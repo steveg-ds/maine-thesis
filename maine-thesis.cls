@@ -180,7 +180,7 @@
 \def\@fourthreader{}
 \def\@fifthreader{}
 \def\@bibfiles{}
-\def\@type{Dissertation}
+\def\@type{Thesis}
 \def\@LastLevel{0}
 
 \newif\ifmultipleappendices\multipleappendicesfalse
@@ -756,13 +756,13 @@
 %%%%%%%%%%%%%%%%%%%%%
 % Special Pages/Environments
 %%%%%%%%%%%%%%%%%%%%%
-\newcommand{\references}{%
-	\cleardoublepage
-	\singlespacing
-	\phantomsection
-	\addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{\bibname}}{\bibname}}
-	\bibliography{\@bibfiles}
-}
+%\newcommand{\references}{%
+%	\cleardoublepage
+%	\singlespacing
+%	\phantomsection
+%	\addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{\bibname}}{\bibname}}
+%	\bibliography{\@bibfiles}
+%}
 
 \renewenvironment{thebibliography}[1]
 	{%begin

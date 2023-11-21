@@ -1,0 +1,60 @@
+\documentclass{maine-thesis}  % Default options 12pt and final copy
+
+% Include necessary packages here
+\usepackage[round]{natbib} % Load the natbib package with round brackets
+\usepackage{hyperref} % Load the hyperref package
+\usepackage{setspace} % If not loaded previously for \singlespacing
+\usepackage{soul}
+
+% Replace contents of {...} with your own information.
+\title{Rurality and Robustness: Rural Communities and Housing Insecurity Risk }					% Title of thesis
+\author{Steve Garcia}					% Author's name: First Middle Last
+\degreesheld{A.A.S., B.A.}			% Previously earned degree(s), institution(s) and year(s).  
+\degree{Data Science and Engineering}  				% Degree to be granted
+\program{Spatial Information Science and Engineering}				% Degree granting department or program
+\submitdate{May, 2024}				% Month and year of graduation (do not separate with a comma)
+
+\principaladvisor[TBD]{TBD} 			% Advisor's [short title and name]{name, long title}
+% If you have more than one advisor then you'll should delete the first argument ("[...]") above and uncomment the following commands
+%\secondadvisor{...}
+%\principalshort{...} 			% Shortened advisor name for abstract.  See guidelines for example.
+
+% Include all committee members names and titles
+\firstreader{TBD}        
+\secondreader{TBD}
+
+
+% If the thesis has MORE than one appendix, leave the following command in.  Else, comment it out.
+\multipleappendicestrue 
+
+% Begin the document.
+\begin{document}
+\preliminary
+\titlepage
+
+\include{Front}
+
+% Main text of the thesis.  Use of the `\input' command will make later editing much easier.
+\include{Ch1}				
+\include{Ch2}				
+\include{Ch3}				
+\include{Ch4}
+\include{Ch5}
+\include{Ch6}
+
+
+\newpage % Start on a new page (optional)
+%\section*{\bibname} % Section header for the bibliography (change to \refname or \references if needed)
+\phantomsection
+\addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{\bibname}}{\bibname}}
+\singlespacing % Adjust spacing as needed (e.g., \doublespacing, \onehalfspacing)
+\bibliographystyle{plainnat} % Set the bibliography style to plainnat
+\bibliography{references} % Specifies the BibTeX file		% Inserts and formats the reference section.
+
+%\appendix					% Include this before any appendices.
+%\include{AppA}				% First appendix.
+%\include{AppB}				% Second appendix, etc.
+
+%\include{Biography}
+
+\end{document}
