@@ -351,33 +351,33 @@
 	\fi
 }
 
-\def\doublespacing{%
-	\ifcase \@ptsize \relax
-		\def\baselinestretch{1.667}
-	\or
-		\def\baselinestretch{1.618}
-	\or
-		\def\baselinestretch{1.655}
-	\fi
-	\setspace@size
-}
+%\def\doublespacing{%
+%	\ifcase \@ptsize \relax
+%		\def\baselinestretch{1.667}
+%	\or
+%		\def\baselinestretch{1.618}
+%	\or
+%		\def\baselinestretch{1.655}
+%	\fi
+%	\setspace@size
+%}
 
-\def\onehalfspacing{%
-	\ifcase \@ptsize \relax
-		\def\baselinestretch{1.25}
-	\or
-		\def\baselinestretch{1.213}
-	\or
-		\def\baselinestretch{1.241}
-	\fi
-	\setspace@size
-}
+%\def\onehalfspacing{%
+%	\ifcase \@ptsize \relax
+%		\def\baselinestretch{1.25}
+%	\or
+%		\def\baselinestretch{1.213}
+%	\or
+%		\def\baselinestretch{1.241}
+%	\fi
+%	\setspace@size
+%}
 
-\def\singlespacing{%
-	\def\baselinestretch{1}
-	\setspace@size
-	\vskip \baselineskip
-}
+%\def\singlespacing{%
+%	\def\baselinestretch{1}
+%	\setspace@size
+%	\vskip \baselineskip
+%}
 
 \newcommand*\loftspacing{10}
 
