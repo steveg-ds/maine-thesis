@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1700784507 "/home/steve-garcia/thesis/maine-thesis-2/Documentation/Main.tex" "Main.pdf" "Main" 1700784507
+  "/etc/texmf/web2c/texmf.cnf" 1684965525 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/steve-garcia/thesis/maine-thesis-2/Documentation/Main.tex" 1700778116 2169 f1d03e6a83b6881e375eefa249eb2666 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700773789 2801363 5b462685f0a57b93a4b7b7be785a42a6 ""
+  "Main.aux" 1700784507 32 3985256e7290058c681f74d7a3565a19 ""
+  "Main.tex" 1700778116 2169 f1d03e6a83b6881e375eefa249eb2666 ""
+  "maine-thesis.cls" 0 -1 0 ""
+  (generated)
+  "Main.log"
+  "Main.pdf"

@@ -1,0 +1,7 @@
+PWD /home/steve-garcia/thesis/maine-thesis-2/Documentation
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/steve-garcia/thesis/maine-thesis-2/Documentation/Main.tex
+OUTPUT Main.log

@@ -3,15 +3,28 @@
 \section{\textit{Defining Rurality}}
 Rather than strictly defining rurality, this thesis uses the United States Department of Agriculture (USDA) Rural-Urban Continuum spectrum. The following codes are used to encapsulate rurality:
 
-\begin{itemize}
-    \item 7: Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC)
-    \item 8: Small town high commuting: primary flow 30 percent or more to a small UC
-    \item 9: Small town low commuting: primary flow 10 percent to 30 percent to a small UC
-    \item 10: Rural areas: primary flow to a tract outside an urban area or urban cluster
-\end{itemize}
+\begin{table}[htbp]
+    \centering
+    \caption{Description of RUCA Codes Used}
+    \label{tab:town_description}
+    \begin{tabular}{|c|p{10cm}|}
+        \hline
+        \textbf{Number} & \textbf{Description} \\
+        \hline
+        7 & Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC) \\
+        \hline
+        8 & Small town high commuting: primary flow 30 percent or more to a small UC \\
+        \hline
+        9 & Small town low commuting: primary flow 10 percent to 30 percent to a small UC \\
+        \hline
+        10 & Rural areas: primary flow to a tract outside an urban area or urban cluster \\
+        \hline
+    \end{tabular}
+\end{table}
 
 
-The range of RUCA codes was chosen to be more inclusive than exclusive, including small towns with various levels of commuting to urban clusters and areas classified as rural. We include small towns because they often serve as hubs for rural areas, serving an important role in rural areas. Spatial autocorrelation is used to determine how often similar rates of each variable occurred across each rural census tract in each state. Finally, multinomial logistic regression is used to determine how well the risk levels of a census tract can be predicted based on the nationwide dataset.  All analysis was conducted in the R statistical language.  
+
+The range of RUCA codes described in Table 1.1 was chosen to be inclusive than exclusive, including small towns with various levels of commuting to urban clusters and areas classified as rural. We include small towns because they often serve as hubs for rural areas, serving an important role in rural areas. Spatial autocorrelation is used to determine how often similar rates of each variable occurred across each rural census tract in each state. Finally, multinomial logistic regression is used to determine how well the risk levels of a census tract can be predicted based on the nationwide dataset.  All analysis was conducted in the R statistical language.  
 
 \section{\textit{Data}}
 Eight different sectors of 2019 ACS 5-year variables are used to capture the 4 Cs of housing insecurity using indicators of housing insecurity identified in the literature. These sectors are housing cost, housing quality, housing type, economic diversity, education mobility, poverty mobility, and household worker/aid. For demographic variables we use seven variables including an “other” variable to account for race/ ethnicity and the number of people over or under 18 by gender. The economic diversity data is the number of people employed across 13 distinct categories. There are It was necessary to create three compound variables: high-cost with a mortgage, high cost without a mortgage, and high-cost rent to use the standard affordability measure of 30 percent. There are four variables for housing conditions which include houses with an incomplete or insufficient kitchen or plumbing for occupied and unoccupied housing units. Two sets of variables account for residential mobility: education and poverty that include those who did not move, those who moved in and out of county and state.  Due to the housing affordability and income inequality crises, those below the poverty level and those at 125 percent of the poverty level as high risk for housing instability are included in residential mobility: poverty. For education those with and without a high school diploma are included as those without a college degree may face higher barriers to well-paying and stable employment. Wage/aid data include households without income, households that receive public assistance, households that receive supplemental security income, households with investment income, households with other income, households with 3+ workers and the household Gini index. For housing type, renters and owners of mobile homes, single family homes, small and large multi-family homes, and renters and owners of unconventional housing are included.  
@@ -24,16 +37,81 @@ Supervised and unsupervised machine learning algorithms are used alongside Moran
 
 \subsection{\textit{Neighbors Algorithm}}
 
-Communities often share dependencies across state lines, making it unjust to disregard neighboring communities in a state-based housing insecurity analysis. To address this, the analysis encompasses census tracts within 15 miles of a state's outermost tract. Any census tract sharing a boundary with a tract within this range is considered, ensuring a more inclusive evaluation of rural housing insecurity. This process is repeated for each state in the continental United States. 
+Communities often share dependencies across state lines, making it unjust to disregard neighboring communities in a state-based housing insecurity analysis. To address this, the analysis encompasses census tracts within 15 miles of a state's outermost tract. Any census tract sharing a boundary with a tract within this range is considered, ensuring a more inclusive evaluation of rural housing insecurity. This process is repeated for each state in the continental United States.
+
+The formula for queen contiguity neighbors is shown in Equation \ref{eq:queen_neighbors}.
+
+\begin{equation}
+    \label{eq:queen_neighbors}
+    \begin{aligned}
+        \text{Top-left:} & \quad (x-1, y-1) \\
+        \text{Top:} & \quad (x, y-1) \\
+        \text{Top-right:} & \quad (x+1, y-1) \\
+        \text{Left:} & \quad (x-1, y) \\
+        \text{Right:} & \quad (x+1, y) \\
+        \text{Bottom-left:} & \quad (x-1, y+1) \\
+        \text{Bottom:} & \quad (x, y+1) \\
+        \text{Bottom-right:} & \quad (x+1, y+1)
+    \end{aligned}
+\end{equation}
 
 \subsection{\textit{K-Medoids Clustering}}
-K-medoids clustering is a partitioning technique aimed at dividing a dataset into K distinct and non-overlapping clusters. Unlike K-means clustering, which utilizes centroids as cluster representatives, K-medoids employs actual data points within the dataset as cluster representatives. The key advantage of K-medoids lies in its robustness to outliers and noise due to its use of real data points.The objective of K-medoids clustering is to minimize the sum of dissimilarities within clusters. Each state, including neighboring census tracts, is clustered. The cluster medians are analyzed to determine which clusters have a high, medium, or low risk of housing insecurity based on the factors previously identified in the literature review
+K-medoids clustering is a partitioning technique aimed at dividing a dataset into \(K\) distinct and non-overlapping clusters. Unlike K-means clustering, which utilizes centroids as cluster representatives, K-medoids employs actual data points within the dataset as cluster representatives. The key advantage of K-medoids lies in its robustness to outliers and noise due to its use of real data points. The objective of K-medoids clustering is to minimize the sum of dissimilarities within clusters. Each state, including neighboring census tracts, is clustered. The cluster medians are analyzed to determine which clusters have a high, medium, or low risk of housing insecurity based on the factors previously identified in the literature review. The formula for K-medoids clustering is shown in Equation \ref{eq:k-medoids}.
+
+\begin{equation}\label{eq:k-medoids}
+    \begin{aligned}
+        \underset{S}{\text{minimize}} \quad & \sum_{i=1}^{K} \sum_{x \in C_i} d(x, m_i) \\
+        \text{where:} \\
+        S & : \text{The set of clusters.} \\
+        K & : \text{The number of clusters.} \\
+        i & : \text{Index representing each cluster (\(1 \leq i \leq K\)).} \\
+        C_i & : \text{The \(i\)-th cluster containing data points.} \\
+        x & : \text{A data point within a specific cluster (\(x \in C_i\)).} \\
+        m_i & : \text{The medoid (representative) of the \(i\)-th cluster.} \\
+        d(x, m_i) & : \text{The dissimilarity (distance) between data point \(x\) and medoid \(m_i\).}
+    \end{aligned}
+\end{equation}
+
 
 \subsection{\textit{Moran's I}}
-The Global Moran's I is a statistical measure used in spatial analysis to detect spatial clustering or dispersion of similar values within a dataset. It quantifies the degree of spatial autocorrelation by assessing whether neighboring locations exhibit similar or dissimilar attribute values. Specifically, Moran's I considers both the values of the locations and the spatial relationship between them, providing a single coefficient that ranges from -1 to 1, with 0 indicating spatial randomness. This measure helps identify patterns in spatial data, highlighting if similar values tend to be close to each other or dispersed across the study area. The Moran's I values for each variable is calculated for each state and nationally in order to analyze how the housing insecurity factors cluster in space. 
+The Global Moran's I is a statistical measure used in spatial analysis to detect spatial clustering or dispersion of similar values within a dataset. It quantifies the degree of spatial autocorrelation by assessing whether neighboring locations exhibit similar or dissimilar attribute values. Specifically, Moran's I considers both the values of the locations and the spatial relationship between them, providing a single coefficient that ranges from -1 to 1, with 0 indicating spatial randomness. This measure helps identify patterns in spatial data, highlighting if similar values tend to be close to each other or dispersed across the study area. The Moran's I values for each variable is calculated for each state and nationally in order to analyze how the housing insecurity factors cluster in space. The formula for Moran's I is shown in Equation \ref{eq:moran_i}.:
+
+\begin{equation}\label{eq:moran_i}
+    I = \frac{N}{W} \frac{\sum_{i=1}^{N} \sum_{j=1}^{N} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{N} (x_i - \bar{x})^2}
+\end{equation}
+
+Where:
+
+\begin{align*}
+I & : \text{Moran's I statistic, representing the degree of spatial autocorrelation.} \\
+N & : \text{Total number of spatial units (e.g., census tracts, regions).} \\
+W & : \text{Total spatial weight in the dataset.} \\
+w_{ij} & : \text{Spatial weight between spatial units \(i\) and \(j\).} \\
+x_i & : \text{Value of the variable of interest in spatial unit \(i\).} \\
+\bar{x} & : \text{Mean value of the variable of interest across all spatial units.}
+\end{align*}
+
+This statistic ranges from -1 (perfect dispersion) to 1 (perfect clustering), where positive values indicate positive spatial autocorrelation (clustering), negative values indicate negative spatial autocorrelation (dispersion), and values around zero indicate randomness or no spatial pattern.
+
 
 \subsection{\textit{Multinomial Logistic Regression}}
 
-After the clustering is performed and the clusters are analyzed, each sector is assigned a new variable containing the risk levels for each census tract. Cross split validation is used wherein for each state, a new model is trained on all states except the target state. The probability that each census tract is its actual classification is preserved for the analysis. Additionally, to better understand how the \hs factors contribute to the risk levels, for each sector a national model is trained on the entire dataset so that the model can be analyzed and prediction power can be measured in the best-case scenario. 
+After the clustering is performed and the clusters are analyzed, each sector is assigned a new variable containing the risk levels for each census tract. Cross split validation is used wherein for each state, a new model is trained on all states except the target state. The probability that each census tract is its actual classification is preserved for the analysis. Additionally, to better understand how the \hs factors contribute to the risk levels, for each sector a national model is trained on the entire dataset so that the model can be analyzed and prediction power can be measured under the best-case scenario. The formula for multinomial logistic regression is shown in Equation \ref{eq:multinom_regression}.
+
+\begin{equation}\label{eq:multinom_regression}
+    \log\left(\frac{{P(Y = k \mid X)}}{{P(Y = K \mid X)}}\right) = \beta_{0k} + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_p X_p
+\end{equation}
+
+Where:
+\begin{align*}
+    & \log: \text{Natural logarithm function} \\
+    & P(Y = k \mid X): \text{Probability of the outcome being in category \(k\) given predictor variables \(X\)} \\
+    & P(Y = K \mid X): \text{Probability of the outcome being in the reference category \(K\) given \(X\)} \\
+    & \beta_{0k}: \text{Intercept for category \(k\)} \\
+    & \beta_1, \beta_2, \dots, \beta_p: \text{Coefficients corresponding to predictor variables \(X_1, X_2, \dots, X_p\)} \\
+    & X_1, X_2, \dots, X_p: \text{Predictor variables} \\
+    & k: \text{Specific category being predicted} \\
+    & K: \text{Reference category}
+\end{align*}
 
 \endinput
