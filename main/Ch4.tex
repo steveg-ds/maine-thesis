@@ -1,38 +1,100 @@
-\chapter{Analysis of Rural Housing Insecurity}	
+\chapter{Results}	
 
-\textit{Figure 1 about here}
+This analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were intentionally excluded from the analysis: Alaska and Hawaii were omitted  due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  Figure \ref{fig:neighbors_bar} shows how the neighbors algorithm changed the state census tract counts. 
 
-To capture the interconnectedness of neighboring communities for social and economic activities, census tracts within a 15-mile radius of a state’s bordering census tracts are included for each state (see Figure 1). Each sector of the data is then clustered using K-Medoids clustering. K-Medoids clustering groups data points by picking representative points from the data itself. It aims to minimize the overall difference between each point and its closest representative point within a cluster.  K-Medoids clustering was used to reduce the influence of outliers and potential sampling errors on the results.  
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth, height=10cm]{plots/neighbors.jpeg}
+    \caption{State Census Tracts vs. State Neighbors Count}
+    \label{fig:neighbors_bar}
+\end{figure}
 
 
-\textit{Figure 2 about here}
+\section{\textit{Cluster Analysis}}
 
-The cluster medians are analyzed and relabeled so that one is always the highest risk and three is always lowest risk (see figure 2). Association rules learning is used to find associations between risk levels across each sector. Association rules are used to discover relationships or patterns within a dataset. The goal of association rules is to highlight underlying patterns between sector risk levels. We generate association rules with a minimum support and confidence of 0.05 and a minimum item set length of two using the clusters for each column to reveal patterns between housing insecurity indicators. We examine high-risk-to-high-risk associations (1:1), low-risk-to-high-risk (3:1) and high-risk-to-low (1:3) -risk associations. We use Moran’s I spatial autocorrelation for each variable to determine how spatially clustered our variables are. Moran's I spatial autocorrelation is a statistical measure used to assess the degree of spatial clustering or dispersion in spatial data. Finally, we use a multinomial logistic regression to calculate the probability that the observation falls into its actual cluster based on a model trained on all the data and applied to each state to determine how well each state fits into the overall patterns of the dataset. In multinomial logistic regression, the model estimates the probability of each category compared to a reference category, providing insights into the likelihood of a data point belonging to each category. 
+Here, the results of the cluster analysis is presented for each sector. The primary mechanism for analyzing the clusters is the average cluster medians for all states. The cluster averages are used only when cluster medians are consistently 0 and more information is needed to analyze the clusters.  All values are represented as a percentage corresponding to the base unit each sector is scaled to. 
 
-\section{\textit{results}}
-there is text here 
+\subsection{\textit{Employment Diversity}}
+The risk levels for employment diversity are determined based on which clusters have the highest number of highest cluster values compared to the cluster with the lowest number of lowest cluster values. The higher the cluster averages across variables, the better the economic diversity of a cluster. Table \ref{tab:emp} shows the values for this sector. 
+Cluster 1 had the lowest cluster medians in 61 percent of variables, 
+Cluster 2 has the highest cluster median in 53 percent of variables, and Cluster 3 has the middle value in 69 %nice 
+percent of cases. Cluster 1 has the lowest level of economic diversity, cluster 2 has the lowest level of economic diversity, and cluster 3 has the medium level of economic diversity. 
 
+% latex table generated in R 4.1.2 by xtable 1.8-6 package
+% Thu Nov 23 19:11:59 2023
+\begin{table}[ht]
+    \centering
+    \caption{Median Values for Employment Diversity Clusters}
+    \label{tab:emp}
+    \begin{tabular}{|r| r| r| r|}
+        \hline
+        Variable & Cluster 1 & Cluster 2 & Cluster 3 \\ 
+        \hline
+        \hline
+        ag\_for\_fish\_hunt\_mining & 2.54 & 2.24 & 1.87 \\ 
+        \hline
+        arts\_rec\_food & 2.86 & 3.12 & 3.10 \\ 
+        \hline
+        construction & 3.16 & 3.06 & 3.07 \\ 
+        \hline
+        edu\_health\_social & 9.38 & 9.73 & 9.46 \\ 
+        \hline
+        fin\_re\_insur & 1.47 & 1.60 & 1.57 \\ 
+        \hline
+        information & 0.35 & 0.41 & 0.37 \\ 
+        \hline
+        manufacturing & 4.52 & 5.44 & 4.75 \\ 
+        \hline
+        othersvcs & 1.76 & 1.88 & 1.91 \\ 
+        \hline
+        prof\_sci\_mgmt\_waste & 2.17 & 2.25 & 2.28 \\ 
+        \hline
+        public\_admin & 1.98 & 1.88 & 1.92 \\ 
+        \hline
+        retail\_trade & 4.48 & 4.78 & 4.59 \\ 
+        \hline
+        trans\_warehouse\_util & 2.17 & 2.03 & 2.12 \\ 
+        \hline
+        wholesale\_trade & 0.76 & 0.86 & 0.70 \\ 
+        \hline
+    \end{tabular}
+\end{table}
 %\textit{Figure 3 about here}
 
-\section{\textit{Sample Description}}
+\subsection{\textit{Demographics}}
 
-In this study, the analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. four states and Washington D.C. were intentionally excluded from our analysis: Alaska and Hawaii were omitted from our study due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature. Given their geographical isolation and distinct characteristics Alaska, and Hawaii to ensure the accuracy and generalizability of these findings; New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  
+\subsection{\textit{Housing Cost}}
+
+\subsection{\textit{Housing Quality}}
+
+\subsection{\textit{Residential Mobility: Education}}
+
+\subsection{\textit{Residential Mobility: Poverty}}
+
+\subsection{\textit{Wage and Household Factors}}
+
+\subsection{\textit{Housing Type}}
+
+
+
+
+
 
 \section{\textit{Association Rules}}
-For 1:1 rules, the rule with the highest confidence and support is between housing type and cost, occurring in 11\% of transactions with a coverage of 0.29. Wage/ household aid has the most one-one- associations in this group occurring in an average of 1\% of observations, there is a 36\% average probability that any of these sectors are in the consequent if wage/ household aid is in the antecedent. In about 9\% of observations, residential mobility poverty is the consequent if mobility education is the antecedent with a 36\% probability of a high risk for mobility poverty when there is a high risk of mobility education. mobility education also has an association with employment with 33\% confidence and 8\% support. 
+For 1:1 rules, the rule with the highest confidence and support is between housing type and cost, occurring in 11 percent of transactions with a coverage of 0.29. Wage/ household aid has the most one-one- associations in this group occurring in an average of 1 percent of observations, there is a 36 percent average probability that any of these sectors are in the consequent if wage/ household aid is in the antecedent. In about 9 percent of observations, residential mobility poverty is the consequent if mobility education is the antecedent with a 36 percent probability of a high risk for mobility poverty when there is a high risk of mobility education. mobility education also has an association with employment with 33 percent confidence and 8 percent support. 
 
-Of the 3:1 rules with the top 10 highest confidence values, employment diversity has a relationship with every other sector. Support is low at 5\% with an average confidence of 0.42 and a slightly positive average lift of 1.1. The two other highest rules are housing type to mobility poverty with support of around twelve percent and a confidence interval of 0.41 and employment to residential mobility poverty with support of six percent and a confidence interval of 0.4. Looking at the top ten 3:1 rules with the highest confidence values, the results are significantly different from the 3:1 rules Employment is in the consequent if any other sector is in the antecedent with an average support of 12\%, and an average confidence interval of 0.32. This relationship between employment diversity having both high-risk-to-low-risk and high-risk-to-low-risk is a surprising relationship. 
+Of the 3:1 rules with the top 10 highest confidence values, employment diversity has a relationship with every other sector. Support is low at 5 percent with an average confidence of 0.42 and a slightly positive average lift of 1.1. The two other highest rules are housing type to mobility poverty with support of around twelve percent and a confidence interval of 0.41 and employment to residential mobility poverty with support of six percent and a confidence interval of 0.4. Looking at the top ten 3:1 rules with the highest confidence values, the results are significantly different from the 3:1 rules Employment is in the consequent if any other sector is in the antecedent with an average support of 12 percent, and an average confidence interval of 0.32. This relationship between employment diversity having both high-risk-to-low-risk and high-risk-to-low-risk is a surprising relationship. 
 
 \section{\textit{Moran's I}}
 
 \textit{Figure 4 about here}
 
-Moran’s I is calculated for every state and the entire dataset. With the exceptions of demographics and employment diversity, the average Moran's I statistics are between 0.2 and 0.35 (see figure 4). For demographics, African American has the strongest spatial autocorrelation at 0.49 followed by Whites at 0.45 and Hispanics and Latinos at 0.4. Jobs often considered more urban such as retail trade and information services have small positive spatial autocorrelations with values around 0.1. For household wage/ aid, the households with no wage variable have the highest average Moran’s I statistic at 0.34, followed by households with public assistance at 0.3. The most surprising observation in this sector is the Gini index. There is a lot of conversation in the public and academic spheres about income inequality, yet in rural areas there is an average Moran’s I of 0.19, indicating a very slight positive spatial autocorrelation. For housing cost, the most surprising observation is the low average spatial autocorrelation of high-cost renters. At only 0.16, there is not as much clustering of high rent burdened households in rural areas. mobile home ownership and single unit ownership have the highest spatial autocorrelations for housing type with Moran’s I values of 0.34.  Mobile home renters has an average Moran’s I of 0.22. Unconventional housing types for both owners and renters had slightly positive Moran’s I statistics at 0.2 and 0.15. For mobility education, same house without a high school diploma (0.34) and same house with a high school diploma (0.31) have similar values and while the positive spatial autocorrelations are low, they are notably higher than the mobility variables in the Sector. While same house below the poverty line had the strongest spatial autocorrelation of (0.27), moved different county at 125\% of the poverty level (0.18) is between the two same house poverty level variables and almost identical to same house 125\% of the poverty level when rounding to the third decimal place. For employment diversity, average Moran’s I statistics vary across all variables with manufacturing (0.47) and Black (0.49 having the highest values.  
+Moran’s I is calculated for every state and the entire dataset. With the exceptions of demographics and employment diversity, the average Moran's I statistics are between 0.2 and 0.35 (see figure 4). For demographics, African American has the strongest spatial autocorrelation at 0.49 followed by Whites at 0.45 and Hispanics and Latinos at 0.4. Jobs often considered more urban such as retail trade and information services have small positive spatial autocorrelations with values around 0.1. For household wage/ aid, the households with no wage variable have the highest average Moran’s I statistic at 0.34, followed by households with public assistance at 0.3. The most surprising observation in this sector is the Gini index. There is a lot of conversation in the public and academic spheres about income inequality, yet in rural areas there is an average Moran’s I of 0.19, indicating a very slight positive spatial autocorrelation. For housing cost, the most surprising observation is the low average spatial autocorrelation of high-cost renters. At only 0.16, there is not as much clustering of high rent burdened households in rural areas. mobile home ownership and single unit ownership have the highest spatial autocorrelations for housing type with Moran’s I values of 0.34.  Mobile home renters has an average Moran’s I of 0.22. Unconventional housing types for both owners and renters had slightly positive Moran’s I statistics at 0.2 and 0.15. For mobility education, same house without a high school diploma (0.34) and same house with a high school diploma (0.31) have similar values and while the positive spatial autocorrelations are low, they are notably higher than the mobility variables in the Sector. While same house below the poverty line had the strongest spatial autocorrelation of (0.27), moved different county at 125 percent of the poverty level (0.18) is between the two same house poverty level variables and almost identical to same house 125 percent of the poverty level when rounding to the third decimal place. For employment diversity, average Moran’s I statistics vary across all variables with manufacturing (0.47) and Black (0.49 having the highest values.  
 
 
 \section{\textit{Multinomial Logistic Regression}}
 
-A multinomial logistic regression was performed on each sector of data and tested on the data for each state. Average accuracy for all sectors was low, ranging between 34% for employment diversity and 38% for demographics (see Figure 5). Medians were in a similar range of 32% for mobility poverty and 40% for demographics. Demographics had the highest standard deviation at 14%, indicating a high degree of variation in predictability. State probabilities had a high across sector average of 41% and a low of 31%. 
+The final method applied in this study is a multinomial logistic regression performed on each sector of data and tested on the data for each state. The probability that a predicted risk level is the actual risk level is used to measure how well the data for each state can be predicted based on a model trained on the other states. These probabilities are used to saturate the final map ) to visualize how well census tracts conform to the national dataset. Average accuracy for all sectors was low, ranging between 34  for employment diversity and 38 percent for demographics. Medians were in a similar range of 32 percent for mobility poverty and 40 percent for demographics. Demographics had the highest standard deviation at 14 percent, indicating a high degree of variation in predictability. Looking at average probability for each sector in each state, Utah had the best prediction results with an average of 41 percent and Minnesota was the hardest to predict at 31 percent between sectors. The standard deviation of every state is 14 percent, indicating a high level of variation in each state. While the standard deviation is significant, the mean and median statistics indicate the data is close to symmetrically distributed.  
 
 \textit{Figure 5 about here}
 
