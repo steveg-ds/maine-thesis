@@ -3,25 +3,7 @@
 \section{\textit{Defining Rurality}}
 Rather than strictly defining rurality, this thesis uses the United States Department of Agriculture (USDA) Rural-Urban Continuum spectrum. The following codes are used to encapsulate rurality:
 
-\begin{table}[htbp]
-    \centering
-    \caption{Description of RUCA Codes Used}
-    \label{tab:town_description}
-    \begin{tabular}{|c|p{10cm}|}
-        \hline
-        \textbf{Number} & \textbf{Description} \\
-        \hline
-        7 & Small town core: primary flow within an Urban Cluster of 2,500 to 9,999 (small UC) \\
-        \hline
-        8 & Small town high commuting: primary flow 30 percent or more to a small UC \\
-        \hline
-        9 & Small town low commuting: primary flow 10 percent to 30 percent to a small UC \\
-        \hline
-        10 & Rural areas: primary flow to a tract outside an urban area or urban cluster \\
-        \hline
-    \end{tabular}
-\end{table}
-
+\input{tables/ruca_table.tex}
 
 
 The range of RUCA codes described in Table 1.1 was chosen to be inclusive than exclusive, including small towns with various levels of commuting to urban clusters and areas classified as rural. We include small towns because they often serve as hubs for rural areas, serving an important role in rural areas. Spatial autocorrelation is used to determine how often similar rates of each variable occurred across each rural census tract in each state. Finally, multinomial logistic regression is used to determine how well the risk levels of a census tract can be predicted based on the nationwide dataset.  All analysis was conducted in the R statistical language.  
@@ -72,6 +54,24 @@ K-medoids clustering is a partitioning technique aimed at dividing a dataset int
     \end{aligned}
 \end{equation}
 
+\subsection{\textit{Association Rules Learning}}
+
+Association Rules learning is a data mining technique used to uncover interesting relationships between variables in large datasets. It aims to discover patterns in the form of rules indicating the co-occurrence or association between items within transactions or events.
+
+Association rule learning involves two main metrics:
+
+\textbf{Support (s)}: Measures the frequency or occurrence of an itemset in the dataset.
+\[
+\text{Support}(A \rightarrow B) = \frac{\text{Transactions containing both A and B}}{\text{Total transactions}}
+\]
+
+\textbf{Confidence (c)}: Measures the conditional probability that an item B appears in a transaction given that item A is present.
+\[
+\text{Confidence}(A \rightarrow B) = \frac{\text{Support}(A \cup B)}{\text{Support}(A)}
+\]
+
+Here, association rules are used to analyze the common occurrences between sector risk levels. Of primary interest are unexpected relationships where a high risk level is association with a low risk level and vice versa. 
+
 
 \subsection{\textit{Moran's I}}
 The Global Moran's I is a statistical measure used in spatial analysis to detect spatial clustering or dispersion of similar values within a dataset. It quantifies the degree of spatial autocorrelation by assessing whether neighboring locations exhibit similar or dissimilar attribute values. Specifically, Moran's I considers both the values of the locations and the spatial relationship between them, providing a single coefficient that ranges from -1 to 1, with 0 indicating spatial randomness. This measure helps identify patterns in spatial data, highlighting if similar values tend to be close to each other or dispersed across the study area. The Moran's I values for each variable is calculated for each state and nationally in order to analyze how the housing insecurity factors cluster in space. The formula for Moran's I is shown in Equation \ref{eq:moran_i}.:
@@ -91,7 +91,7 @@ x_i & : \text{Value of the variable of interest in spatial unit \(i\).} \\
 \bar{x} & : \text{Mean value of the variable of interest across all spatial units.}
 \end{align*}
 
-This statistic ranges from -1 (perfect dispersion) to 1 (perfect clustering), where positive values indicate positive spatial autocorrelation (clustering), negative values indicate negative spatial autocorrelation (dispersion), and values around zero indicate randomness or no spatial pattern.
+
 
 
 \subsection{\textit{Multinomial Logistic Regression}}

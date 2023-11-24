@@ -1,4 +1,10 @@
 {
-    "typescript.tsserver.nodePath": ""
+    "typescript.tsserver.nodePath": "",
+    "files.exclude": {
+        "**/*.aux": true
+    },
+    {
+        "grammarly.files.include": ["**/*.tex"],
+        // Other settings...
+      }
 }
-
