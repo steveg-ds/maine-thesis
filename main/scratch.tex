@@ -1,0 +1,43 @@
+\section{\textit{Decision Trees}}
+For each sector, a national decision tree model was created to analyze how well the risk levels can be classified under the ideal circumstances. Additionally, variable importance metrics are created for each model to better understand how each factor contributes to the model.
+
+
+\subsection{\textit{Employment Diversity}}
+Table \ref{tab:emp_confusion} shows the confusion matrix and model statistics for the employment diversity decision tree. Accuracy on this model improved six \pct from the average \mlr results. The model performed the best on the low risk level observations reflected by the highest F1 score (0.46). Wholesale-trade, manufacturing, and ag-for-fish-hunt-mining contributed the most to this model while retail trade, information, and public administration contributed the least. 
+
+\input{tables/confusion/emp_confusion.tex}
+
+\pagebreak
+
+\subsection{\textit{Demographics}}
+
+Table \ref{tab:dem_confusion} shows the confusion matrix and model statistics for the demographic diversity decision tree. This model's accuracy is identical to the average \mlr results. This model performed best on the medium risk level observations with the highest F1 score (0.61). female under 18, hispanic and latino, and white contributed the most to this model while haw pac, asian, and black contributed the least. 
+
+\input{tables/confusion/dem_confusion.tex}
+
+\pagebreak
+
+\subsection{\textit{Housing Cost}}
+
+\input{tables/confusion/cost_confusion.tex}
+
+\subsection{\textit{Housing Quality}}
+
+\input{tables/confusion/qual_confusion.tex}
+
+
+\subsection{\textit{Residential Mobility: Education}}
+
+\input{tables/confusion/trans_edu_confusion.tex}
+
+\subsection{\textit{Residential Mobility: Poverty}}
+
+\input{tables/confusion/trans_pov_confusion.tex}
+
+\subsection{\textit{Wage and Household Factors}}
+
+\input{tables/confusion/waid_confusion.tex}
+
+\subsection{\textit{Housing Type}}
+
+\input{tables/confusion/hh_type_confusion.tex}
