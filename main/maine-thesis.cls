@@ -50,7 +50,7 @@
 \DeclareOption{12pt}{\renewcommand\docsize{12pt}}
 \DeclareOption{draft}{\drafttrue
 	\ExecuteOptions{10pt}
-	\PassOptionsToClass{draft}{report}
+	\PassOptionslass{draft}{report}
 	\newcommand{\drafttext}{\sffamily\small{DRAFT}
 	\mt@officialfalse}
 }

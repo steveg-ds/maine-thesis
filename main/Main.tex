@@ -11,24 +11,39 @@
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{dcolumn}
-\usepackage{calculator}
 
+
+
+
+% Adjust the space between figure number and title in the list of figures
+\cftsetindents{figure}{3em}{10em} % Adjust the second value to set the desired space
+
+% Additional settings for list of tables or other lists if needed
+\cftsetindents{table}{0em}{2.5em} 
 
 % Creating custom commands
 %\newcommand{\HIRL}{housing insecurity risk level }
-\newcommand{\ct}{census tract}
+\newcommand{\ct}{census tract }
 
-\newcommand{\cts}{census tracts}
+\newcommand{\cts}{census tracts }
 
-\newcommand{\hs}{housing insecurity}
+\newcommand{\hs}{housing insecurity }
 
-\newcommand{\pct}{percent}
+\newcommand{\pct}{percent }
 
-\newcommand{\mlr}{multinomial logistic regression}
+\newcommand{\mlr}{multinomial logistic regression }
 
-\newcommand{\lrl}{low risk level}
-\newcommand{\mrl}{medium risk level}
-\newcommand{\hrl}{high risk level}
+\newcommand{\lrl}{low risk level }
+\newcommand{\mrl}{medium risk level }
+\newcommand{\hrl}{high risk level }
+
+\newcommand{\lrls}{low risk levels }
+\newcommand{\mrls}{medium risk levels }
+\newcommand{\hrls}{high risk levels }
+
+
+\setlength{\cftfignumwidth}{3em}
+
 
 
 % Replace contents of {...} with your own information.
@@ -72,6 +87,10 @@
 %\section*{\bibname} % Section header for the bibliography (change to \refname or \references if needed)
 \phantomsection
 \addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{\bibname}}{\bibname}}
+
+
+
+
 \doublespacing % Adjust spacing as needed (e.g., \doublespacing, \onehalfspacing)
 \bibliographystyle{plainnat} % Set the bibliography style to plainnat
 \bibliography{references} % Specifies the BibTeX file		% Inserts and formats the reference section.
