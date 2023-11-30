@@ -31,31 +31,29 @@ The 4 C’s housing as an interconnected web of factors that impact health and e
 \section{\textit{Motivation}}
 There are three primary reasons behind this exploration:
 \begin{itemize}
-    \item{The first motivation comes from the lack of attention scholars have paid to rural areas as it pertains to \hs. }
-    \item{The second motivation is to test the efficacy of the 4 C's model of \hs for the rural United States. As there is an urban lens to \hs, an adequate theoretical model must be capable of adapting to areas often left out of the conversation}
-    \item{The final motivation is to provide policy makers and researchers with a tool to identify rural areas of \hs in their constituency and create harm reduction approaches and services that can meet the unique needs of their areas.}
+    \item{The first motivation comes from the lack of attention scholars have paid to rural areas as it pertains to \hs. While the literature on rural housing insecurity is growing, there has yet to be a holistic nationwide survey of rural housing insecurity. Rural areas deserve more attention, and this thesis hopes to serve as a starting point for future research on rural housing insecurity at all levels with the ultimate goal of breaking the urban-focused lens of housing insecurity.}
+    \item{The second motivation is to test the efficacy of the 4 C's model of \hs for the rural United States. As there is an urban lens to \hs, an adequate theoretical model must be capable of adapting to areas often left out of the conversation. One study \citep{gleason_using_2021} has applied the 4 C's model to housing insecurity for the state of Maine. Most applications of the 4 C's has been to study the relationships between various conditions and housing insecurity, but no studies have applied it broadly to rural housing insecurity.}
+    \item{The final motivation is to provide policy-makers and researchers with a quantitative and qualitative framework to identify rural areas of \hs in their constituency and create harm reduction approaches and services that can meet the unique needs of their areas. The patchwork of local, state, and federal systems that encompass the aid programs of the United States means that there are a lot of people involved in the policy-making process with, as of yet, no real mechanism for addressing housing insecurity in their particular jurisdictions.}
 
 \end{itemize}
 
 \section{\textit{Approach}}
-In order to improve our understanding of rural \hs, this thesis investigates the risk levels of rural census tracts in the United States  using the 4 C's model of \hs. Using k-medoids clustering, risk factors across eight different sectors are used to assign housing insecurity risk levels to rural census tracts for the continental United States. Each state is clustered with census tracts from other states within a 15 mile boundary to encapsulate how communities exist across state lines. The cluster medians are analyzed to understand the trends in \hs factors across states and the clusters are relabeled based on risk factors identified in the literature so that each cluster falls into a low, medium, or high risk level. Using these risk levels, association rules learning is used to identify common patterns between sector risk levels and identify pockets of rural \ct that are at high risk of \hs. To better understand how factors of \hs relate to space, Moran's I spatial autocorrelation is used to determine how spatially clustered each \hs factor is. Finally, a multinomial logistic regression is used to determine how well each states sector risk levels can be predicted and a national model is generated for each sectors risk levels to analyze how each \hs factor contributes to sector risk levels. 
+In order to improve our understanding of rural \hs, this thesis investigates the risk levels of rural census tracts in the United States  using the 4 C's model of \hs. Using k-medoid clustering, risk factors across eight different sectors are used to assign housing insecurity risk levels to rural census tracts for the continental United States. Each state is clustered with census tracts from other states within a 15-mile boundary to encapsulate how communities exist across state lines. The cluster medians are analyzed to understand the trends in \hs factors across states and the clusters are relabeled based on risk factors identified in the literature so that each cluster falls into a low, medium, or high risk level. Using these risk levels, association rules learning is used to identify common patterns between sector risk levels and identify pockets of rural \ct that are at high risk of \hs. To better understand how factors of \hs relate to space, Moran's I spatial autocorrelation is used to determine how spatially clustered each \hs factor is. Local Moran's I is used to determine how spatially clustered each risk level is to better understand the clustering of housing insecurity risk in rural areas.Finally, a multinomial logistic regression is used to determine how well each states sector risk levels can be predicted and a national model is generated for each sectors risk levels to analyze well the risk levels created by this implementation of the 4 C's model can be predicted nationally and state by state. 
 
-Beginning to understand rural homelessness requires that a number of questions be answered:
+Beginning to understand rural homelessness requires that several questions be answered:
 \begin{itemize}
-    \item How can risk factors of  be used to identify risk levels of \hs while accounting for the variation in rural areas? 
+    \item How can risk factors of be used to identify risk levels of \hs while accounting for the variation in rural areas? 
     \item Do \hs factors identified for urban areas exhibit similar characteristics in rural areas? 
     \item When measuring \hs across different dimensions, how often do the same features arise?
     \item Are there spatial relations between the different dimensions of \hs? 
-    \item To what extent can the \hs dimensions be predicted? 
+    \item To what extent can this model of housing insecurity be used to predict risk levels across housing insecurity factors?
 
 \end{itemize}
 \section{\textit{Major Results}}
 I have some
 
 \section{\textit{Intended Audience}}
-Why would anyone read this 
-
-This thesis is intended for an audience with a significant interest in rural housing insecurity. such an audience can include, but is not limited to policy makers, economists, political scientists, community psychologists, rural sociology, and many others concerned with housing insecurity. 
+This thesis is intended for an audience with a significant interest in rural housing insecurity. Such an audience can include, but is not limited to policy makers, economists, political scientists, community psychologists, rural sociology, and many others concerned with housing insecurity. 
 
 \section{\textit{Structure of Thesis}}
 The thesis is structured into six chapters. Chapter 2 offers a comprehensive theoretical foundation, focusing on the application of the 4 C's of the \hs model. This chapter critically reviews pertinent literature pertaining to various facets of the model. Chapter 3 delineates the methodology employed for data processing. It provides an in-depth explanation of the chosen methodology and its execution. The ensuing Chapter 4 presents the study's findings, offering a detailed analysis of the acquired results. Chapter 5 deliberates on the implications of the results, discussing their significance and impact within the scope of the study. This chapter provides a thorough examination of the noteworthy findings. Chapter 6 serves as a synthesis, summarizing the entirety of the work and offering insightful commentary on the major findings. Additionally, it delineates potential avenues for future research and study.

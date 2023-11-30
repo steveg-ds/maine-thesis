@@ -2,27 +2,26 @@
 
 This analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were intentionally excluded from the analysis: Alaska and Hawaii were omitted due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  Figure \ref{fig:neighbors_bar} shows how the neighbor algorithm changed the state census tract counts. 
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=1\textwidth, height=10cm]{plots/neighbors.jpeg}
-    \caption{State Census Tracts vs. State Neighbors Count}
-    \label{fig:neighbors_bar}
-\end{figure}
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=1\textwidth, height=10cm]{plots/neighbors.jpeg}
+%    \caption{State Census Tracts vs. State Neighbors Count}
+%    \label{fig:neighbors_bar}
+%\end{figure}
 
 
 \section{\textit{Cluster Analysis}}
 
-Here, the results of the cluster analysis is presented for each sector. The primary mechanism for analyzing the clusters is the average cluster medians for all states. The cluster averages were analyzed as well to ensure that the same trends are found in the dataset under a different descriptive statistic. All values are represented as a percentage corresponding to the base unit each sector is scaled to. 
+Here, the results of the cluster analysis is presented for each sector. The primary mechanism for analyzing the clusters is the average cluster medians for all states. The cluster averages were analyzed as well to ensure that the same trends are found in the dataset under a different descriptive statistic. All values are represented as a percentage corresponding to the base unit each sector is scaled to.
 
 \subsection{\textit{Employment Diversity}}
 The risk levels for employment diversity are determined based on which clusters have the highest number of highest cluster values compared to the cluster with the lowest number of lowest cluster values. The higher the cluster averages across variables, the better the economic diversity of a cluster. Table \ref{tab:emp} shows the values for this sector. 
 Cluster 1 had the lowest cluster medians in 61 percent of variables, 
 Cluster 2 has the highest cluster median in 53 percent of variables, and Cluster 3 has the middle value in 69 %nice 
-percent of cases. Based on this analysis Cluster one has the lowest level of economic diversity, cluster two has the lowest level of economic diversity, and cluster three has a medium level of economic diversity. Employment in education, health, and social work has the highest presence across each cluster followed by manufacturing. 
+percent of cases. Based on this analysis Cluster one has the lowest level of economic diversity, cluster two has the lowest level of economic diversity, and cluster three has a medium level of economic diversity. Employment in education, health, and social work has the highest presence across each cluster followed by manufacturing.
 
 \input{tables/clusters/emp_clus_table.tex}
 
-\pagebreak
 
 \subsection{\textit{Demographics}}
 
@@ -50,7 +49,6 @@ For residential mobility: education, the risk levels are determined primarily by
 
 \input{tables/clusters/trans_edu_clus_table.tex}
 
-\pagebreak
 
 \subsection{\textit{Residential Mobility: Poverty}}
 
@@ -71,14 +69,31 @@ For the housing type sector, owner single unit is considered the safest housing 
 
 
 \section{\textit{Association Rules}}
-For 1:1 rules, the rule with the highest confidence and support is between housing type and cost, occurring in 11 percent of transactions with a coverage of 0.29. Wage/ household aid has the most one-one- associations in this group occurring in an average of 1 percent of observations, there is a 36 percent average probability that any of these sectors are in the consequent if wage/ household aid is in the antecedent. In about 9 percent of observations, residential mobility poverty is the consequent if mobility education is the antecedent with a 36 percent probability of a high risk for mobility poverty when there is a high risk of mobility education. mobility education also has an association with employment with 33 percent confidence and 8 percent support. 
 
-Of the 3:1 rules with the top 10 highest confidence values, employment diversity has a relationship with every other sector. Support is low at 5 percent with an average confidence of 0.42 and a slightly positive average lift of 1.1. The two other highest rules are housing type to mobility poverty with support of around twelve percent and a confidence interval of 0.41 and employment to residential mobility poverty with support of six percent and a confidence interval of 0.4. Looking at the top ten 3:1 rules with the highest confidence values, the results are significantly different from the 3:1 rules Employment is in the consequent if any other sector is in the antecedent with an average support of 12 percent, and an average confidence interval of 0.32. This relationship between employment diversity having both high-risk-to-low-risk and high-risk-to-low-risk is a surprising relationship. 
+There are three areas of investigation for the association rules generated from the housing insecurity risk levels. First are high-risk-to-high-risk associations (1:1), second are low-risk-to-low-risk associations (3:3), third are inverse relationships: low-risk-to-high-risk associations (3:1) and high-risk-to-low-risk associations (1:3). Tables \ref{tab:high_risk_ass}, \ref{tab:low_risk_ass}, \ref{tab:low_high_risk}, and \ref{tab:high_low_risk} show the average support, average confidence, coverage, and average lift for the different association rules. For each set of association rules, their average lift values indicate that the likelihood of finding the items together is only slightly more or slightly less than their likelihood of being found together by chance. The high-risk-to-high-risk associations have the lowest average support values of the four groups of rules, and low-risk-to-low-risk associations have the highest average support. All average confidence values range from 0.2 to 0.4, indicating that for the risk level on the left-hand side of the transaction, there is an average 20 to 40 percent probability of each other risk level being on the right-hand side of the transaction. Overall, the association rules indicate that there is little consistency in census tracts showing signs of housing insecurity risk at different levels. 
+
+
+
+
+\input{tables/associations/high_risk.tex}
+
+\input{tables/associations/low_risk.tex}
+
+\input{tables/associations/low_high_risk.tex}
+
+\input{tables/associations/high_low_risk.tex}
+
+
+
 
 \section{\textit{Moran's I}}
 
-While the association rules dealt exclusively with the housing insecurity risk levels, Moran’s I spatial autocorrelation is used to examine how values group together in space for all variables. Moran’s I is calculated for every state and the entire dataset.  Table \ref{tab:moran_sector} shows the average of statistically significant Moran's I values calculated. Variable averages across states show similar trends as the sector averages. Manufacturing has the highest average Moran's I statistic at 00.43, followed by white at 0.38 and ag-for-fish-hunt-mining at 0.34. There is a weak spatial autocorrelation between the different levels of rurality at 0.29.
-The sector averages are low,ranging from 0.19 to 0.32. While averages are low, there are some outliers that deserve further attention.  
+
+While the association rules dealt exclusively with the housing insecurity risk levels, Moran’s I spatial autocorrelation is used to examine how values group in space for all variables. Moran’s I is calculated for every state and the entire dataset.  Table \ref{moran_desc} shows the descriptive statistics for the significant Moran's I values
+Table \ref{moran_sector} shows the average of statistically significant Moran's I values across sectors. Variable averages show similar trends as the sector averages. Manufacturing has the highest average Moran's I statistic at 0.43, followed by white at 0.38 and ag-for-fish-hunt-mining at 0.34. There is a weak spatial autocorrelation between the different levels of rurality at 0.29.
+The sector averages are low, ranging from 0.19 to 0.32. While averages are low, certain observations deserve further attention. There are 134 statistically significant Moran's I values greater than 0.5 not including the nationwide calculations. These observations are spread across 38 states, with Arizona and New Mexico accounting for 16 percent of high Moran's I statistics. These high values are explored further in the next section on outliers in the Moran's I values. 
+
+\input{tables/moran/moran_desc.tex}
 
 \input{tables/moran/moran_sector_avg.tex}
 
@@ -86,29 +101,61 @@ The sector averages are low,ranging from 0.19 to 0.32. While averages are low, t
 %\input{tables/all_moran_table.tex}
 
 \subsection{Moran's I Outliers}
-% TODO: rewrite into sentence
-Demographics, household wage/ aid, do not have any outliers based on the IRQ method.  mobility poverty has 13 outliers. The mean of all mobility poverty observations is 0.19 while the mean for the outliers is 0.47. 69 percent of these outliers are the same house below the poverty line variable. Connecticut, Nevada, and Arizona have surprisingly high Moran’s I statistics for the mobility poverty risk levels variable. The average for these three states is 0.45 compared to 0.21 for the same variable. There are 4 outliers in the mobility education  with same house less than high school in Ohio, California, and all states. The final outlier is same house with a high school diploma in Maryland. These outliers have an average of 0.61 while all sector observations have an average of 0.23. For housing type, there are two outliers: owner single unit and owner mobile home, both in the South Dakota. These outliers have an average Moran’s I of 0.63 while the sector has an average of 0.25. for Housing quality there are two outliers: occupied incomplete plumbing and occupied incomplete kitchen, both in the state of New Mexico. The sector average is 0.28 while these outliers have an average of 0.66. Housing cost has six outliers: mortgage high cost in Arizona, Maryland, Minnesota, Nevada, and New Mexico. The variable average is 0.28 while these observations have an average of 0.5. For economic diversity there are 16 outliers. 10 of these observations are for manufacturing in all states, Virginia, Florida, Indiana, Kentucky, Mississippi, Ohio, Pennsylvania, South Dakota, and Virginia. The average Moran’s I statistic for this sector was 0.47 while these outliers have an average of 0.68. 5 of these outliers are for the agriculture, forestry, fishing, hunting, and mining variable in New Mexico, Oklahoma, Texas, Washington, and all states. The average Moran’s I statistic for this variable is 0.36 while these outliers have an average of 0. 61. These outliers provide useful insights into states where conditions do not align with the trends found in the whole dataset and may merit further investigation, especially since all outliers are positive.  
+% TODO: rewrite intro sentence
+Here, outliers based on the interquartile range method are calculated for the Moran's I statistics are analyzed to highlight areas that do not follow the overall trends. Demographics, household wage/ aid, do not have any outliers based on the IRQ method. mobility poverty has 13 outliers. The mean of all mobility poverty observations is 0.19 while the mean for the outliers is 0.47. 69 percent of these outliers are the same house below the poverty line variable. Connecticut, Nevada, and Arizona have surprisingly high Moran’s I statistics for the mobility poverty risk levels variable. The average for these three states is 0.45 compared to 0.21 for the same variable. There are 4 outliers in the residential mobility: education sector with same\_house\_less\_than\_hs in Ohio, California, and all states. The final outlier is same\_house\_hs in Maryland. These outliers have an average of 0.61 while all sector observations have an average of 0.23. For housing type, there are two outliers: owner\_single and owner\_mobile, both in South Dakota. These outliers have an average Moran’s I of 0.63 while the sector has an average of 0.25. For housing quality there are two outliers: occupied incomplete plumbing and occupied incomplete kitchen, both in the state of New Mexico. The sector average is 0.28 while these outliers have an average of 0.66. Housing cost has six outliers: mortgage high cost in Arizona, Maryland, Minnesota, Nevada, and New Mexico. The variable average is 0.28 while these observations have an average of 0.5. For economic diversity there are 16 outliers, 10 of these observations are for manufacturing nationally and in Virginia, Florida, Indiana, Kentucky, Mississippi, Ohio, Pennsylvania, South Dakota, and Virginia. The average Moran’s I statistic for this sector was 0.47 while these outliers have an average of 0.68. five of these outliers are for the agriculture, forestry, fishing, hunting, and mining variable in New Mexico, Oklahoma, Texas, Washington, and nationally. The average Moran’s I statistic for this variable is 0.36 while these outliers have an average of 0.61. 
 
 \subsection{Risk Level Analysis}
 
-The following table shows the local spatial autocorrelation for each cluster across each sector. There are notable local Moran's I statistics for the low and high risk level census tracts. The medium risk level census tracts had very small local Moran's I statistics. The results indicate that the extremes of the scale tend to cluster around each other: high risk census tracts are close to high risk census tracts and low risk census tracts are close to low risk census tracts while there is a level of spatial randomness in the grouping of medium risk level census tracts. 
+The following table shows the local spatial autocorrelation for each cluster across each sector. There are notable local Moran's I statistics for the low and high-risk level census tracts. The medium-risk level census tracts had very small local Moran's I statistics. The results indicate that the extremes of the scale tend to cluster around each other: high-risk census tracts are close to high-risk census tracts and low-risk census tracts are close to low-risk census tracts while there is a level of spatial randomness in the grouping of medium-risk level census tracts. 
 
 \input{tables/moran/local_cluster_avg.tex}
 
 \section{\textit{Multinomial Logistic Regression}}
 
-The final method applied in this study is a multinomial logistic regression performed on each sector of data and tested on the data for each state. The probability that a predicted risk level is the actual risk level is used to measure how well the data for each state can be predicted based on a model trained on the other states alongside the confusion matrices for each sectors actual and predicted classification. National models using in-sample evaluation are used to measure how well a census tracts risk levels can be predicted
+The final method applied in this study is a multinomial logistic regression performed on each sector of data and tested on the data for each state. The probability that a predicted risk level is the actual risk level is used to measure how well the data for each state can be predicted based on a model trained on the other states alongside the confusion matrices for each sector's actual and predicted classification. National models using in-sample evaluation are used to measure how well a census tract's risk levels can be predicted
 
 \subsection{Probability}
-Average accuracy for all sectors was low: employment diversity, housing quality, residential mobility: poverty and household factors had an average probability of 34 percent; housing type and housing cost had an average of 0.35; residential mobility: poverty had an average of 36 percent; demographics had the highest average probability at 0.38. Demographics had the highest standard deviation at 14 percent, indicating a high degree of variation in predictability. For each sector in each state, Utah had the best prediction results with an average of 41 percent and Minnesota was the hardest to predict at 31 percent between sectors. The following subsections explore the performance of the state models and national models for each sector. \hl{do more analysis of the probabilities: probabilities by cluster}
+Average probability for all sectors was low: employment diversity, housing quality, residential mobility: poverty and household factors had an average probability of 34 percent; housing type and housing cost had an average of 0.35; residential mobility: poverty had an average of 36 percent; demographics had the highest average probability at 0.38. Demographics had the highest standard deviation at 14 percent, indicating a high degree of variation in predictability. For each sector in each state, Utah had the best prediction results with an average of 41 percent and Minnesota was the hardest to predict at 31 percent between sectors. Average probabilities for each cluster across sectors were similarly low. Across every sector except demographics, the models predicted the highest average probabilities for low-risk level census tracts. For demographics, the models had the highest average probability for the medium-risk level census tracts. The following subsections explore the performance of the state models and national models for each sector. 
 
 \subsection{Accuracy}
+The confusion matrices for each sector were low, with the models for most sectors over-classifying census tracts as low risk significantly harmed their accuracy. Presented here are also the accuracy results for national models tested using in-sample evaluation to measure accuracy under the best-case scenario. 
+
+Table \ref{tab:emp_confusion} shows that the models struggled to classify the \mrls and \hrls with the best performance on the \lrls for the economic diversity sector. These models were more successful at classifying \cts with higher levels of economic diversity. The state models correctly classified 34 percent of low-risk census tracts, 11 percent of medium-risk census tracts, and 53 percent of low-risk census tracts. Overall, the state models were 34 percent accurate and the national model was 41 percent accurate. 
+
+\input{tables/confusion/emp_confusion.tex} 
 
 
-The confusion matrices for each sector were low, with the models for most sectors over-classifying census tracts as low risk significantly harmed their accuracy. Table \ref{tab:emp_confusion} shows that the models struggled to classify the \mrls  and \hrls with the best performance on the \lrls. These models were more successful at classifying \cts with higher levels of economic diversity, with \hl{?} percent accuracy overall. \input{tables/confusion/emp_confusion.tex} The demographic diversity models were able to predict \mrls and \lrls significantly better than \hrls.  Table \ref{tab:dem_confusion} shows The models were more capable of predicting \ct risk levels for the risk levels that are predominantly white, with \hl{?} percent accuracy overall. \input{tables/confusion/dem_confusion.tex} Table \ref{tab:cost_confusion} shows that the housing cost models struggled to classify the \lrl \cts, accurately predicting about 33 percent of all cases. They also struggled to differentiate between \mrl and \hrl \cts with an overall accuracy of \hl{?}. \input{tables/confusion/cost_confusion.tex} Table \ref{tab:qual_confusion} shows that the housing quality models significantly over-classified \cts as \lrl with an overall accuracy of \hl{?}. \input{tables/confusion/qual_confusion.tex} Table \ref{tab:trans_edu_confusion} shows that the residential mobility: education models significantly over classified \cts as \lrl while correctly classifying \hl{?} percent of low risk level census tracts with an overall accuracy of \hl{?}. \input{tables/confusion/trans_edu_confusion.tex}
-Table \ref{tab:trans_edu_confusion} shows that the residential mobility: poverty models significantly over classified \cts as \lrl with an overall accuracy of \hl{?}. \input{tables/confusion/trans_pov_confusion.tex} Table \ref{tab:waid_confusion} shows that the household factor models significantly over classified \cts as \lrl with an overall accuracy of \hl{?} percent accuracy. \input{tables/confusion/waid_confusion.tex}
-Table \ref{tab:hh_type_confusion} shows that the housing type models significantly over classified \cts as \lrl with an overall accuracy of \hl{?}.
-\input{tables/confusion/hh_type_confusion.tex} 
+The demographic diversity models were able to predict \mrls and \lrls significantly better than \hrls for the demographic diversity sector.  Table \ref{tab:dem_confusion} shows The models were most capable of predicting medium-risk level census tracts. The models accurately predicted three percent of high-risk level census tracts while classifying medium-risk census tracts with 72 percent accuracy and 42 percent of low-risk census tracts. The state and national models predicted 48 and 52 percent of census tracts accurately. 
+
+\input{tables/confusion/dem_confusion.tex} 
+
+Table \ref{tab:cost_confusion} shows that the housing cost models struggled to classify the \lrl \cts. They also struggled to differentiate between \mrl and \hrl \cts. The state models accurately predicted 34 percent of high-risk level census tracts, 44 percent of medium-risk level census tracts, and 43 percent of low-risk level census tracts. The state models were 45 percent accurate and the national model was 41 percent accurate. \hl{this doesn't make sense}
+
+\input{tables/confusion/cost_confusion.tex} 
+
+Table \ref{tab:qual_confusion} shows that the housing quality models significantly over-classified \cts as \lrl. The state models correctly classified 15 percent of high-risk census tracts, 13 percent of medium-risk level census tracts, and 63 percent of low-risk level census tracts. Overall, the state models had 39 percent accuracy and the national model had 32 percent accuracy. 
+
+\input{tables/confusion/qual_confusion.tex} 
+
+Table \ref{tab:trans_edu_confusion} shows that the residential mobility: education models significantly over-classified \cts as \lrl. They successfully predicted 14 percent of low-risk census tracts, 39 percent of medium-risk level census tracts, and  60 percent of low-risk census tracts. The state models had an accuracy of 46 percent and the national model had an accuracy of 42 percent.
+
+\input{tables/confusion/trans_edu_confusion.tex} 
+
+Table \ref{tab:trans_pov_confusion} shows that the residential mobility: poverty models significantly over-classified \cts as \lrl. they successfully predicted 15 percent of high-risk census tracts, 14 percent of medium-risk census tracts, and 72 percent of high-risk census tracts. The state models had an accuracy of 41 percent and the national model had an accuracy of 37 percent. 
+
+\input{tables/confusion/trans_pov_confusion.tex} 
+
+Table \ref{tab:waid_confusion} shows that the household factor models significantly over classified \cts as \lrl. They successfully predicted 12 percent of high-risk level census tracts, 33 percent of medium-risk level census tracts, and 54 percent of low-risk level census tracts. The state models had an accuracy of 42 percent and the national model had an accuracy of 36 percent. 
+
+\input{tables/confusion/waid_confusion.tex}
+
+Table \ref{tab:hh_type_confusion} shows that the housing type models significantly over-classified \cts as \lrl. they successfully predicted 6 percent of low-risk level census tracts, 33 percent of medium-risk level census tracts, and 54 percent of high-risk census tracts. The state models had an accuracy of 45 percent and the national models had an accuracy of 43 percent. 
+
+\input{tables/confusion/hh_type_confusion.tex}
+
+
+
+
 
 
 
