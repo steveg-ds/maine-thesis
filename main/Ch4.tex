@@ -1,6 +1,6 @@
 \chapter{Results}	
 
-This analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were intentionally excluded from the analysis: Alaska and Hawaii were omitted due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  Figure \ref{fig:neighbors_bar} shows how the neighbor algorithm changed the state census tract counts. 
+This analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were intentionally excluded from the analysis: Alaska and Hawaii were omitted due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  Figure \ref{fig:neighbors_bar} shows how the neighbor algorithm changed the state census tract counts. \hl{more analysis}
 
 %\begin{figure}[htbp]
 %    \centering
@@ -9,13 +9,16 @@ This analysis focused on a sample of 6,364 rural census tracts with a RUCA code 
 %    \label{fig:neighbors_bar}
 %\end{figure}
 
+\section{RUCA Code Descriptions}
+
+\hl{insert descriptive statistics by RUCA code}
 
 \section{\textit{Cluster Analysis}}
 
 Here, the results of the cluster analysis is presented for each sector. The primary mechanism for analyzing the clusters is the average cluster medians for all states. The cluster averages were analyzed as well to ensure that the same trends are found in the dataset under a different descriptive statistic. All values are represented as a percentage corresponding to the base unit each sector is scaled to.
 
 \subsection{\textit{Employment Diversity}}
-The risk levels for employment diversity are determined based on which clusters have the highest number of highest cluster values compared to the cluster with the lowest number of lowest cluster values. The higher the cluster averages across variables, the better the economic diversity of a cluster. Table \ref{tab:emp} shows the values for this sector. 
+The risk levels for employment diversity are determined based on which clusters have the highest number of highest cluster values compared to the cluster with the lowest number of lowest cluster values. The higher the cluster medians across variables, the better the economic diversity of a cluster. Table \ref{tab:emp} shows the values for this sector. 
 Cluster 1 had the lowest cluster medians in 61 percent of variables, 
 Cluster 2 has the highest cluster median in 53 percent of variables, and Cluster 3 has the middle value in 69 %nice 
 percent of cases. Based on this analysis Cluster one has the lowest level of economic diversity, cluster two has the lowest level of economic diversity, and cluster three has a medium level of economic diversity. Employment in education, health, and social work has the highest presence across each cluster followed by manufacturing.
@@ -45,7 +48,7 @@ For housing quality, risk levels are determined by which clusters have the highe
 
 
 \subsection{\textit{Residential Mobility: Education}}
-For residential mobility: education, the risk levels are determined primarily by the variables for those who moved with less than a high school education and those in the same house with less than a high school education, and the clusters where more people moved overall will be the highest risk levels. Table \ref{tab:trans_edu} shows the values for this sector. Cluster one has the medium value for 71 percent of variables including each less than high school education variable. Cluster two has the lowest values for each variable. cluster 3 has the highest values for 71 percent of variables, including each of the less than high school education variables. Cluster one becomes the lowest risk level because it has medium levels of residential mobility but the highest level of residential stability with a high school education. Cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
+For residential mobility: education, the risk levels are determined by the variables for those who moved with less than a high school education and those in the same house with less than a high school education, and the clusters where more people moved overall will be the highest risk levels. Table \ref{tab:trans_edu} shows the values for this sector. Cluster one has the medium value for 71 percent of variables including each less than high school education variable. Cluster two has the lowest values for each variable. cluster 3 has the highest values for 71 percent of variables, including each of the less than high school education variables. Cluster one becomes the lowest risk level because it has medium levels of residential mobility but the highest level of residential stability with a high school education. Cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
 
 \input{tables/clusters/trans_edu_clus_table.tex}
 
@@ -115,10 +118,12 @@ The following table shows the local spatial autocorrelation for each cluster acr
 The final method applied in this study is a multinomial logistic regression performed on each sector of data and tested on the data for each state. The probability that a predicted risk level is the actual risk level is used to measure how well the data for each state can be predicted based on a model trained on the other states alongside the confusion matrices for each sector's actual and predicted classification. National models using in-sample evaluation are used to measure how well a census tract's risk levels can be predicted
 
 \subsection{Probability}
+
+\hl{maybe i should use a table for the sector statistics}
 Average probability for all sectors was low: employment diversity, housing quality, residential mobility: poverty and household factors had an average probability of 34 percent; housing type and housing cost had an average of 0.35; residential mobility: poverty had an average of 36 percent; demographics had the highest average probability at 0.38. Demographics had the highest standard deviation at 14 percent, indicating a high degree of variation in predictability. For each sector in each state, Utah had the best prediction results with an average of 41 percent and Minnesota was the hardest to predict at 31 percent between sectors. Average probabilities for each cluster across sectors were similarly low. Across every sector except demographics, the models predicted the highest average probabilities for low-risk level census tracts. For demographics, the models had the highest average probability for the medium-risk level census tracts. The following subsections explore the performance of the state models and national models for each sector. 
 
 \subsection{Accuracy}
-The confusion matrices for each sector were low, with the models for most sectors over-classifying census tracts as low risk significantly harmed their accuracy. Presented here are also the accuracy results for national models tested using in-sample evaluation to measure accuracy under the best-case scenario. 
+The confusion matrices for each sector show that accuracy is low, with the models for most sectors over-classifying census tracts as low risk significantly harmed their accuracy. Presented here are also the accuracy results for national models tested using in-sample evaluation to measure accuracy under the best-case scenario. 
 
 Table \ref{tab:emp_confusion} shows that the models struggled to classify the \mrls and \hrls with the best performance on the \lrls for the economic diversity sector. These models were more successful at classifying \cts with higher levels of economic diversity. The state models correctly classified 34 percent of low-risk census tracts, 11 percent of medium-risk census tracts, and 53 percent of low-risk census tracts. Overall, the state models were 34 percent accurate and the national model was 41 percent accurate. 
 
