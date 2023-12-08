@@ -897,6 +897,11 @@ INPUT ./plots/regional_map.png
 INPUT plots/regional_map.png
 INPUT ./plots/regional_map.png
 INPUT ./plots/regional_map.png
+INPUT ./plots/regional_risk_map.png
+INPUT ./plots/regional_risk_map.png
+INPUT plots/regional_risk_map.png
+INPUT ./plots/regional_risk_map.png
+INPUT ./plots/regional_risk_map.png
 INPUT ./plots/assoc_scatter.png
 INPUT ./plots/assoc_scatter.png
 INPUT plots/assoc_scatter.png

@@ -104,6 +104,15 @@ To better understand housing insecurity risk in rural areas, it is important to 
      \label{fig:regional_map}
  \end{figure}
 
+ To highlight areas of particular concern, a threshold of 12 out of 24 was used where 8 equals a high-risk across all sectors and 24 equals a low-risk across all sectors to highlight areas that face the highest risk based on the cluster analysis. This results in 115 census tracts as high risk and 661 at a medium risk based on the sum of their risk level variables. Figure~\ref{fig:regional_risk_map} highlights the high-risk areas in red, and the medium-risk levels in yellow. The majority of the high-risk census tracts are in Minnesota (26), Wisconsin (26), Texas (24), Arizona (21), Missouri (18), Georgia (16), North Carolina (13), Montana (11), North Dakota (11), and Oklahoma (10). The other 104 high-risk census tracts are spread across 27 other states. 
+
+ \begin{figure}[htbp]
+    \centering
+     \includegraphics[width=\textwidth, height=12cm]{plots/regional_risk_map.png}
+     \caption{Risk Level Across Sectors}
+     \label{fig:regional_risk_map}
+ \end{figure}
+
 \section{\textit{Association Rules}}
 
 There are three areas of investigation for the association rules generated from the housing insecurity risk levels. First are high-risk-to-high-risk associations (1:1), second are low-risk-to-low-risk associations (3:3), third are inverse relationships: low-risk-to-high-risk associations (3:1) and high-risk-to-low-risk associations (1:3). Tables~\ref{tab:high_risk_ass},~\ref{tab:low_risk_ass},~\ref{tab:low_high_risk}, and~\ref{tab:high_low_risk} show the average support, average confidence, coverage, and average lift for the different association rules. Figure~\ref{fig:assoc_scatter} shows the overall trends in the association rules. Support is low with confidence below 0.2 for most of the rules.  There are 23 rules with support greater than 0.2 that reflect the occurrence of each risk level for each sector. The plot shows a significant amount of clustering around the 0.35 confidence and 0.1 support range. For each set of association rules, their average lift values indicate that the likelihood of finding the items together is only slightly more or slightly less than their likelihood of being found together by chance. The high-risk-to-high-risk associations have the lowest average support values of the four groups of rules, and low-risk-to-low-risk associations have the highest average support. All average confidence values range from 0.2 to 0.4, indicating that for the risk level on the left-hand side of the transaction, there is an average 20 to 40 percent probability of each other risk level being on the right-hand side of the transaction. Overall, the association rules indicate that there is little consistency in census tracts showing signs of housing insecurity risk at different levels. 
