@@ -1,7 +1,7 @@
 \chapter{Results}	
 
 This analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were intentionally excluded from the analysis: Alaska and Hawaii were omitted due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  Figure~\ref{fig:neighbors_bar} 
-shows how the neighbor algorithm changed the state census tract counts. This allows the risk-level assignment to reflect the intra-state nature of communities. 
+shows how the neighbor algorithm changed the state census tract counts. This allows the risk-level assignment to reflect the inter-state nature of communities. 
 
 
 
@@ -27,7 +27,6 @@ Figure \ref{fig:ruca_frequency} shows the distribution of RUCA codes in the data
 \hl{insert descriptive statistics by RUCA code}
 
 \section{\textit{Cluster Analysis}}
-
 Here, the results of the cluster analysis are presented for each sector. The primary mechanism for analyzing the clusters is the average cluster medians for all states. The cluster averages were analyzed as well to ensure that the same trends are found in the dataset under a different descriptive statistic. All values are represented as a percentage corresponding to the base unit each sector is scaled to. Figure~\ref{fig:ruca_frequency} shows the distribution of risk levels for each sector. For all sectors except housing cost and demographic diversity, there is a higher number of low-risk rather than high-risk or medium-risk level census tracts. Demographics is the only sector with notably more medium-level than low-level census tracts. 
 
 \begin{figure}[htbp]
@@ -47,25 +46,20 @@ percent of cases. Based on this analysis Cluster one has the lowest level of eco
 
 
 \subsection{\textit{Demographics}}
-
 Due to the historical forces affecting minorities in both rural and urban areas, the risk levels for demographics are based on which clusters have the highest minority populations and the lowest white populations. 
 Table~\ref{tab:dem} shows the values for this sector.  This sector was decided based on the median and average highest, lowest, and medium value counts as clusters two and three had almost the same cluster median counts. Cluster three is the middle value for 90 percent of cluster median variables. Cluster three has the highest number of highest values across means and medians with 55 percent of variables. Cluster two is the lowest for 50 percent of variables. Cluster three alsos has the largest African American and Hispanic and Latino cluster medians. Based on this analysis, cluster one has a medium risk of housing insecurity, cluster two has a low risk of housing insecurity and cluster three has the highest risk of housing insecurity. One notable observation is that the cluster medians for the male/ female over 18 years old variables are roughly three times higher than the male/ female under 18 variables. This reflects the aging population of rural areas noted in the literature. 
 
 \input{tables/clusters/dem_clus_table.tex}
 
 \subsection{\textit{Housing Cost}}
-
 For housing cost, risk levels are determined by which clusters have the highest cluster medians. Cluster 1 has the highest value for mortgage high cost. Cluster 2 has the lowewest mortgage and rent high cost cluster medians. cluster 3 has the highest no mortgage and rent high cost cluster medians. Table~\ref{tab:cost} shows the values for this sector. Cluster one becomes the medium risk level, cluster two becomes the low risk level, and cluster three becomes the high risk level. 
 
 \input{tables/clusters/cost_clus_table.tex}
 
 \subsection{\textit{Housing Quality}}
-
 For housing quality, risk levels are determined by which clusters have the highest values, with preference given to occupied housing as housing conditions in unoccupied housing is of lesser concern than occupied housing. Table~\ref{tab:qual} shows the values for this sector. Cluster one has the highest values for unoccupied housing with incomplete kitchens and plumbing. Cluster three has the medium value for each variable.Cluster three has the highest values for occupied housing with incomplete kitchens and plumbing. Cluster one becomes the lowest risk level, cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
 
 \input{tables/clusters/qual_clus_table.tex}
-
-
 
 \subsection{\textit{Residential Mobility: Education}}
 For residential mobility: education, the risk levels are determined by the variables for those who moved with less than a high school education and those in the same house with less than a high school education, and the clusters where more people moved overall will be the highest risk levels. Table~\ref{tab:trans_edu} shows the values for this sector. Cluster one has the medium value for 71 percent of variables including each less than high school education variable. Cluster two has the lowest values for each variable. Cluster 3 has the highest values for 71 percent of variables, including each of the less than high school education variables. Cluster one becomes the lowest risk level because it has medium levels of residential mobility but the highest level of residential stability with a high school education. Cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
@@ -74,13 +68,11 @@ For residential mobility: education, the risk levels are determined by the varia
 
 
 \subsection{\textit{Residential Mobility: Poverty}}
-
 The residential mobility: poverty sector follows the criteria of residential mobility: education closely with those the variables for those who moved that are below the poverty level are the highest priority. Table~\ref{tab:trans_pov} shows the values for this sector. Cluster one has the lowest values for every variable. Cluster two has the medium value for 57 percent of variables. Cluster three has the highest values for 57 percent of variables including three of the below the poverty level variables. Cluster one becomes the lowest risk level, cluster two becomes the medium risk level, and cluster three becomes the highest risk level. One noteable observation from the cluster medians is that cluster three has the highest value of those living in the same house below and above the poverty measure, indicating high levels of poverty for \cts in this cluster.
 
 \input{tables/clusters/trans_pov_clus_table.tex}
 
 \subsection{\textit{Wage and Household Factors}}
-
 For household wage/ aid, the clusters with the highest number of maximum cluster medians determines the risk levels with particular attention given to households with no wage and households with three or more workers. Table~\ref{tab:waid} shows the values for this sector. Cluster one has the lowest cluster medians for 89 percent of variables. Cluster two has the medium value for 55 percent of variables. Cluster three has the highest values for 55 percent of variables and the middle value for the other variables. Notablable high values for cluster three include the Gini index, households with no vehicle, households with at least one worker and no vehicle, and households receiving supplemental security income.  
 
 \input{tables/clusters/waid_clus_table.tex}
@@ -89,8 +81,6 @@ For household wage/ aid, the clusters with the highest number of maximum cluster
 For the housing type sector, owner single unit is considered the safest housing while renters and owners of unconventional housing and mobile homes are considered high risk. This sector required a combination of means and medians for the analysis because, for several variables, all cluster medians are zero. Table~\ref{tab:hh_type} shows the values for this sector. Cluster three has the highest owner mobile and the medium value for renter mobile. Cluster three has the highest renter and owner unconventional cluster averages. Cluster one has the highest owner single and the lowest renter mobile home. Cluster one becomes the low risk level, cluster two becomes the medium risk level, and cluster three becomes the high risk level.
 
 \input{tables/clusters/hh_type_clus_table.tex}
-
-
 
 \subsection{\textit{Rurality and Risk Levels}}
 To better understand housing insecurity risk in rural areas, it is important to look at the risk levels as they relate to the scale of rurality used. Table~\ref{tab:ruca_risk} shows the percentage of each RUCA code that has a high-risk level for each sector. While RUCA code 10 makes up 50 percent of all census tracts, 43 to 50 percent of all high-risk level census tracts have this RUCA code. RUCA code 7 is next with a range between 32 and 39 percent of high-risk level census tracts while making up only 33 percent of the dataset. At the opposite end of the spectrum, RUCA code 9 makes up 5 percent of the dataset and only 5 percent of high-risk census tracts. Figure~\ref{fig:regional_map} shows the risk level of each census tract across each sector. Each census tract is assigned a color red (high-risk), yellow (medium-risk), and green (low-risk) for each sector. These colors are then saturated based on the probability for each sector. The colors are then blended so that the map reflects how well the state fits into its national train-split model and the overall risk level of the census tract. Many census tracts fall somewhere between green and yellow, with pockets of light shades of red visible. 
