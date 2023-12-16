@@ -12,9 +12,11 @@ shows how the neighbor algorithm changed the state census tract counts. This all
     \label{fig:neighbors_bar}
 \end{figure}
 
+
+
 \section{RUCA Distribution}
 
-Figure \ref{fig:ruca_frequency} shows the distribution of RUCA codes in the dataset. Small towns with a primary flow within an urban cluster with a population of 2,500 to 9,999 (33 percent) and rural areas with a primary flow to a tract outside an urban area or urban cluster (48 percent) make up the majority of the dataset. The rest are split between small towns with high levels of commuting to a small urban cluster (13 percent) and small towns with low commuting to a small urban cluster  (5 percent). In total, \hl{?} million people were considered in the analysis. 
+Figure \ref{fig:ruca_frequency} shows the distribution of RUCA codes in the dataset. Small towns with a primary flow within an urban cluster with a population of 2,500 to 9,999 (33 percent) and rural areas with a primary flow to a tract outside an urban area or urban cluster (48 percent) make up the majority of the dataset. The rest are split between small towns with high levels of commuting to a small urban cluster (13 percent) and small towns with low commuting to a small urban cluster  (5 percent). In total, 22.4 million people were considered in the analysis. 
 
 \begin{figure}[htbp]
     \centering
@@ -24,7 +26,6 @@ Figure \ref{fig:ruca_frequency} shows the distribution of RUCA codes in the data
  \end{figure}
  
 
-\hl{insert descriptive statistics by RUCA code}
 
 \section{\textit{Cluster Analysis}}
 Here, the results of the cluster analysis are presented for each sector. The primary mechanism for analyzing the clusters is the average cluster medians for all states. The cluster averages were analyzed as well to ensure that the same trends are found in the dataset under a different descriptive statistic. All values are represented as a percentage corresponding to the base unit each sector is scaled to. Figure~\ref{fig:ruca_frequency} shows the distribution of risk levels for each sector. For all sectors except housing cost and demographic diversity, there is a higher number of low-risk rather than high-risk or medium-risk level census tracts. Demographics is the only sector with notably more medium-level than low-level census tracts. 
@@ -80,37 +81,15 @@ The RMP sector follows the criteria of residential RME closely with those the va
 
 \subsection{\textit{Wage and Household Factors}}
 
-For household wage/ aid, the clusters with the highest number of maximum cluster medians determines the risk levels with particular attention given to households with no wage and households with three or more workers Table~\ref{tab:waid} shows the values for this sector. Cluster one has the lowest cluster medians for 89 percent of variables. Cluster two has the medium value for 55 percent of variables. Cluster three has the highest values for 55 percent of variables and the middle value for the other variables. Notable high values for cluster three include the Gini index, households with no vehicle, households with at least one worker and no vehicle, and households receiving supplemental security income.  
+For household wage/ aid, the clusters with the highest number of maximum cluster medians determine the risk levels with particular attention given to households with no wage and households with three or more workers Table~\ref{tab:waid} shows the values for this sector. Cluster one has the lowest cluster medians for 89 percent of variables. Cluster two has the medium value for 55 percent of variables. Cluster three has the highest values for 55 percent of variables and the middle value for the other variables. Notable high values for cluster three include the Gini index, households with no vehicle, households with at least one worker and no vehicle, and households receiving supplemental security income.  
 
 \input{tables/clusters/waid_clus_table.tex}
 
 \subsection{\textit{Housing Type}}
-For the housing type sector, owner single unit is considered the safest housing while renters and owners of unconventional housing and mobile homes are considered high risk. This sector required a combination of means and medians for the analysis because, for several variables, all cluster medians are zero. Table~\ref{tab:hh_type} shows the values for this sector. Cluster three has the highest owner mobile and the medium value for renter mobile. Cluster three has the highest renter and owner unconventional cluster averages. Cluster one has the highest owner single and the lowest renter mobile home. Cluster one becomes the low risk level, cluster two becomes the medium risk level, and cluster three becomes the high risk level.
+For the housing type sector, owner single unit is considered the safest housing while renters and owners of unconventional housing and mobile homes are considered high risk. This sector required a combination of means and medians for the analysis because, for several variables, all cluster medians are zero. Table~\ref{tab:hh_type} shows the values for this sector. Cluster three has the highest owner mobile and the medium value for renter mobile. Cluster three has the highest renter and owner unconventional cluster averages. Cluster one has the highest owner single and the lowest renter mobile home. Cluster one becomes the low-risk level, cluster two becomes the medium-risk level, and Cluster Three becomes the high-risk level.
 
 \input{tables/clusters/hh_type_clus_table.tex}
 
-\subsection{\textit{Rurality and Risk Levels}}
-To better understand housing insecurity risk in rural areas, it is important to look at the risk levels as they relate to the scale of rurality used. Table~\ref{tab:ruca_risk} shows the percentage of each RUCA code that has a high-risk level for each sector. While RUCA code 10 makes up 50 percent of all census tracts, 43 to 50 percent of all high-risk level census tracts have this RUCA code. RUCA code 7 is next with a range between 32 and 39 percent of high-risk level census tracts while making up only 33 percent of the dataset. At the opposite end of the spectrum, RUCA code 9 makes up 5 percent of the dataset and only 5 percent of high-risk census tracts. Figure~\ref{fig:regional_map} shows the risk level of each census tract across each sector. Each census tract is assigned a color red (high-risk), yellow (medium-risk), and green (low-risk) for each sector. These colors are then saturated based on the probability for each sector. The colors are then blended so that the map reflects how well the state fits into its national train-split model and the overall risk level of the census tract. Many census tracts fall somewhere between green and yellow, with pockets of light shades of red visible. 
-
-\input{tables/ruca_cluster.tex}
-
-\begin{figure}[htbp]
-    \centering
-     \includegraphics[width=\textwidth, height=12cm]{plots/regional_map.png}
-     \caption{Risk Level Across Sectors}
-     \label{fig:regional_map}
- \end{figure}
-
-
- 
- The census tract risk threshold results in 115 census tracts labeled as high risk and 661 labeled as medium risk based on the sum of their risk level variables. Figure~\ref{fig:regional_risk_map} highlights the high-risk areas in red, and the medium-risk levels in yellow. The majority of the high-risk census tracts are in Minnesota (26), Wisconsin (26), Texas (24), Arizona (21), Missouri (18), Georgia (16), North Carolina (13), Montana (11), North Dakota (11), and Oklahoma (10). The other 104 high-risk census tracts are spread across 27 other states. % more on medium-risk census tracts
-
- \begin{figure}[htbp]
-    \centering
-     \includegraphics[width=\textwidth, height=12cm]{plots/regional_risk_map.png}
-     \caption{Risk Level Across Sectors}
-     \label{fig:regional_risk_map}
- \end{figure}
 
 \section{\textit{Association Rules}}
 
@@ -148,7 +127,7 @@ The sector averages are low, ranging from 0.19 to 0.32. While averages are low, 
 
 \subsection{Moran's I Outliers}
 % TODO: rewrite intro sentence
-Here, outliers based on the interquartile range method are calculated for the Moran's I statistics are analyzed to highlight areas that do not follow the overall trends. Figure~\ref{fig:moran_sector} shows the distribution of Moran's I for each sector. Demographics, household wage/ aid, do not have any outliers based on the IRQ method. RMP has 13 outliers. The mean of all RMP observations is 0.19 while the mean for the outliers is 0.47. 69 percent of these outliers are the same house below the poverty line variable. Connecticut, Nevada, and Arizona have surprisingly high Moran’s I statistics for the RMP risk levels variable. The average for these three states is 0.45 compared to 0.21 for the same variable overall. There are 4 outliers in the residential RME sector with same\_house\_less\_than\_hs in Ohio, California, and all states. The final outlier is same\_house\_hs in Maryland. These outliers have an average of 0.61 while all sector observations have an average of 0.23. For housing type, there are two outliers: owner\_single and owner\_mobile, both in South Dakota. These outliers have an average Moran’s I of 0.63 while the sector has an average of 0.25. For housing quality there are two outliers: occupied incomplete plumbing and occupied incomplete kitchen, both in the state of New Mexico. The sector average is 0.28 while these outliers have an average of 0.66. Housing cost has six outliers: mortgage high cost in Arizona, Maryland, Minnesota, Nevada, and New Mexico. The variable average is 0.28 while these observations have an average of 0.5. For economic diversity there are 16 outliers, 10 of these observations are for manufacturing nationally and in Virginia, Florida, Indiana, Kentucky, Mississippi, Ohio, Pennsylvania, South Dakota, and Virginia. The average Moran’s I statistic for this sector was 0.47 while these outliers have an average of 0.68. five of these outliers are for the agriculture, forestry, fishing, hunting, and mining variable in New Mexico, Oklahoma, Texas, Washington, and nationally. The average Moran’s I statistic for this variable is 0.36 while these outliers have an average of 0.61. Figure~\ref{fig:moran_region} shows the distribution of Moran's I for each state by region.
+Outliers based on the interquartile range method are calculated for the Moran's I statistics are analyzed to highlight areas that do not follow the overall trends in the data set. Figure~\ref{fig:moran_sector} shows the distribution of Moran's I for each sector. Demographics, household wage/ aid, do not have any outliers based on the IRQ method. RMP has 13 outliers. The mean of all RMP observations is 0.19 while the mean for the outliers is 0.47. 69 percent of these outliers are the same house below the poverty line variable. Connecticut, Nevada, and Arizona have surprisingly high Moran’s I statistics for the RMP risk levels variable. The average for these three states is 0.45 compared to 0.21 for the same variable overall. There are 4 outliers in the residential RME sector with same\_house\_less\_than\_hs in Ohio, California, and all states. The final outlier is same\_house\_hs in Maryland. These outliers have an average of 0.61 while all sector observations have an average of 0.23. For housing type, there are two outliers: owner\_single and owner\_mobile, both in South Dakota. These outliers have an average Moran’s I of 0.63 while the sector has an average of 0.25. For housing quality there are two outliers: occupied incomplete plumbing and occupied incomplete kitchen, both in the state of New Mexico. The sector average is 0.28 while these outliers have an average of 0.66. Housing cost has six outliers: mortgage high cost in Arizona, Maryland, Minnesota, Nevada, and New Mexico. The variable average is 0.28 while these observations have an average of 0.5. For economic diversity there are 16 outliers, 10 of these observations are for manufacturing nationally and in Virginia, Florida, Indiana, Kentucky, Mississippi, Ohio, Pennsylvania, South Dakota, and Virginia. The average Moran’s I statistic for this sector was 0.47 while these outliers have an average of 0.68. five of these outliers are for the agriculture, forestry, fishing, hunting, and mining variable in New Mexico, Oklahoma, Texas, Washington, and nationally. The average Moran’s I statistic for this variable is 0.36 while these outliers have an average of 0.61. Figure~\ref{fig:moran_region} shows the distribution of Moran's I for each state by region.
 
 \begin{figure}[htbp]
     \centering
@@ -236,5 +215,29 @@ Table~\ref{tab:waid_confusion} shows that the household factor models significan
 Table~\ref{tab:hh_type_confusion} shows that the housing type models significantly over-classified census tracts as low-risk levels. they successfully predicted 6 percent of low-risk level census tracts, 33 percent of medium-risk level census tracts, and 54 percent of high-risk census tracts. The state models had an accuracy of 45 percent and the national models had an accuracy of 43 percent. 
 
 \input{tables/confusion/hh_type_confusion.tex}
+
+\section{\textit{Rurality and Risk Levels}}
+To better understand housing insecurity risk in rural areas, it is important to look at the risk levels as they relate to the scale of rurality used. Table~\ref{tab:ruca_risk} shows the percentage of each RUCA code that has a high-risk level for each sector. While RUCA code 10 makes up 50 percent of all census tracts, 43 to 50 percent of all high-risk level census tracts have this RUCA code. RUCA code 7 is next with a range between 32 and 39 percent of high-risk level census tracts while making up only 33 percent of the dataset. At the opposite end of the spectrum, RUCA code 9 makes up 5 percent of the dataset and only 5 percent of high-risk census tracts. Figure~\ref{fig:regional_map} shows the risk level of each census tract across each sector. Each census tract is assigned a color red (high-risk), yellow (medium-risk), and green (low-risk) for each sector. These colors are then saturated based on the probability for each sector. The colors are then blended so that the map reflects how well the state fits into its national train-split model and the overall risk level of the census tract. Many census tracts fall somewhere between green and yellow, with pockets of light shades of red visible. 
+
+\input{tables/ruca_cluster.tex}
+
+\begin{figure}[htbp]
+    \centering
+     \includegraphics[width=\textwidth, height=12cm]{plots/regional_map.png}
+     \caption{Risk Level Across Sectors}
+     \label{fig:regional_map}
+ \end{figure}
+
+
+ 
+ The census tract risk threshold results in 115 census tracts labeled as high risk and 661 labeled as medium risk based on the sum of their risk level variables. Figure~\ref{fig:regional_risk_map} highlights the high-risk areas in red, and the medium-risk levels in yellow. The majority of the high-risk census tracts are in Minnesota (26), Wisconsin (26), Texas (24), Arizona (21), Missouri (18), Georgia (16), North Carolina (13), Montana (11), North Dakota (11), and Oklahoma (10). The other 104 high-risk census tracts are spread across 27 other states. % more on medium-risk census tracts
+
+ \begin{figure}[htbp]
+    \centering
+     \includegraphics[width=\textwidth, height=12cm]{plots/regional_risk_map.png}
+     \caption{Risk Level Across Sectors}
+     \label{fig:regional_risk_map}
+ \end{figure}
+
 
 \endinput

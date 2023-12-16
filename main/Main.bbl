@@ -1,9 +1,26 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{87}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[noa(2022)]{noauthor_productivity-pay_2022}
+The {Productivity}-{Pay} {Gap}.
+\newblock Technical report, Economic Policy Institute, 2022.
+\newblock URL \url{https://www.epi.org/productivity-pay-gap/}.
+
+\bibitem[Agans et~al.(2014)Agans, Jefferson, Bowling, Zeng, Yang, and
+  Silverbush]{agans_enumerating_2014}
+Robert~P. Agans, Malcolm~T. Jefferson, James~M. Bowling, Donglin Zeng, Jenny
+  Yang, and Mark Silverbush.
+\newblock Enumerating the {Hidden} {Homeless}: {Strategies} to {Estimate} the
+  {Homeless} {Gone} {Missing} {From} a {Point}-in-{Time} {Count}.
+\newblock \emph{Journal of Official Statistics}, 30\penalty0 (2):\penalty0
+  215--229, June 2014.
+\newblock ISSN 2001-7367.
+\newblock \doi{10.2478/jos-2014-0014}.
+\newblock URL \url{https://www.sciendo.com/article/10.2478/jos-2014-0014}.
 
 \bibitem[Anderson et~al.(2021)Anderson, Han, and
   Hisnanick]{anderson_effect_2021}
@@ -15,6 +32,14 @@ D.~Augustus Anderson, Hye-Sung Han, and John Hisnanick.
 \newblock ISSN 1535-6841, 1540-6040.
 \newblock \doi{10.1177/15356841211007757}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/15356841211007757}.
+
+\bibitem[Angel and Bittschi(2014)]{angel_housing_2014}
+Stefan Angel and Benjamin Bittschi.
+\newblock Housing and {Health}.
+\newblock \emph{SSRN Electronic Journal}, 2014.
+\newblock ISSN 1556-5068.
+\newblock \doi{10.2139/ssrn.2518364}.
+\newblock URL \url{http://www.ssrn.com/abstract=2518364}.
 
 \bibitem[Bachmann and Cooper(2014)]{bachmann_ins_2014}
 Rüdiger Bachmann and Daniel Cooper.
@@ -35,6 +60,25 @@ Seth~A. Berkowitz and Deepak Palakshappa.
 \newblock ISSN 1932-6203.
 \newblock \doi{10.1371/journal.pone.0284251}.
 \newblock URL \url{https://dx.plos.org/10.1371/journal.pone.0284251}.
+
+\bibitem[Bjerke and Mellander(2019)]{bjerke_mover_2019}
+Lina Bjerke and Charlotta Mellander.
+\newblock Mover stayer winner loser.
+\newblock \emph{Cities}, 130:\penalty0 103850, 2019.
+\newblock ISSN 02642751.
+\newblock \doi{10.1016/j.cities.2022.103850}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S026427512200289X}.
+
+\bibitem[Blank(2005)]{blank_poverty_2005}
+Rebecca~M. Blank.
+\newblock Poverty, {Policy}, and {Place}: {How} {Poverty} and {Policies} to
+  {Alleviate} {Poverty} {Are} {Shaped} by {Local} {Characteristics}.
+\newblock \emph{International Regional Science Review}, 28\penalty0
+  (4):\penalty0 441--464, October 2005.
+\newblock ISSN 0160-0176, 1552-6925.
+\newblock \doi{10.1177/0160017605278999}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0160017605278999}.
 
 \bibitem[Blumenberg and Pierce(2012)]{blumenberg_automobile_2012}
 Evelyn Blumenberg and Gregory Pierce.
@@ -69,6 +113,36 @@ Sarah~K. Bruch, Joseph Van~Der Naald, and Janet~C. Gornick.
 \newblock \doi{10.1086/724556}.
 \newblock URL \url{https://www.journals.uchicago.edu/doi/10.1086/724556}.
 
+\bibitem[Burton et~al.(2013)Burton, Lichter, Baker, and
+  Eason]{burton_inequality_2013}
+Linda~M. Burton, Daniel~T. Lichter, Regina~S. Baker, and John~M. Eason.
+\newblock Inequality, {Family} {Processes}, and {Health} in the “{New}”
+  {Rural} {America}.
+\newblock \emph{American Behavioral Scientist}, 57\penalty0 (8):\penalty0
+  1128--1151, August 2013.
+\newblock ISSN 0002-7642, 1552-3381.
+\newblock \doi{10.1177/0002764213487348}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0002764213487348}.
+
+\bibitem[Canto et~al.(2014)Canto, Brown, and Deller]{canto_rural_2014}
+Amber Canto, Laura~E. Brown, and Steven~C. Deller.
+\newblock Rural {Poverty}, {Food} {Access}, and {Public} {Health} {Outcomes}.
+\newblock \emph{Choices}, 29\penalty0 (2):\penalty0 1--5, 2014.
+\newblock ISSN 0886-5558.
+\newblock URL \url{https://www.jstor.org/stable/choices.29.2.04}.
+\newblock Publisher: Agricultural \& Applied Economics Association.
+
+\bibitem[Castle(1998)]{castle_conceptual_1998}
+Emery~N. Castle.
+\newblock A {Conceptual} {Framework} for the {Study} of {Rural} {Places}.
+\newblock \emph{American Journal of Agricultural Economics}, 80\penalty0
+  (3):\penalty0 621--631, 1998.
+\newblock ISSN 0002-9092.
+\newblock \doi{10.2307/1244569}.
+\newblock URL \url{https://www.jstor.org/stable/1244569}.
+\newblock Publisher: [Agricultural \& Applied Economics Association, Oxford
+  University Press].
+
 \bibitem[Castle et~al.(2011)Castle, Wu, and Weber]{castle_place_2011}
 Emery~N. Castle, JunJie Wu, and Bruce~A. Weber.
 \newblock Place {Orientation} and {Rural}–{Urban} {Interdependence}.
@@ -84,6 +158,25 @@ Jing Chen.
 \newblock Economic {Diversity} and {Regional} {Economic} {Performance}: {A}
   {Methodological} {Concern} from {Model} {Uncertainty}.
 \newblock Working {Paper}, West Virginia University, 2018.
+
+\bibitem[Cox et~al.(2019)Cox, Henwood, Rodnyansky, Rice, and
+  Wenzel]{cox_road_2019}
+Robynn Cox, Benjamin Henwood, Seva Rodnyansky, Eric Rice, and Suzanne Wenzel.
+\newblock Road {Map} to a {Unified} {Measure} of {Housing} {Insecurity}.
+\newblock \emph{Cityscape}, 21\penalty0 (2):\penalty0 93--127, 2019.
+\newblock URL
+  \url{https://www.huduser.gov/portal/periodicals/cityscpe/vol21num2/ch5.pdf}.
+
+\bibitem[Crandall and Weber(2004)]{crandall_local_2004}
+Mindy~S. Crandall and Bruce~A. Weber.
+\newblock Local {Social} and {Economic} {Conditions}, {Spatial}
+  {Concentrations} of {Poverty}, and {Poverty} {Dynamics}.
+\newblock \emph{American Journal of Agricultural Economics}, 86\penalty0
+  (5):\penalty0 1276--1281, 2004.
+\newblock ISSN 0002-9092.
+\newblock URL \url{https://www.jstor.org/stable/3697941}.
+\newblock Publisher: [Agricultural \& Applied Economics Association, Oxford
+  University Press].
 
 \bibitem[Cromartie and Bucholtz(2008)]{cromartie_defining_2008}
 John Cromartie and Shawn Bucholtz.
@@ -140,7 +233,7 @@ Matthew Desmond and Kristin~L. Perkins.
 \newblock \doi{10.1177/1078087415589192}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/1078087415589192}.
 
-\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_2015}
+\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_shell_2015}
 Matthew Desmond and Tracey Shollenberger.
 \newblock Forced {Displacement} {From} {Rental} {Housing}: {Prevalence} and
   {Neighborhood} {Consequences}.
@@ -161,6 +254,17 @@ Matthew Desmond and Nathan Wilmers.
 \newblock \doi{10.1086/701697}.
 \newblock URL \url{https://www.journals.uchicago.edu/doi/10.1086/701697}.
 
+\bibitem[Desmond et~al.(2015)Desmond, Gershenson, and
+  Kiviat]{desmond_forced_2015}
+Matthew Desmond, Carl Gershenson, and Barbara Kiviat.
+\newblock Forced {Relocation} and {Residential} {Instability} among {Urban}
+  {Renters}.
+\newblock \emph{Social Service Review}, 89\penalty0 (2):\penalty0 227--262,
+  June 2015.
+\newblock ISSN 0037-7961, 1537-5404.
+\newblock \doi{10.1086/681091}.
+\newblock URL \url{https://www.journals.uchicago.edu/doi/10.1086/681091}.
+
 \bibitem[Drew(2014)]{drew_believing_2014}
 Rachel~Bogardus Drew.
 \newblock Believing in {Homeownership}: {Behavioral} {Drivers} of {Housing}
@@ -172,6 +276,14 @@ Rachel~Bogardus Drew.
 D~D’Alessandro and L~Appolloni.
 \newblock Housing and health: an overview.
 \newblock \emph{Ann Ig}, 32\penalty0 (5):\penalty0 17--26, 2020.
+
+\bibitem[Evans et~al.(2019)Evans, Philips, and Ruffini]{evans_reducing_2019}
+William Evans, David Philips, and Krista Ruffini.
+\newblock Reducing and {Preventing} {Homelessness}: {A} {Review} of the
+  {Evidence} and {Charting} a {Research} {Agenda}.
+\newblock Technical Report w26232, National Bureau of Economic Research,
+  Cambridge, MA, September 2019.
+\newblock URL \url{http://www.nber.org/papers/w26232.pdf}.
 
 \bibitem[Fishback(2020)]{fishback_social_2020}
 Price~V. Fishback.
@@ -235,6 +347,25 @@ Lingqian Hu and Liming Wang.
 \newblock URL
   \url{https://www.tandfonline.com/doi/full/10.1080/02673037.2017.1364354}.
 
+\bibitem[Isserman(2005)]{isserman_national_2005}
+Andrew~M. Isserman.
+\newblock In the {National} {Interest}: {Defining} {Rural} and {Urban}
+  {Correctly} in {Research} and {Public} {Policy}.
+\newblock \emph{International Regional Science Review}, 28\penalty0
+  (4):\penalty0 465--499, October 2005.
+\newblock ISSN 0160-0176, 1552-6925.
+\newblock \doi{10.1177/0160017605279000}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0160017605279000}.
+
+\bibitem[Isserman et~al.(2009)Isserman, Feser, and Warren]{isserman_why_2009}
+Andrew~M. Isserman, Edward Feser, and Drake~E. Warren.
+\newblock Why {Some} {Rural} {Places} {Prosper} and {Others} {Do} {Not}.
+\newblock \emph{International Regional Science Review}, 32\penalty0
+  (3):\penalty0 300--342, July 2009.
+\newblock ISSN 0160-0176, 1552-6925.
+\newblock \doi{10.1177/0160017609336090}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0160017609336090}.
+
 \bibitem[Jacobs(2011)]{jacobs_environmental_2011}
 David~E. Jacobs.
 \newblock Environmental {Health} {Disparities} in {Housing}.
@@ -297,6 +428,16 @@ Jessica~N. Kropczynski and Patricia~H. Dyk.
 \newblock \doi{10.1080/08882746.2012.11430603}.
 \newblock URL
   \url{http://www.tandfonline.com/doi/full/10.1080/08882746.2012.11430603}.
+
+\bibitem[Kurre(2003)]{kurre_is_2003}
+James~A. Kurre.
+\newblock Is {The} {Cost} {Of} {Living} {Less} {In} {Rural} {Areas}?
+\newblock \emph{International Regional Science Review}, 26\penalty0
+  (1):\penalty0 86--116, January 2003.
+\newblock ISSN 0160-0176.
+\newblock \doi{10.1177/0160017602238987}.
+\newblock URL \url{https://doi.org/10.1177/0160017602238987}.
+\newblock Publisher: SAGE Publications Inc.
 
 \bibitem[Lee and Evans(2020)]{lee_forced_2020}
 Barrett~A. Lee and Megan Evans.
@@ -375,6 +516,19 @@ Sarah~A Low.
 \newblock Rural {Manufacturing} at a {Glance}, 2017 {Edition}.
 \newblock \emph{Plastics and rubber}, 2017.
 
+\bibitem[Lutfiyya et~al.(2012)Lutfiyya, McCullough, Haller, Waring, Bianco, and
+  Lipsky]{lutfiyya_rurality_2012}
+May~Nawal Lutfiyya, Joel~Emery McCullough, Irina~V. Haller, Stephen~C. Waring,
+  Joseph~A. Bianco, and Martin~Stephen Lipsky.
+\newblock Rurality as a {Root} or {Fundamental} {Social} {Determinant} of
+  {Health}.
+\newblock \emph{Disease-a-Month}, 58\penalty0 (11):\penalty0 620--628, November
+  2012.
+\newblock ISSN 00115029.
+\newblock \doi{10.1016/j.disamonth.2012.08.005}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0011502912001563}.
+
 \bibitem[MacTavish et~al.(2006)MacTavish, Eley, and
   Salamon']{mactavish_policy_2006}
 Katherine MacTavish, Michelle Eley, and Sonya Salamon'.
@@ -423,6 +577,32 @@ Katherine~M. O’Regan, Ingrid~Gould Ellen, and Sophie House.
 \newblock \doi{10.1177/0002716221995158}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/0002716221995158}.
 
+\bibitem[Palacios et~al.(2021)Palacios, Eichholtz, Kok, and
+  Aydin]{palacios_impact_2021}
+Juan Palacios, Piet Eichholtz, Nils Kok, and Erdal Aydin.
+\newblock The impact of housing conditions on health outcomes.
+\newblock \emph{Real Estate Economics}, 49\penalty0 (4):\penalty0 1172--1200,
+  December 2021.
+\newblock ISSN 1080-8620, 1540-6229.
+\newblock \doi{10.1111/1540-6229.12317}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1111/1540-6229.12317}.
+
+\bibitem[Partridge and Rickman(2007)]{partridge_persistent_2007}
+Mark~D. Partridge and Dan~S. Rickman.
+\newblock Persistent {Pockets} of {Extreme} {American} {Poverty} and {Job}
+  {Growth}: {Is} {There} a {Place}-{Based} {Policy} {Role}?
+\newblock 2007.
+\newblock \doi{10.22004/AG.ECON.8599}.
+\newblock URL \url{https://ageconsearch.umn.edu/record/8599}.
+\newblock Publisher: Unknown.
+
+\bibitem[Pendall et~al.(2016)Pendall, Goodman, Zhu, and
+  Gold]{pendall_future_2016}
+Rolf Pendall, Laurie Goodman, Jun Zhu, and Amanda Gold.
+\newblock The {Future} of {Rural} {Housing}.
+\newblock Research {Report}, The Urban Institute, Washington D.C., 2016.
+
 \bibitem[Phinney(2013)]{phinney_exploring_2013}
 Robin Phinney.
 \newblock Exploring {Residential} {Mobility} among {Low}-{Income} {Families}.
@@ -447,6 +627,16 @@ Virginia~A. Rauh, Philip~J. Landrigan, and Luz Claudio.
 \newblock ISSN 00778923.
 \newblock \doi{10.1196/annals.1425.032}.
 \newblock URL \url{http://doi.wiley.com/10.1196/annals.1425.032}.
+
+\bibitem[Robertson et~al.(2007)Robertson, Harris, Fritz, Noftsinger, and
+  Fischer]{robertson_rural_2007}
+Marjorie Robertson, Natalie Harris, Nancy Fritz, Rebecca Noftsinger, and Pamela
+  Fischer.
+\newblock Rural {Homelessness}.
+\newblock 2007.
+\newblock \doi{10.13140/RG.2.1.3433.7683}.
+\newblock URL \url{http://rgdoi.net/10.13140/RG.2.1.3433.7683}.
+\newblock Publisher: Unpublished.
 
 \bibitem[Sherrieb et~al.(2010)Sherrieb, Norris, and
   Galea]{sherrieb_measuring_2010}
@@ -486,6 +676,18 @@ P.~Johnelle Sparks, Corey~S. Sparks, and Joseph J.~A. Campbell.
 \newblock \doi{10.1007/BF03354896}.
 \newblock URL \url{https://link.springer.com/10.1007/BF03354896}.
 
+\bibitem[Stockhammer(2008)]{stockhammer_stylized_2008}
+Engelbert Stockhammer.
+\newblock Some {Stylized} {Facts} on the {Finance}-{Dominated} {Accumulation}
+  {Regime}.
+\newblock \emph{Competition \& Change}, 12\penalty0 (2):\penalty0 184--202,
+  June 2008.
+\newblock ISSN 1024-5294.
+\newblock \doi{10.1179/102452908X289820}.
+\newblock URL
+  \url{https://journals.sagepub.com/doi/abs/10.1179/102452908X289820}.
+\newblock Publisher: SAGE Publications Ltd.
+
 \bibitem[Swope and Hernandez(2020)]{swope_housing_2020}
 Carolyn~B. Swope and Diana Hernandez.
 \newblock Housing as a determinant of health equity\_ {A} conceptual model.
@@ -493,6 +695,17 @@ Carolyn~B. Swope and Diana Hernandez.
 \newblock \doi{10.1016/j.socscimed.2019.112571}.
 \newblock URL
   \url{https://reader.elsevier.com/reader/sd/pii/S0277953619305659?token=0BF7CE998C4949B5AD4DB9DB6CE6CA02DF1448E46028A9D722AB36EBD1473C1B404CCF479C8632CC8BEF36226993A634&originRegion=us-east-1&originCreation=20230118070028}.
+
+\bibitem[Thiede et~al.(2018)Thiede, Kim, and Valasik]{thiede_spatial_2018}
+Brian Thiede, Hyojung Kim, and Matthew Valasik.
+\newblock The {Spatial} {Concentration} of {America}'s {Rural} {Poor}
+  {Population}: {A} {Postrecession} {Update}: {Concentrated} {Poverty} in
+  {Rural} {America}.
+\newblock \emph{Rural Sociology}, 83\penalty0 (1):\penalty0 109--144, March
+  2018.
+\newblock ISSN 00360112.
+\newblock \doi{10.1111/ruso.12166}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1111/ruso.12166}.
 
 \bibitem[{U.S. Census Bureau} and {U.S. Department of Housing and Urban
   Development}(1963)]{us_census_bureau_median_1963}
@@ -516,6 +729,25 @@ John~C. Weicher.
 \newblock Housing conditions and homelessness.
 \newblock \emph{Gender Issues}, pages 35--53, 2006.
 
+\bibitem[Wiener(2020)]{wiener_labor_2020}
+Noé~M. Wiener.
+\newblock Labor {Market} {Segmentation} and {Immigrant} {Competition}: {A}
+  {Quantal} {Response} {Statistical} {Equilibrium} {Analysis}.
+\newblock \emph{Entropy}, 22\penalty0 (7):\penalty0 742, July 2020.
+\newblock ISSN 1099-4300.
+\newblock \doi{10.3390/e22070742}.
+\newblock URL \url{https://www.mdpi.com/1099-4300/22/7/742}.
+
+\bibitem[Wilson and Rahe(2016)]{wilson_rural_2016}
+Bev Wilson and Mallory~L. Rahe.
+\newblock Rural prosperity and federal expenditures, 2000–2010.
+\newblock \emph{Regional Science Policy \& Practice}, 8\penalty0
+  (1-2):\penalty0 3--26, March 2016.
+\newblock ISSN 1757-7802, 1757-7802.
+\newblock \doi{10.1111/rsp3.12070}.
+\newblock URL
+  \url{https://rsaiconnect.onlinelibrary.wiley.com/doi/10.1111/rsp3.12070}.
+
 \bibitem[Yadavalli et~al.(2020)Yadavalli, Rivett, Brooks, McFarland, and
   Hardiman]{yadavalli_comprehensive_2020}
 Anita Yadavalli, Brenna Rivett, James Brooks, Christiana~K McFarland, and David
@@ -523,5 +755,37 @@ Anita Yadavalli, Brenna Rivett, James Brooks, Christiana~K McFarland, and David
 \newblock A {Comprehensive} {Look} at {Housing} {Market} {Conditions} {Across}
   {America}'s {Cities}.
 \newblock \emph{Cityscape}, 22\penalty0 (2):\penalty0 111--132, 2020.
+
+\bibitem[Yousey and Samudra(2018)]{yousey_defining_2018}
+Amelia Yousey and Rhucha Samudra.
+\newblock Defining {Homelessness} in the {Rural} {United} {States}.
+\newblock \emph{Online Journal of Rural Research \& Policy}, 13\penalty0 (4),
+  December 2018.
+\newblock ISSN 1936-0487.
+\newblock \doi{10.4148/1936-0487.1094}.
+\newblock URL \url{https://newprairiepress.org/ojrrp/vol13/iss4/1}.
+
+\bibitem[Zarecor et~al.(2021)Zarecor, Peters, and Hamideh]{martinez_rural_2021}
+Kimberly~E. Zarecor, David~J. Peters, and Sara Hamideh.
+\newblock Rural {Smart} {Shrinkage} and {Perceptions} of {Quality} of {Life} in
+  the {American} {Midwest}.
+\newblock In Javier Martinez, Claudia~Andrea Mikkelsen, and Rhonda Phillips,
+  editors, \emph{Handbook of {Quality} of {Life} and {Sustainability}}, pages
+  395--415. Springer International Publishing, Cham, 2021.
+\newblock ISBN 978-3-030-50539-4 978-3-030-50540-0.
+\newblock \doi{10.1007/978-3-030-50540-0_20}.
+\newblock URL \url{http://link.springer.com/10.1007/978-3-030-50540-0_20}.
+\newblock Series Title: International Handbooks of Quality-of-Life.
+
+\bibitem[Zimmerman et~al.(2008)Zimmerman, Ham, and Frank]{zimmerman_does_2008}
+Julie~N. Zimmerman, Sunny~(Seonok) Ham, and Sarah~Michelle Frank.
+\newblock Does it or {Doesn}'t it? {Geographic} {Differences} and the {Costs}
+  of {Living}.
+\newblock \emph{Rural Sociology}, 73\penalty0 (3):\penalty0 463--486, September
+  2008.
+\newblock ISSN 0036-0112, 1549-0831.
+\newblock \doi{10.1526/003601108785766561}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1526/003601108785766561}.
 
 \end{thebibliography}
