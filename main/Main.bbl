@@ -1,14 +1,9 @@
-\begin{thebibliography}{87}
+\begin{thebibliography}{88}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[noa(2022)]{noauthor_productivity-pay_2022}
-The {Productivity}-{Pay} {Gap}.
-\newblock Technical report, Economic Policy Institute, 2022.
-\newblock URL \url{https://www.epi.org/productivity-pay-gap/}.
 
 \bibitem[Agans et~al.(2014)Agans, Jefferson, Bowling, Zeng, Yang, and
   Silverbush]{agans_enumerating_2014}
@@ -276,6 +271,12 @@ Rachel~Bogardus Drew.
 D~D’Alessandro and L~Appolloni.
 \newblock Housing and health: an overview.
 \newblock \emph{Ann Ig}, 32\penalty0 (5):\penalty0 17--26, 2020.
+
+\bibitem[{Economic Policy Institute}(2022)]{productivity-pay-gap_2022}
+{Economic Policy Institute}.
+\newblock The {Productivity}-{Pay} {Gap}.
+\newblock Technical report, Economic Policy Institute, 2022.
+\newblock URL \url{https://www.epi.org/productivity-pay-gap/}.
 
 \bibitem[Evans et~al.(2019)Evans, Philips, and Ruffini]{evans_reducing_2019}
 William Evans, David Philips, and Krista Ruffini.
@@ -567,6 +568,12 @@ Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
 \newblock ISSN 0895-3309.
 \newblock \doi{10.1257/jep.25.3.173}.
 \newblock URL \url{https://pubs.aeaweb.org/doi/10.1257/jep.25.3.173}.
+
+\bibitem[{National Coalition for the Homeless}(2009)]{noauthor_rural_2009}
+{National Coalition for the Homeless}.
+\newblock Rural {Homelessness}.
+\newblock Technical report, National Coalition for the Homeless, 2009.
+\newblock URL \url{https://homelesshub.ca/sites/default/files/xzzomc0w.pdf}.
 
 \bibitem[O’Regan et~al.(2021)O’Regan, Ellen, and House]{oregan_how_2021}
 Katherine~M. O’Regan, Ingrid~Gould Ellen, and Sophie House.
