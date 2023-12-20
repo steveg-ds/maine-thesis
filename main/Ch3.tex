@@ -6,7 +6,7 @@ Rather than strictly defining rurality, this thesis uses the United States Depar
 \input{tables/clusters/ruca_table.tex}
 
 
-The range of RUCA codes described in Table 3.1 was chosen to be inclusive rather than exclusive, including small towns with various levels of commuting to urban clusters and areas classified as rural. We include small towns because they often serve as hubs for rural areas, serving an important role in rural areas and \hl{source} has identified a significant amount of rural people that live on the edge of urban places, like small towns. Spatial autocorrelation is used to determine how often similar rates of each variable occurred across each rural census tract in each state. Finally, multinomial logistic regression is used to determine how well the risk levels of a census tract can be predicted based on the nationwide dataset.  All analysis was conducted in the R statistical language.  
+The range of RUCA codes described in Table 3.1 was chosen to be inclusive rather than exclusive, including small towns with various levels of commuting to urban clusters and areas classified as rural. We include small towns because they often serve as hubs for rural areas, serving an important role in rural areas and \citet{isserman_national_2005} has identified a significant amount of rural people that live on the edge of urban places, like small towns. Spatial autocorrelation is used to determine how often similar rates of each variable occurred across each rural census tract in each state. Finally, multinomial logistic regression is used to determine how well the risk levels of a census tract can be predicted based on the nationwide dataset.  All analysis was conducted in the R statistical language.  
 
 \section{\textit{Applying the 4 C's}}
 Applying the four C's of housing insecurity necessitates a mix of quantitative and qualitative analysis. To use the model to classify areas into risk levels, it is necessary to define thresholds for each pillar based on the literature review. 
@@ -17,10 +17,47 @@ Housing Conditions are difficult to encapsulate because they encompass a broad r
 
 Consistency, or residential mobility, is difficult to encapsulate because many households move for reasons unrelated to housing insecurity. To focus on the subset of households that are at a high risk of becoming housing insecure, the scope of residential mobility is limited to those who have moved in the past year without a college degree and those who are either below or just above the poverty line. These groups are more likely to move to more precarious situations than those making moves for economic and social reasons unrelated to housing insecurity. 
 
-Context is the most difficult pillar of the four C's to capture because it encapsulates many individual, social, and political factors. Five different sectors are used to capture context. Due to the influence of social, political, and historical processes, demographic diversity is used to account forthe effect that race has on housing insecurity risk. The previously mentioned measures of residential stability also contribute to the context of an area, encapsulating education and poverty. The type of housing individuals in an area live in is a significant factor of context because mobile homes, while being seen as a means of affordable housing, can signify a risk of housing insecurity when taken in tandem with other factors. The final measure in context is household factors. This range of household factors is designed to encapsulate different individual, social, and economic factors that contribute to housing insecurity 
+Context is the most difficult pillar of the four C's to capture because it encapsulates many individual, social, and political factors. Five different sectors are used to capture context. Due to the influence of social, political, and historical processes, demographic diversity is used to account for the effect that race has on housing insecurity risk. The previously mentioned measures of residential stability also contribute to the context of an area, encapsulating education and poverty. The type of housing individuals in an area live in is a significant factor of context because mobile homes, while being seen as a means of affordable housing, can signify a risk of housing insecurity when taken in tandem with other factors. The final measure in context is household factors. This range of household factors is designed to encapsulate different individual, social, and economic factors that contribute to housing insecurity 
 
 \section{\textit{Data}}
-Eight different sectors of 2019 ACS 5-year variables are used to capture the 4 Cs of housing insecurity using indicators of housing insecurity identified in the literature. These sectors are demographics, housing cost, housing quality, housing type, economic diversity, education mobility, poverty mobility, and household factors. For demographic variables, we use seven variables including an “other” variable to account for race/ ethnicity and the number of people over or under 18 by gender. The economic diversity data is the number of people employed across 13 distinct categories. It was necessary to create three compound variables: high cost with a mortgage, high cost without a mortgage, and high-cost rent to use the standard affordability measure of 30 percent. There are four variables for housing conditions which include houses with an incomplete or insufficient kitchen or plumbing for occupied and unoccupied housing units.  Due to the housing affordability and income inequality crises, those below the poverty level and those at 125 percent of the poverty level are included in residential mobility: poverty (RMP). For residential mobility: education (RME), those with and without a high school diploma are included as those without a college degree may face higher barriers to well-paying and stable employment. Household factors include households without income, households that receive public assistance, households that receive supplemental security income, households with investment income, households with other income, households with 3+ workers, and the household Gini index. The Gini index is a common measure of income inequality where zero represents perfect equality and one represents perfect inequality. For housing type, renters and owners of mobile homes, single-family homes, small and large multi-family homes, and renters and owners of unconventional housing are included.  
+
+Eight different sectors of 2019 ACS 5-year variables are used to capture the 4 Cs of housing insecurity using indicators of housing insecurity identified in the literature. These sectors are demographics, housing cost, housing quality, housing type, residential mobility: poverty, residential mobility: education, and household factors. For demographic variables, Seven variables including an “other” variable are used to account for race/ ethnicity and the number of people over or under 18 by gender. 
+
+\begin{table}[ht]
+\small
+\centering
+\begin{tabular}{|c|c|}
+  \hline
+col\_name & name \\ 
+  \hline
+white & B01001A\_001 \\ 
+  \hline
+  black & B01001B\_001 \\ 
+    \hline
+  am\_in\_ala\_nat & B01001C\_001 \\ 
+    \hline
+  asian & B01001D\_001 \\ 
+    \hline
+  haw\_pac & B01001E\_001 \\ 
+    \hline
+  other & B01001F\_001 \\ 
+    \hline
+  hisp\_lat & B01001I\_001 \\ 
+    \hline
+  population & B01003\_001 \\ 
+    \hline
+  male\_u18 & B05003\_003 \\ 
+    \hline
+  male\_o18 & B05003\_008 \\ 
+    \hline
+  female\_u18 & B05003\_014 \\ 
+    \hline
+  female\_o18 & B05003\_019 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+The economic diversity data is the number of people employed across 13 distinct categories. It was necessary to create three compound variables: high cost with a mortgage, high cost without a mortgage, and high-cost rent to use the standard affordability measure of 30 percent. There are four variables for housing conditions which include houses with an incomplete or insufficient kitchen or plumbing for occupied and unoccupied housing units.  Due to the housing affordability and income inequality crises, those below the poverty level and those at 125 percent of the poverty level are included in residential mobility: poverty (RMP). For residential mobility: education (RME), those with and without a high school diploma are included as those without a college degree may face higher barriers to well-paying and stable employment. Household factors include households without income, households that receive public assistance, households that receive supplemental security income, households with investment income, households with other income, households with 3+ workers, and the household Gini index. The Gini index is a common measure of income inequality where zero represents perfect equality and one represents perfect inequality. For housing type, renters and owners of mobile homes, single-family homes, small and large multi-family homes, and renters and owners of unconventional housing are included.  
 
 
 
