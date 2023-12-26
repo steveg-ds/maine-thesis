@@ -21,56 +21,23 @@ Context is the most difficult pillar of the four C's to capture because it encap
 
 \section{\textit{Data}}
 
-Eight different sectors of 2019 ACS 5-year variables are used to capture the 4 Cs of housing insecurity using indicators of housing insecurity identified in the literature. These sectors are demographics, housing cost, housing quality, housing type, residential mobility: poverty, residential mobility: education, and household factors. For demographic variables, Seven variables including an “other” variable are used to account for race/ ethnicity and the number of people over or under 18 by gender. 
+Eight different sectors of 2019 ACS 5-year variables at the census tract level are used to capture the 4 Cs of housing insecurity using indicators of housing insecurity identified in the literature. Appendix \hl{?} shows the variables used for each sector. These sectors are demographics, housing cost, housing quality, housing type, residential mobility: poverty, residential mobility: education, and household factors. For demographic variables, Seven variables including an “other” variable are used to account for race/ ethnicity and the number of people over or under 18 by gender. 
 
-\begin{table}[ht]
-\small
-\centering
-\begin{tabular}{|c|c|}
-  \hline
-col\_name & name \\ 
-  \hline
-white & B01001A\_001 \\ 
-  \hline
-  black & B01001B\_001 \\ 
-    \hline
-  am\_in\_ala\_nat & B01001C\_001 \\ 
-    \hline
-  asian & B01001D\_001 \\ 
-    \hline
-  haw\_pac & B01001E\_001 \\ 
-    \hline
-  other & B01001F\_001 \\ 
-    \hline
-  hisp\_lat & B01001I\_001 \\ 
-    \hline
-  population & B01003\_001 \\ 
-    \hline
-  male\_u18 & B05003\_003 \\ 
-    \hline
-  male\_o18 & B05003\_008 \\ 
-    \hline
-  female\_u18 & B05003\_014 \\ 
-    \hline
-  female\_o18 & B05003\_019 \\ 
-   \hline
-\end{tabular}
-\end{table}
 
-The economic diversity data is the number of people employed across 13 distinct categories. It was necessary to create three compound variables: high cost with a mortgage, high cost without a mortgage, and high-cost rent to use the standard affordability measure of 30 percent. There are four variables for housing conditions which include houses with an incomplete or insufficient kitchen or plumbing for occupied and unoccupied housing units.  Due to the housing affordability and income inequality crises, those below the poverty level and those at 125 percent of the poverty level are included in residential mobility: poverty (RMP). For residential mobility: education (RME), those with and without a high school diploma are included as those without a college degree may face higher barriers to well-paying and stable employment. Household factors include households without income, households that receive public assistance, households that receive supplemental security income, households with investment income, households with other income, households with 3+ workers, and the household Gini index. The Gini index is a common measure of income inequality where zero represents perfect equality and one represents perfect inequality. For housing type, renters and owners of mobile homes, single-family homes, small and large multi-family homes, and renters and owners of unconventional housing are included.  
+The economic diversity data is the number of people employed across 13 distinct categories. It was necessary to create three compound variables: high cost with a mortgage, high cost without a mortgage, and high-cost rent to use the standard affordability measure of 30 percent. There are four variables for housing conditions which include houses with an incomplete or insufficient kitchen or plumbing for occupied and unoccupied housing units.  Due to the housing affordability and income inequality crises, those below the poverty level and those at 125 percent of the poverty level are included in residential mobility: poverty (RMP). For residential mobility: education (RME), those with and without a high school diploma are included as those without a college degree may face higher barriers to well-paying and stable employment. Household factors include households without income, households that receive public assistance, households that receive supplemental security income, households with investment income, households with other income, households with 3 or more workers, and the household Gini index. The Gini index is a common measure of income inequality where zero represents perfect equality and one represents perfect inequality. For housing type,  renters and owners of mobile homes, single-family residences, small and large multi-family homes, as well as renters and owners of unconventional housing are included.
 
 
 
 \section{\textit{Data processing}}
-In order to ensure the integrity of the data, census tracts that lacked specific sector-related information were excluded from the analysis. These omitted tracts were assigned a risk level of zero, a measure adopted to preserve the largest possible number of census tracts for subsequent analyses. To mitigate potential biases stemming from differences in population sizes and geographic areas, a standardized approach was employed across each sector. This involved scaling all dataset components to a common base unit. Demographic and economic diversity variables were adjusted proportionally to the population size. Meanwhile, data on household expenses and types were scaled based on the counts of homeowners and renters. The household dataset underwent normalization corresponding to the total number of households, whereas housing condition indicators were adjusted relative to the total count of occupied and unoccupied housing units. It's essential to note that all numerical values within the dataset have been uniformly represented as percentages, except for the household Gini Index, which retains its original values. % i feel like my data processing hasn't been fully explained 
+In order to ensure the integrity of the data, census tracts that lacked specific sector-related information were excluded from the analysis. These omitted tracts were assigned a risk level of zero to preserve the largest possible number of census tracts for subsequent analyses. To mitigate potential biases stemming from differences in population sizes and geographic areas, a standardized approach was employed across each sector. This involved scaling all dataset components to a common base unit. Demographic and economic diversity variables were adjusted proportionally to the population size. Meanwhile, data on household expenses and types were scaled based on the counts of homeowners and renters. The household dataset underwent normalization corresponding to the total number of households, and housing condition indicators were adjusted relative to the total count of occupied and unoccupied housing units. Household factors were scaled by the total number of households. All numerical values within the dataset have been uniformly represented as percentages, except for the household Gini Index, which retains its original values. 
 
 \section{\textit{Methods}}
 Supervised and unsupervised machine learning algorithms are used alongside global and local Moran's I spatial autocorrelation and the Queen Contiguity spatial relationship algorithm to form and analyze the housing insecurity risk assignment system, and multinomial logistic regression to examine the predictive abilities of the risk assignment system.
 
 \subsection{\textit{Neighbors Algorithm}}
-Communities often share dependencies across state lines, making it unjust to disregard neighboring communities in a state-based housing insecurity analysis. To address this, the analysis encompasses census tracts within 15 miles of a state's outermost tract. Any census tract sharing a boundary with a tract within this range is considered, ensuring a more inclusive evaluation of rural housing insecurity. This process is repeated for each state in the continental United States.
+In housing insecurity analyses that span state lines, overlooking neighboring communities can be unfair due to shared dependencies. To mitigate this, the analysis adopts the Queen Contiguity Neighbors algorithm. It encompasses census tracts situated within a 15-mile radius of a state's outermost tract. Any census tract sharing a boundary within this distance is included, ensuring a comprehensive evaluation of rural housing insecurity across state borders. This iterative process is applied to every state within the continental United States, facilitating a more inclusive and nuanced assessment.
 
-The formula for queen contiguity neighbors is shown in Equation \ref{eq:queen_neighbors}.
+The formula for queen contiguity neighbors is shown in Equation~\ref{eq:queen_neighbors}.
 
 \begin{equation}
     \label{eq:queen_neighbors}
@@ -87,7 +54,7 @@ The formula for queen contiguity neighbors is shown in Equation \ref{eq:queen_ne
 \end{equation}
 
 \subsection{\textit{K-Medoid Clustering}}
-K-medoids clustering is a partitioning technique aimed at dividing a dataset into \(K\) distinct and non-overlapping clusters. Unlike K-means clustering, which utilizes centroids as cluster representatives, K-medoids employs actual data points within the dataset as cluster representatives. The key advantage of K-medoids lies in its robustness to outliers and noise due to its use of real data points. The objective of K-medoids clustering is to minimize the sum of dissimilarities within clusters. Each state, including neighboring census tracts, is clustered individually. The cluster medians are analyzed to determine which clusters have a high, medium, or low risk of housing insecurity based on the factors previously identified in the literature review. To bring areas of concern, census tracts are labeled as high-risk if the sum of their risk levels is 12 and medium-risk if the sum of their risk levels is 15. Out of a total of 24, this approach highlights the areas that show the most vulnerability across sectors.The formula for K-medoids clustering is shown in Equation \ref{eq:k-medoids}.
+K-medoids clustering is a partitioning technique aimed at dividing a dataset into \(K\) distinct and non-overlapping clusters. Unlike K-means clustering, which utilizes centroids as cluster representatives, K-medoids uses data points within the dataset as cluster representatives. The key advantage of K-medoids lies in its robustness to outliers and noise due to the use of real data points. The objective of K-medoids clustering is to minimize the sum of dissimilarities within clusters. Each state, including neighboring census tracts, is clustered individually. The cluster medians are analyzed to determine which clusters have a high, medium, or low risk of housing insecurity based on the factors previously identified in the literature review. This approach highlights the areas that show the most vulnerability across sectors. The formula for K-medoids clustering is shown in Equation \ref{eq:k-medoids}.
 
 \begin{equation}\label{eq:k-medoids}
     \begin{aligned}
@@ -103,11 +70,13 @@ K-medoids clustering is a partitioning technique aimed at dividing a dataset int
     \end{aligned}
 \end{equation}
 
+
+\subsection{\textit{Identifying High Risk Census Tracts}}
+Each sector now has a new variable representing the risk level for that census tract with one being high-risk, two being medium-risk, and three being low-risk. This means that each census tract has a housing risk level on a scale of 8 to 24 with 8 being the highest level of risk and 24 being the lowest level of risk. To highlight areas of particular concern, a threshold of 12 out of 24 is used to identify high-risk census tracts. A threshold of 15 out of 24 is used to identify medium-risk census tracts. Census tracts with a total greater than 15 are considered to have a low risk of housing insecurity. This serves to highlight areas of immediate concern for researchers and policymakers. Standard t-tests are used to measure if there are statistically significant differences between the variable averages of high, medium, and low-risk census tracts.
+
 \subsection{\textit{Association Rules Learning}}
 
-Association Rules learning is a data mining technique used to uncover interesting relationships between variables in large datasets. It aims to discover patterns in the form of rules indicating the co-occurrence or association between items within transactions or events. This methodology operates by analyzing transactions or occurrences, seeking statistically significant associations between different items. These associations are expressed as rules that outline the likelihood or dependency of one item's presence based on the occurrence of another. 
-
-Association rule learning involves two main metrics:
+Association Rules learning is a data mining technique used to uncover interesting relationships between variables in large datasets. It aims to discover patterns in the form of rules indicating the co-occurrence or association between items within transactions or events. This methodology operates by analyzing transactions or occurrences, seeking statistically significant associations between different items. These associations are expressed as rules that outline the likelihood or dependency of one item's presence based on the occurrence of another. The transactions consist of the risk levels of each census tract across each sector. Association rules learning involves two main metrics:
 
 \textbf{Support (s)}: Measures the frequency or occurrence of an itemset in the dataset.
 \[
@@ -119,7 +88,7 @@ Association rule learning involves two main metrics:
 \text{Confidence}(A \rightarrow B) = \frac{\text{Support}(A \cup B)}{\text{Support}(A)}
 \]
 
-Here, association rules are used to analyze the common occurrences between sector risk levels. Of primary interest are high-risk-to-high-risk, low-risk-to-low-risk relationships, and unexpected relationships where a high-risk level is associated with a low-risk level and vice versa. 
+Association rules are used to analyze the common occurrences between sector risk levels. Of primary interest are high-risk-to-high-risk, low-risk-to-low-risk relationships, and unexpected relationships where a high-risk level is associated with a low-risk level and vice versa. This is used to examine if under the 4 C's framework, census tracts commonly exhibit signs of risk or if there is variation in these relationships.
 
 
 \subsection{\textit{Moran's I}}
@@ -140,7 +109,7 @@ x_i & : \text{Value of the variable of interest in spatial unit \(i\).} \\
 \bar{x} & : \text{Mean value of the variable of interest across all spatial units.}
 \end{align*}
 
-To measure how housing insecurity risk levels cluster in space, local Moran's I is also used to indicate the spatial relationship of housing insecurity risk levels. The formula for local Moran's I is shown in Equation \ref{eq:local_moran_i}. Local Moran's I does not follow the same -1 to 1 structure of global Moran's I, but it retains the structure that positive values indicate stronger spatial autocorrelations and negative values indicate stronger spatial randomness. 
+To measure how housing insecurity risk levels cluster at the census tract level, local Moran's I is also used to indicate the spatial relationship of housing insecurity risk levels. The formula for local Moran's I is shown in Equation \ref{eq:local_moran_i}. Local Moran's I does not follow the same -1 to 1 structure of global Moran's I, but it retains the structure that positive values indicate stronger spatial autocorrelations and negative values indicate stronger spatial randomness. 
 
 \begin{equation}\label{eq:local_moran_i}
     I = \frac{N}{W} \frac{\sum_{i=1}^{N} \sum_{j=1}^{N} w_{ij} (x_i - \bar{x})(x_j - \bar{x})}{\sum_{i=1}^{N} (x_i - \bar{x})^2}
@@ -178,7 +147,6 @@ Where:
     & K: \text{Reference category}
 \end{align*}
 
-\subsection{\textit{Identifying High Risk Census Tracts}}
-Each sector now has a new variable representing the risk level for that census tract with one being high-risk, two being medium-risk, and three being low-risk. This means that each census tract has a housing risk level on a scale of 8 to 24 with 8 being the highest level of risk and 24 being the lowest level of risk. To highlight areas of particular concern, a threshold of 12 out of 24 is used to identify high-risk census tracts. a threshold of 15 out of 24 is used to identify medium-risk census tracts. Census tracts with a total greater than 15 are considered to have a low risk of housing insecurity. This serves to highlight areas of immediate concern for researchers and policymakers. 
+
 
 \endinput

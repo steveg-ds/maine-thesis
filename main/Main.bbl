@@ -1,9 +1,14 @@
-\begin{thebibliography}{88}
+\begin{thebibliography}{94}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Administration(2022)]{health_resources__services_administration_defining_2022}
+Health Resources \&~Services Administration.
+\newblock Defining {Rural} {Population}, 2022.
+\newblock URL \url{https://www.hrsa.gov/rural-health/about-us/what-is-rural}.
 
 \bibitem[Agans et~al.(2014)Agans, Jefferson, Bowling, Zeng, Yang, and
   Silverbush]{agans_enumerating_2014}
@@ -228,17 +233,6 @@ Matthew Desmond and Kristin~L. Perkins.
 \newblock \doi{10.1177/1078087415589192}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/1078087415589192}.
 
-\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_shell_2015}
-Matthew Desmond and Tracey Shollenberger.
-\newblock Forced {Displacement} {From} {Rental} {Housing}: {Prevalence} and
-  {Neighborhood} {Consequences}.
-\newblock \emph{Demography}, 52\penalty0 (5):\penalty0 1751--1772, October
-  2015.
-\newblock ISSN 0070-3370, 1533-7790.
-\newblock \doi{10.1007/s13524-015-0419-9}.
-\newblock URL
-  \url{https://read.dukeupress.edu/demography/article/52/5/1751/169475/Forced-Displacement-From-Rental-Housing-Prevalence}.
-
 \bibitem[Desmond and Wilmers(2019)]{desmond_poor_2019}
 Matthew Desmond and Nathan Wilmers.
 \newblock Do the {Poor} {Pay} {More} for {Housing}? {Exploitation}, {Profit},
@@ -272,12 +266,6 @@ D~D’Alessandro and L~Appolloni.
 \newblock Housing and health: an overview.
 \newblock \emph{Ann Ig}, 32\penalty0 (5):\penalty0 17--26, 2020.
 
-\bibitem[{Economic Policy Institute}(2022)]{productivity-pay-gap_2022}
-{Economic Policy Institute}.
-\newblock The {Productivity}-{Pay} {Gap}.
-\newblock Technical report, Economic Policy Institute, 2022.
-\newblock URL \url{https://www.epi.org/productivity-pay-gap/}.
-
 \bibitem[Evans et~al.(2019)Evans, Philips, and Ruffini]{evans_reducing_2019}
 William Evans, David Philips, and Krista Ruffini.
 \newblock Reducing and {Preventing} {Homelessness}: {A} {Review} of the
@@ -307,6 +295,12 @@ Jason~M. Fletcher, Tatiana Andreyeva, and Susan~H. Busch.
 \newblock \doi{10.1080/10796120903310541}.
 \newblock URL
   \url{http://www.tandfonline.com/doi/abs/10.1080/10796120903310541}.
+
+\bibitem[for~the Homeless(2009)]{noauthor_rural_2009}
+National~Coalition for~the Homeless.
+\newblock Rural {Homelessness}.
+\newblock Technical report, National Coalition for the Homeless, 2009.
+\newblock URL \url{https://homelesshub.ca/sites/default/files/xzzomc0w.pdf}.
 
 \bibitem[Gkartzios and Ziebarth(2017)]{gkartzios_housing_2017}
 MEnelaos Gkartzios and Ann Ziebarth.
@@ -408,6 +402,13 @@ Huiyun Kim, Sarah~A. Burgard, and Kristin~S. Seefeldt.
 \newblock ISSN 0037-7961, 1537-5404.
 \newblock \doi{10.1086/690681}.
 \newblock URL \url{https://www.journals.uchicago.edu/doi/10.1086/690681}.
+
+\bibitem[Kochhar and Fry(2014)]{kochhar_wealth_2014}
+Rakesh Kochhar and Richard Fry.
+\newblock Wealth inequality has widened along racial, ethnic lines since end of
+  {Great} {Recession}, 2014.
+\newblock URL
+  \url{https://www.pewresearch.org/short-reads/2014/12/12/racial-wealth-gaps-great-recession/}.
 
 \bibitem[Krivo and Kaufman(2004)]{krivo_housing_2004}
 Lauren~J. Krivo and Robert~L. Kaufman.
@@ -512,10 +513,31 @@ Daniel~T. Lichter, David~L. Brown, and Domenico Parisi.
 \newblock \doi{10.1002/psp.2415}.
 \newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1002/psp.2415}.
 
+\bibitem[Lobao and Saenz(2002)]{lobao_spatial_2002}
+Linda Lobao and Rogelio Saenz.
+\newblock Spatial {Inequality} and {Diversity} as an {Emerging} {Research}
+  {Area}*.
+\newblock \emph{Rural Sociology}, 67\penalty0 (4):\penalty0 497--511, December
+  2002.
+\newblock ISSN 0036-0112, 1549-0831.
+\newblock \doi{10.1111/j.1549-0831.2002.tb00116.x}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1111/j.1549-0831.2002.tb00116.x}.
+
 \bibitem[Low(2017)]{low_rural_2017}
 Sarah~A Low.
 \newblock Rural {Manufacturing} at a {Glance}, 2017 {Edition}.
 \newblock \emph{Plastics and rubber}, 2017.
+
+\bibitem[Lowe(2018)]{lowe_perceived_2018}
+Travis~Scott Lowe.
+\newblock Perceived {Job} and {Labor} {Market} {Insecurity} in the {United}
+  {States}: {An} {Assessment} of {Workers}’ {Attitudes} {From} 2002 to 2014.
+\newblock \emph{Work and Occupations}, 45\penalty0 (3):\penalty0 313--345,
+  August 2018.
+\newblock ISSN 0730-8884, 1552-8464.
+\newblock \doi{10.1177/0730888418758381}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0730888418758381}.
 
 \bibitem[Lutfiyya et~al.(2012)Lutfiyya, McCullough, Haller, Waring, Bianco, and
   Lipsky]{lutfiyya_rurality_2012}
@@ -560,6 +582,14 @@ Molly~W Metzger and Amy~T Khare.
 \newblock Fair {Housing} and {Inclusive} {Communities}.
 \newblock \emph{American Academy of Social Work and Social Welfare}, 2017.
 
+\bibitem[Miller and Weber(2003)]{miller_persistent_2003}
+Kathleen~K. Miller and Bruce~A. Weber.
+\newblock {PERSISTENT} {POVERTY} {ACROSS} {THE} {RURAL}-{URBAN} {CONTINUUM}.
+\newblock 2003.
+\newblock \doi{10.22004/AG.ECON.18910}.
+\newblock URL \url{https://ageconsearch.umn.edu/record/18910}.
+\newblock Publisher: Unknown.
+
 \bibitem[Molloy et~al.(2011)Molloy, Smith, and Wozniak]{molloy_internal_2011}
 Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
 \newblock Internal {Migration} in the {United} {States}.
@@ -569,11 +599,9 @@ Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
 \newblock \doi{10.1257/jep.25.3.173}.
 \newblock URL \url{https://pubs.aeaweb.org/doi/10.1257/jep.25.3.173}.
 
-\bibitem[{National Coalition for the Homeless}(2009)]{noauthor_rural_2009}
-{National Coalition for the Homeless}.
-\newblock Rural {Homelessness}.
-\newblock Technical report, National Coalition for the Homeless, 2009.
-\newblock URL \url{https://homelesshub.ca/sites/default/files/xzzomc0w.pdf}.
+\bibitem[of~Agriculture(2023)]{noauthor_usda_2023}
+U.S.~Department of~Agriculture.
+\newblock {USDA} {Rural} {Development} {Summary} of {Programs}, 2023.
 
 \bibitem[O’Regan et~al.(2021)O’Regan, Ellen, and House]{oregan_how_2021}
 Katherine~M. O’Regan, Ingrid~Gould Ellen, and Sophie House.
@@ -599,7 +627,7 @@ Juan Palacios, Piet Eichholtz, Nils Kok, and Erdal Aydin.
 Mark~D. Partridge and Dan~S. Rickman.
 \newblock Persistent {Pockets} of {Extreme} {American} {Poverty} and {Job}
   {Growth}: {Is} {There} a {Place}-{Based} {Policy} {Role}?
-\newblock 2007.
+\newblock \emph{Journal of Agricultural and Resource Economics}, 2007.
 \newblock \doi{10.22004/AG.ECON.8599}.
 \newblock URL \url{https://ageconsearch.umn.edu/record/8599}.
 \newblock Publisher: Unknown.
@@ -645,6 +673,17 @@ Marjorie Robertson, Natalie Harris, Nancy Fritz, Rebecca Noftsinger, and Pamela
 \newblock URL \url{http://rgdoi.net/10.13140/RG.2.1.3433.7683}.
 \newblock Publisher: Unpublished.
 
+\bibitem[Sharp and Hall(2014)]{sharp_emerging_2014}
+Gregory Sharp and Matthew Hall.
+\newblock Emerging {Forms} of {Racial} {Inequality} in {Homeownership} {Exit},
+  1968–2009.
+\newblock \emph{Social Problems}, 61\penalty0 (3):\penalty0 427--447, August
+  2014.
+\newblock ISSN 00377791, 15338533.
+\newblock \doi{10.1525/sp.2014.12161}.
+\newblock URL
+  \url{https://academic.oup.com/socpro/article-lookup/doi/10.1525/sp.2014.12161}.
+
 \bibitem[Sherrieb et~al.(2010)Sherrieb, Norris, and
   Galea]{sherrieb_measuring_2010}
 Kathleen Sherrieb, Fran~H. Norris, and Sandro Galea.
@@ -682,6 +721,17 @@ P.~Johnelle Sparks, Corey~S. Sparks, and Joseph J.~A. Campbell.
 \newblock ISSN 2364-2289, 2164-7070.
 \newblock \doi{10.1007/BF03354896}.
 \newblock URL \url{https://link.springer.com/10.1007/BF03354896}.
+
+\bibitem[Spielman et~al.(2014)Spielman, Folch, and
+  Nagle]{spielman_patterns_2014}
+Seth~E. Spielman, David Folch, and Nicholas Nagle.
+\newblock Patterns and causes of uncertainty in the {American} {Community}
+  {Survey}.
+\newblock \emph{Applied Geography}, 46:\penalty0 147--157, January 2014.
+\newblock ISSN 01436228.
+\newblock \doi{10.1016/j.apgeog.2013.11.002}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0143622813002518}.
 
 \bibitem[Stockhammer(2008)]{stockhammer_stylized_2008}
 Engelbert Stockhammer.
