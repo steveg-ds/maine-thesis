@@ -1,4 +1,4 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{95}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -232,6 +232,17 @@ Matthew Desmond and Kristin~L. Perkins.
 \newblock ISSN 1078-0874, 1552-8332.
 \newblock \doi{10.1177/1078087415589192}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/1078087415589192}.
+
+\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_shell_2015}
+Matthew Desmond and Tracey Shollenberger.
+\newblock Forced {Displacement} {From} {Rental} {Housing}: {Prevalence} and
+  {Neighborhood} {Consequences}.
+\newblock \emph{Demography}, 52\penalty0 (5):\penalty0 1751--1772, October
+  2015.
+\newblock ISSN 0070-3370, 1533-7790.
+\newblock \doi{10.1007/s13524-015-0419-9}.
+\newblock URL
+  \url{https://read.dukeupress.edu/demography/article/52/5/1751/169475/Forced-Displacement-From-Rental-Housing-Prevalence}.
 
 \bibitem[Desmond and Wilmers(2019)]{desmond_poor_2019}
 Matthew Desmond and Nathan Wilmers.
