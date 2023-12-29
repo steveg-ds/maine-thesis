@@ -1,4 +1,4 @@
-\begin{thebibliography}{95}
+\begin{thebibliography}{100}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -233,7 +233,7 @@ Matthew Desmond and Kristin~L. Perkins.
 \newblock \doi{10.1177/1078087415589192}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/1078087415589192}.
 
-\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_shell_2015}
+\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_sholl_2015}
 Matthew Desmond and Tracey Shollenberger.
 \newblock Forced {Displacement} {From} {Rental} {Housing}: {Prevalence} and
   {Neighborhood} {Consequences}.
@@ -277,6 +277,12 @@ D~D’Alessandro and L~Appolloni.
 \newblock Housing and health: an overview.
 \newblock \emph{Ann Ig}, 32\penalty0 (5):\penalty0 17--26, 2020.
 
+\bibitem[{Economic Policy Institute}(2022)]{productivity-pay-gap_2022}
+{Economic Policy Institute}.
+\newblock The {Productivity}-{Pay} {Gap}.
+\newblock Technical report, Economic Policy Institute, 2022.
+\newblock URL \url{https://www.epi.org/productivity-pay-gap/}.
+
 \bibitem[Evans et~al.(2019)Evans, Philips, and Ruffini]{evans_reducing_2019}
 William Evans, David Philips, and Krista Ruffini.
 \newblock Reducing and {Preventing} {Homelessness}: {A} {Review} of the
@@ -307,12 +313,6 @@ Jason~M. Fletcher, Tatiana Andreyeva, and Susan~H. Busch.
 \newblock URL
   \url{http://www.tandfonline.com/doi/abs/10.1080/10796120903310541}.
 
-\bibitem[for~the Homeless(2009)]{noauthor_rural_2009}
-National~Coalition for~the Homeless.
-\newblock Rural {Homelessness}.
-\newblock Technical report, National Coalition for the Homeless, 2009.
-\newblock URL \url{https://homelesshub.ca/sites/default/files/xzzomc0w.pdf}.
-
 \bibitem[Gkartzios and Ziebarth(2017)]{gkartzios_housing_2017}
 MEnelaos Gkartzios and Ann Ziebarth.
 \newblock Housing: {A} {Lens} to rural {Inequalities}.
@@ -325,6 +325,17 @@ Kristin Gleason, Matthew Dube, and Jennifer Martin.
   {Areas}.
 \newblock \emph{Journal of Community Psychology}, 50\penalty0 (4):\penalty0
   1993--2012, 2021.
+
+\bibitem[Harrison et~al.(2019)Harrison, Montgomery, and
+  Jeanty]{harrison_spatial_2019}
+Jane~L. Harrison, Claire~A. Montgomery, and P.~Wilner Jeanty.
+\newblock A spatial, simultaneous model of social capital and poverty.
+\newblock \emph{Journal of Behavioral and Experimental Economics}, 78:\penalty0
+  183--192, February 2019.
+\newblock ISSN 22148043.
+\newblock \doi{10.1016/j.socec.2018.09.001}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S2214804318304166}.
 
 \bibitem[Herbert et~al.(2018)Herbert, Hermann, and
   McCue]{herbert_measuring_2018}
@@ -381,6 +392,13 @@ David~E. Jacobs.
 \newblock \doi{10.2105/AJPH.2010.300058}.
 \newblock URL
   \url{https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2010.300058}.
+
+\bibitem[Johnson(2012)]{johnson_rural_2012}
+Kenneth Johnson.
+\newblock Rural demographic change in the new century: slower growth, increased
+  diversity.
+\newblock Technical report, Carsey Institute, 2012.
+\newblock URL \url{https://scholars.unh.edu/carsey/159}.
 
 \bibitem[Kang(2019)]{kang_why_2019}
 Seungbeom Kang.
@@ -596,10 +614,8 @@ Molly~W Metzger and Amy~T Khare.
 \bibitem[Miller and Weber(2003)]{miller_persistent_2003}
 Kathleen~K. Miller and Bruce~A. Weber.
 \newblock {PERSISTENT} {POVERTY} {ACROSS} {THE} {RURAL}-{URBAN} {CONTINUUM}.
-\newblock 2003.
-\newblock \doi{10.22004/AG.ECON.18910}.
+\newblock Technical report, Rural Poverty Research Center, 2003.
 \newblock URL \url{https://ageconsearch.umn.edu/record/18910}.
-\newblock Publisher: Unknown.
 
 \bibitem[Molloy et~al.(2011)Molloy, Smith, and Wozniak]{molloy_internal_2011}
 Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
@@ -610,9 +626,11 @@ Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
 \newblock \doi{10.1257/jep.25.3.173}.
 \newblock URL \url{https://pubs.aeaweb.org/doi/10.1257/jep.25.3.173}.
 
-\bibitem[of~Agriculture(2023)]{noauthor_usda_2023}
-U.S.~Department of~Agriculture.
-\newblock {USDA} {Rural} {Development} {Summary} of {Programs}, 2023.
+\bibitem[{National Coalition for the Homeless}(2009)]{noauthor_rural_2009}
+{National Coalition for the Homeless}.
+\newblock Rural {Homelessness}.
+\newblock Technical report, National Coalition for the Homeless, 2009.
+\newblock URL \url{https://homelesshub.ca/sites/default/files/xzzomc0w.pdf}.
 
 \bibitem[O’Regan et~al.(2021)O’Regan, Ellen, and House]{oregan_how_2021}
 Katherine~M. O’Regan, Ingrid~Gould Ellen, and Sophie House.
@@ -638,7 +656,8 @@ Juan Palacios, Piet Eichholtz, Nils Kok, and Erdal Aydin.
 Mark~D. Partridge and Dan~S. Rickman.
 \newblock Persistent {Pockets} of {Extreme} {American} {Poverty} and {Job}
   {Growth}: {Is} {There} a {Place}-{Based} {Policy} {Role}?
-\newblock \emph{Journal of Agricultural and Resource Economics}, 2007.
+\newblock \emph{Journal of Agricultural and Resource Economics`}, 32\penalty0
+  (1), 2007.
 \newblock \doi{10.22004/AG.ECON.8599}.
 \newblock URL \url{https://ageconsearch.umn.edu/record/8599}.
 \newblock Publisher: Unknown.
@@ -648,6 +667,25 @@ Mark~D. Partridge and Dan~S. Rickman.
 Rolf Pendall, Laurie Goodman, Jun Zhu, and Amanda Gold.
 \newblock The {Future} of {Rural} {Housing}.
 \newblock Research {Report}, The Urban Institute, Washington D.C., 2016.
+
+\bibitem[Peters(2009)]{peters_typology_2009}
+David~J. Peters.
+\newblock Typology of {American} {Poverty}.
+\newblock \emph{International Regional Science Review}, 32\penalty0
+  (1):\penalty0 19--39, January 2009.
+\newblock ISSN 0160-0176, 1552-6925.
+\newblock \doi{10.1177/0160017608325795}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0160017608325795}.
+
+\bibitem[Phelan et~al.(2010)Phelan, Link, and Tehranifar]{phelan_social_2010}
+Jo~C. Phelan, Bruce~G. Link, and Parisa Tehranifar.
+\newblock Social {Conditions} as {Fundamental} {Causes} of {Health}
+  {Inequalities}: {Theory}, {Evidence}, and {Policy} {Implications}.
+\newblock \emph{Journal of Health and Social Behavior}, 51\penalty0
+  (1\_suppl):\penalty0 S28--S40, March 2010.
+\newblock ISSN 0022-1465, 2150-6000.
+\newblock \doi{10.1177/0022146510383498}.
+\newblock URL \url{http://journals.sagepub.com/doi/10.1177/0022146510383498}.
 
 \bibitem[Phinney(2013)]{phinney_exploring_2013}
 Robin Phinney.
@@ -679,10 +717,10 @@ Virginia~A. Rauh, Philip~J. Landrigan, and Luz Claudio.
 Marjorie Robertson, Natalie Harris, Nancy Fritz, Rebecca Noftsinger, and Pamela
   Fischer.
 \newblock Rural {Homelessness}.
-\newblock 2007.
+\newblock In \emph{Proceedings of the 2007 National Symposium on Homelessness
+  Research}, 2007.
 \newblock \doi{10.13140/RG.2.1.3433.7683}.
 \newblock URL \url{http://rgdoi.net/10.13140/RG.2.1.3433.7683}.
-\newblock Publisher: Unpublished.
 
 \bibitem[Sharp and Hall(2014)]{sharp_emerging_2014}
 Gregory Sharp and Matthew Hall.
@@ -782,6 +820,10 @@ Brian Thiede, Hyojung Kim, and Matthew Valasik.
   January 1963.
 \newblock URL \url{https://fred.stlouisfed.org/series/MSPUS}.
 \newblock Publisher: FRED, Federal Reserve Bank of St. Louis.
+
+\bibitem[{U.S. Department of Agriculture}(2023)]{noauthor_usda_2023}
+{U.S. Department of Agriculture}.
+\newblock {USDA} {Rural} {Development} {Summary} of {Programs}, 2023.
 
 \bibitem[Wakin(2005)]{wakin_not_2005}
 Michele Wakin.
