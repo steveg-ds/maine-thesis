@@ -13,9 +13,11 @@
 \usepackage{dcolumn}
 \usepackage{ulem}
 \usepackage{tabularx}
-
-
-
+\usepackage{placeins}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{booktabs}
 % Adjust the space between figure number and title in the list of figures
 \cftsetindents{figure}{3em}{1em} % Adjust the second value to set the desired space
 
@@ -44,13 +46,10 @@
 
 \newcommand{\mlr}{multinomial logistic regression }
 
-\newcommand{\lrl}{low risk level }
-\newcommand{\mrl}{medium risk level }
-\newcommand{\hrl}{high risk level }
-
-\newcommand{\lrls}{low risk levels }
-\newcommand{\mrls}{medium risk levels }
-\newcommand{\hrls}{high risk levels }
+\newcommand{\hhr}{high-risk-to-high-risk}
+\newcommand{\llr}{low-risk-to-low-risk}
+\newcommand{\lhr}{low-risk-to-high-risk}
+\newcommand{\hlr}{high-risk-to-low-risk}
 
 
 \setlength{\cftfignumwidth}{3em}
@@ -61,11 +60,11 @@
 \title{Rurality and Robustness: Rural Communities and Housing Insecurity Risk }					% Title of thesis
 \author{Steve Garcia}					% Author's name: First Middle Last
 \degreesheld{A.A.S., B.A.}			% Previously earned degree(s), institution(s) and year(s).  
-\degree{Data Science and Engineering}  				% Degree to be granted
-\program{Spatial Information Science and Engineering}				% Degree granting department or program
+\degree{Master of Science}  				% Degree to be granted
+\program{Data Science and Engineering}				% Degree granting department or program
 \submitdate{May, 2024}				% Month and year of graduation (do not separate with a comma)
 
-\principaladvisor[Dr. Matt Dube]{Matt Dube, Assistant Professor of Computer Information Systems} 			% Advisor's [short title and name]{name, long title}
+\principaladvisor[Dr. Matthew P. Dube]{Matthew P. Dube, Associate Professor of Computer Information Systems} 			% Advisor's [short title and name]{name, long title}
 % If you have more than one advisor then you'll should delete the first argument ("[...]") above and uncomment the following commands
 %\secondadvisor{...}
 %\principalshort{...} 			% Shortened advisor name for abstract.  See guidelines for example.
@@ -108,7 +107,8 @@
 
 \appendix					% Include this before any appendices.
 \include{AppA}				% First appendix.
-%\include{AppB}				% Second appendix, etc.
+\include{AppB}				% Second appendix, etc.
+\include{AppC}
 
 \include{Biography}
 

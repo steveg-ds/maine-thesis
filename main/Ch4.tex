@@ -1,19 +1,21 @@
 \chapter{Results}	
 
-This analysis focused on a sample of 6,364 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were intentionally excluded from the analysis: Alaska and Hawaii were omitted due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from our spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis.  Figure~\ref{fig:neighbors_bar} 
+This analysis focused on a sample of 6,362 rural census tracts with a RUCA code of seven or higher. Four states and Washington D.C. were excluded from the analysis. Alaska and Hawaii were omitted due to the presence of unique factors, particularly in their rural areas, which may not have been adequately addressed in the existing literature.  New Jersey and Rhode Island were excluded from the spatial analysis due to a lack of adequate data. These states are both very urban and once discrepancies in the data were removed, there were not enough observations to include in the analysis. Washington D.C. was removed because it is completely urban. Figure~\ref{fig:neighbors_bar} 
 shows how the neighbor algorithm changed the state census tract counts. This allows the risk-level assignment to reflect the inter-state nature of communities. 
+
 
 \begin{figure}[htbp]
    \centering
-    \includegraphics[width=1\textwidth, height=12cm]{plots/neighbors.png}
+    \includegraphics[width=1\textwidth, height=10cm]{plots/neighbors.png}
     \caption{State Census Tracts vs. State Neighbors Count}
     \label{fig:neighbors_bar}
 \end{figure}
 
+\pagebreak
 
-\section{RUCA Distribution}
+\section{\textit{RUCA Distribution}}
 
-Figure~\ref{fig:ruca_frequency} shows the distribution of RUCA codes in the dataset. Small towns with a primary flow within an urban cluster with a population of 2,500 to 9,999 (33 percent) and rural areas with a primary flow to a tract outside an urban area or urban cluster (48 percent) make up the majority of the dataset. The rest are split between small towns with high levels of commuting to a small urban cluster (13 percent) and small towns with low commuting to a small urban cluster  (5 percent). In total, 22.4 million people were considered in the analysis. 
+Figure~\ref{fig:ruca_frequency} shows the distribution of RUCA codes in the dataset. Small towns with a primary flow within an urban cluster with a population of 2,500 to 9,999 (33 percent) and rural areas with a primary flow to a tract outside an urban area or urban cluster (48 percent) make up the majority of the dataset. The rest are split between small towns with high levels of commuting to a small urban cluster (13 percent) and small towns with low commuting to a small urban cluster  (five percent). An area accounting for 22.4 million people was considered in the analysis. 
 
 \begin{figure}[htbp]
     \centering
@@ -23,78 +25,83 @@ Figure~\ref{fig:ruca_frequency} shows the distribution of RUCA codes in the data
  \end{figure}
  
 
-
 \section{\textit{Cluster Analysis}}
-Here, the results of the cluster analysis are presented for each sector. All values are represented as a percentage corresponding to the base unit each sector is scaled to. Figure~\ref{fig:ruca_frequency} shows the distribution of risk levels for each sector. For all sectors except housing cost and demographic diversity, there is a higher number of low-risk rather than high-risk or medium-risk level census tracts. Demographics is the only sector with notably more medium-level than low-level census tracts. 
+
+Here, the results of the cluster analysis are presented for each sector. All values are represented as a percentage corresponding to the base unit each sector is scaled to. Figure~\ref{fig:cluster_dis} shows the distribution of risk levels for each sector. For all sectors except housing cost and demographic diversity, there is a higher number of low-risk rather than medium-risk or high-risk level census tracts. Demographics is the only sector with notably more medium-risk than low-risk census tracts. 
 
 \begin{figure}[htbp]
     \centering
-     \includegraphics[width=1\textwidth, height=12cm]{plots/cluster_distribution.png}
+     \includegraphics[width=1\textwidth, height=10cm]{plots/cluster_distribution.png}
      \caption{Cluster Distribution by Sector}
      \label{fig:cluster_dis}
  \end{figure}
 
 
  
-\subsection{\textit{Employment Diversity}}
-%The risk levels for employment diversity are determined based on which clusters have the highest number of maximum cluster values compared to the cluster with the lowest number of minimum cluster values. The higher the cluster medians across variables, the better the economic diversity of a cluster. 
+\subsection{\textit{employment}}
 
-Table~\ref{tab:emp} shows that Cluster 1 had the lowest cluster medians in 61 percent of variables, Cluster 2 had the highest cluster median in 53 percent of variables, and Cluster 3 had the middle value in 69 %nice 
-percent of cases. Cluster one has the lowest level of economic diversity, Cluster two has the highest level of economic diversity, and Cluster three has a medium level of economic diversity. Employment in education, health, and social work has the highest presence across each cluster followed by manufacturing. Cluster one becomes the high-risk level, cluster two becomes the low-risk level, and cluster three becomes the medium-risk level.
+Table~\ref{tab:emp} shows that cluster one had the lowest cluster medians in 61 percent of variables, cluster two had the highest cluster median for 53 percent of variables, and cluster three had the middle value for 69 %nice 
+percent of variables. Cluster one has the lowest level of economic diversity, cluster two has the highest level of economic diversity, and cluster three has a medium level of economic diversity. Employment in education, health, and social work has the highest presence across each cluster followed by manufacturing. Cluster one becomes the high-risk level, cluster two becomes the low-risk level, and cluster three becomes the medium-risk level.
 
 \input{tables/clusters/emp_clus_table.tex}
 
 
-
 \subsection{\textit{Demographics}}
-Due to the historical forces affecting minorities in both rural and urban areas, the risk levels for demographics are based on which clusters have the highest minority populations and the lowest white populations. This sector was decided based on the median and average highest, lowest, and medium value counts as clusters two and three had almost the same cluster median counts.Table~\ref{tab:dem} shows that Cluster three has the middle value for 90 percent of cluster median variables. Cluster three has the highest number of highest values across means and medians with 55 percent of variables. Cluster two is the lowest for 50 percent of variables. Cluster three also has the largest African-American and Hispanic/ Latino cluster medians. Based on this analysis, Cluster one has a medium risk of housing insecurity, Cluster two has a low risk of housing insecurity, and Cluster three has the highest risk of housing insecurity. 
-
-% one notable observation is that the cluster medians for the male/ female over 18 years old variables are roughly three times higher than the male/ female under 18 variables. This reflects the aging population of rural areas noted in the literature. ### move to discussion ###
+Due to the historical forces affecting minorities in both rural and urban areas, the risk levels for demographics are based on which clusters have the highest minority populations and the lowest white populations. The risk levels of this sector are based on the median and average highest, lowest, and medium value counts as clusters two and three had almost the same cluster median counts. Table~\ref{tab:dem} shows that cluster one has the middle value for 90 percent of variables. Cluster two has the lowest values for 50 percent of variables. Cluster three has the highest number of highest values across means and medians with 55 percent of variables.  Cluster three also has the largest African American and Hispanic/ Latino cluster medians. Cluster one has a medium risk of housing insecurity, cluster two has a low risk of housing insecurity, and cluster three has the highest risk of housing insecurity. 
 
 \input{tables/clusters/dem_clus_table.tex}
 
+\pagebreak
+
 \subsection{\textit{Housing Cost}}
 
-Table~\ref{tab:cost} shows that Cluster 1 has the highest value for mortgage high cost. Cluster two has the lowest mortgage and rent high-cost cluster medians. Cluster three has the highest no-mortgage and rent high-cost cluster medians. Cluster one becomes the medium-risk level, Cluster two becomes the low-risk level, and Cluster three becomes the high-risk level. 
+Table~\ref{tab:cost} shows that cluster one has the highest value for high-cost mortgage. Cluster two has the lowest high-cost mortgage and high-cost rent cluster medians. Cluster three has the highest high-cost no-mortgage and high-cost rent cluster medians. Cluster one becomes the medium-risk level, cluster two becomes the low-risk level, and cluster three becomes the high-risk level. 
 
 \input{tables/clusters/cost_clus_table.tex}
 
 \subsection{\textit{Housing Quality}}
-For housing quality, risk levels are determined by which clusters have the highest values, with preference given to occupied housing as housing conditions in unoccupied housing are of lesser concern than occupied housing. Table~\ref{tab:qual} shows that Cluster one has the highest values for unoccupied housing with incomplete kitchens and plumbing. Cluster three has the medium value for each variable. Cluster three has the highest values for occupied housing with incomplete kitchens and plumbing. Cluster one becomes the lowest risk level, cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
+For housing quality, risk levels are determined by which clusters have the highest values, with preference given to occupied housing as housing conditions in unoccupied housing are of less concern than occupied housing. Table~\ref{tab:qual} shows that cluster one has the highest values for unoccupied housing with incomplete kitchens and plumbing. Cluster three has the medium value for each variable. Cluster three has the highest values for occupied housing with incomplete kitchens and plumbing. Cluster one becomes the low-risk level, cluster two becomes the medium-risk level, and cluster three becomes the high-risk level. 
 
 \input{tables/clusters/qual_clus_table.tex}
 
 \subsection{\textit{Residential Mobility: Education}}
 
-For RME, the risk levels are determined by the variables for those who moved with less than a high school education and those in the same house with less than a high school education, and the clusters where more people moved overall will be the highest risk levels. Table~\ref{tab:trans_edu} shows the values for this sector. Cluster one has the medium value for 71 percent of variables including each less than high school education variable. Cluster two has the lowest values for each variable. Cluster 3 has the highest values for 71 percent of variables, including each of the less than high school education variables. Cluster one becomes the lowest risk level because it has medium levels of residential mobility but the highest level of residential stability with a high school education. Cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
+For RME, the risk levels are determined by the variables for those who moved with less than a high school education and those in the same house with less than a high school education, and the clusters where more people moved overall will be the highest risk levels. Table~\ref{tab:trans_edu} shows the values for this sector. Cluster one has the medium value for 71 percent of variables including each less than high school education variable. Cluster two has the lowest values for each variable. Cluster three has the highest values for 71 percent of variables, including each of the less-than-high school education variables. Cluster one becomes the low-risk level because it has medium levels of residential mobility but the highest level of residential stability with a high school education. Cluster two becomes the medium risk level, and cluster three becomes the high-risk level. 
 
 \input{tables/clusters/trans_edu_clus_table.tex}
 
 
 \subsection{\textit{Residential Mobility: Poverty}}
 
-The RMP sector follows the criteria of residential RME closely with the variables for those who moved that are below the poverty level as the highest priority. Table~\ref{tab:trans_pov} shows that Cluster one has the lowest values for each variable. Cluster two has the medium value for 57 percent of variables. Cluster three has the highest values for 57 percent of variables including three of the below the poverty level variables. Cluster one becomes the lowest risk level, cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
-
-% RMP: one noteable observation from the cluster medians is that cluster three has the highest value of those living in the same house below and above the poverty measure, indicating high levels of poverty for census tracts in this cluster. ### move to discussion ###
+The RMP sector follows the criteria of residential RME closely with the variables for those who moved that are below the poverty level as the highest priority. Table~\ref{tab:trans_pov} shows that cluster one has the lowest values for each variable. P1 represents below the poverty line variables and p2 represents the percentage of those at 125 percent of the poverty line. Cluster two has the medium value for 57 percent of variables. Cluster three has the highest values for 57 percent of variables including three below the poverty level variables. Cluster one becomes the lowest risk level, cluster two becomes the medium risk level, and cluster three becomes the highest risk level. 
 
 \input{tables/clusters/trans_pov_clus_table.tex}
 
-\subsection{\textit{Wage and Household Factors}}
+\subsection{\textit{Household Factors}}
 
-For household wage/ aid, the clusters with the highest number of maximum cluster medians determine the risk levels with particular attention given to households with no wage and households with three or more workers Table~\ref{tab:waid} shows the values for this sector. Cluster one has the lowest cluster medians for 89 percent of variables. Cluster two has the medium value for 55 percent of variables. Cluster three has the highest values for 55 percent of variables and the middle value for the other variables. Notable high values for cluster three include the Gini index, households with no vehicle, households with at least one worker and no vehicle, and households receiving supplemental security income.  
+For household factors the clusters with the highest number of maximum cluster medians determine the risk levels with particular attention given to households with no wage and households with three or more workers Table~\ref{tab:waid} shows the values for this sector. Cluster one has the lowest cluster medians for 89 percent of variables. Cluster two has the medium value for 55 percent of variables. Cluster three has the highest values for 55 percent of variables and the middle value for the other variables. Cluster one becomes the low-risk level, cluster two becomes the medium-risk level, and cluster three becomes the high-risk level.
+
+%Notable high values for cluster three include the Gini index, households with no vehicle, households with at least one worker and no vehicle, and households receiving supplemental security income.  
 
 \input{tables/clusters/waid_clus_table.tex}
 
+\pagebreak
+
+
 \subsection{\textit{Housing Type}}
-For the housing type sector, owner single unit is considered the safest housing while renters and owners of unconventional housing and mobile homes are considered high risk. This sector required a combination of means and medians for the analysis because, for several variables, all cluster medians are zero. Table~\ref{tab:hh_type} shows the values for this sector. Cluster three has the highest owner mobile and the medium value for renter mobile. Cluster three has the highest renter and owner unconventional cluster averages. Cluster one has the highest owner single and the lowest renter mobile home. Cluster one becomes the low-risk level, cluster two becomes the medium-risk level, and Cluster Three becomes the high-risk level.
+For the housing type sector, owner single unit is considered the safest housing while renters and owners of unconventional housing and mobile homes are considered high risk. Table~\ref{tab:hh_type} shows the values for this sector. Cluster one has the highest owner single and the lowest renter mobile home. Cluster two has the medium value for owner single and owner mobile home.Cluster three has the highest owner mobile and the medium value for renter mobile.  Cluster one becomes the low-risk level, cluster two becomes the medium-risk level, and Cluster Three becomes the high-risk level.
 
 \input{tables/clusters/hh_type_clus_table.tex}
 
 
 \section{\textit{Association Rules}}
 
-There are three areas of investigation for the association rules generated from the housing insecurity risk levels. First are high-risk-to-high-risk associations (1:1), second are low-risk-to-low-risk associations (3:3), third are inverse relationships: low-risk-to-high-risk associations (3:1) and high-risk-to-low-risk associations (1:3). Tables~\ref{tab:high_risk_ass},~\ref{tab:low_risk_ass},~\ref{tab:low_high_risk}, and~\ref{tab:high_low_risk} show the average support, average confidence, coverage, and average lift for the different association rules. Figure~\ref{fig:assoc_scatter} shows the overall trends in the association rules. Support is low with confidence below 0.2 for most of the rules.  The figure shows a notable amount of clustering around the 0.35 confidence and 0.1 support range. For each set of association rules, their average lift values indicate that the likelihood of finding the items together is only slightly more or slightly less than their likelihood of being found together by chance. The high-risk-to-high-risk associations have the lowest average support values of the four groups of rules, and low-risk-to-low-risk associations have the highest average support. All average confidence values range from 0.2 to 0.4, indicating that for the risk level on the left-hand side of the transaction, there is an average 20 to 40 percent probability of each other risk level being on the right-hand side of the transaction. Overall, the association rules indicate that there is little consistency in census tracts showing signs of housing insecurity risk at different levels. 
+There are three areas of investigation for the association rules generated from the housing insecurity risk levels. First are \hhr associations (1:1), second are low-risk-to-low-risk associations (3:3), third are inverse relationships: low-risk-to-high-risk associations (3:1) and high-risk-to-low-risk associations (1:3). Tables~\ref{tab:high_risk_ass},~\ref{tab:low_risk_ass},~\ref{tab:low_high_risk}, and~\ref{tab:high_low_risk} show the average support, average confidence, coverage, and average lift for the different association rules. Figure~\ref{fig:assoc_scatter} shows the overall trends in the association rules. Note that the observations with support of 20 percent or greater are empty on the left-hand side, meaning these points represent the presence of the risk levels in the dataset instead of associations between risk levels. Support is low with confidence below 0.2 for most of the rules.  The figure shows a notable amount of clustering around the 0.35 confidence and ten percent support range. For each set of association rules, their average lift values indicate that the likelihood of finding the items together is only slightly more or slightly less than their likelihood of being found together by chance. The \hhr~associations have the lowest average support values of the four groups of rules, and low-risk-to-low-risk associations have the highest average support values. All average confidence values range from 0.2 to 0.4, indicating that for the risk level on the left-hand side of the transaction, there is an average 20 to 40 percent probability of each other risk level being on the right-hand side of the transaction. Overall, the association rules indicate that there is little consistency in census tracts showing signs of housing insecurity risk across sectors. 
 
+\input{tables/associations/high_risk.tex}
+\input{tables/associations/low_risk.tex}
+\input{tables/associations/low_high_risk.tex}
+\input{tables/associations/high_low_risk.tex}
 
  \begin{figure}[htbp]
     \centering
@@ -103,18 +110,23 @@ There are three areas of investigation for the association rules generated from 
      \label{fig:assoc_scatter} % filter out empty left hand side rules (support > 0.2)
  \end{figure}
 
-\input{tables/associations/high_risk.tex}
+\clearpage
 
-\input{tables/associations/low_risk.tex}
 
-\input{tables/associations/low_high_risk.tex}
+Now that the trends of the association rules have been established it is time to analyze the rules themselves. Of the 528 association rules, there are 224 that are significant based on having a lift value greater than 1. This means that the occurrence of one item increases the likelihood of the occurrence of another item rather than the occurrence being attributed to chance. It should be noted that half are inverse relationships with only slightly different confidence values. This is because there is an imbalance in the number of each risk level in each sector, inversing the rules swaps the frequency of the precedent and antecedent, changing the confidence values. 
 
-\input{tables/associations/high_low_risk.tex}
+There are 23 unique and significant \hhr~associations in the dataset with support ranging from 0.06 to 0.1 and confidence between 0.21 and 0.37. The employment sector has positive \hhr~associations with household factors (0.1, 0.29), RME (0.08, 0.25), and housing type (0.09, 0.29). The demographics sector has positive \hhr~associations with RME (0.06, 0.3), RMP (0.07, 0.33), household factors (0.06, 0.3), housing costs (0.06, 0.32), and housing quality (0.06, 0.31). There are only two census tracts with a high risk across each of these sectors, one in Utah and one in Wisconsin. The housing Cost sector has positive \hhr~associations with housing type (0.1, 0.34), housing quality (0.1, 0.32), RMP (0.1, 0.32), household factors (0.09, 0.3), RME (0.08, 0.25), and demographics (0.06, 0.21). The housing quality sector has positive \hhr~associations with housing costs (0.1, 0.35), RMP (0.09, 0.31), housing type (0.09, 0.3), household factors (0.08, 0.29), RME (0.08, 0.26), and demographics (0.06, 0.22). The RMP  sector has positive \hhr~associations with housing costs (0.1, 0.33), household factors (0.09, 0.31), housing quality (0.09, 0.3), housing type (0.09, 0.3), RME (0.09, 0.29), and demographics (0.07. 0.22). The RME sector has positive \hhr~associations with RMP (0.09, 0.35), employment (0.08, 0.33), housing costs (0.08, 0.31), housing quality (0.08, 0.31), household factors (0.07, 0.29), household type (0.07, 0.29), and demographics (0.06, 0.24). Household factors have positive \hhr~associations with employment (0.1, 0.37), housing cost (0.09), RMP (0.09, 0.35), housing type (0.09, 0.35), housing quality (0.08, 0.32), RME (0.07, 0.27), and demographics (0.06, 0.23). 
+
+There are 32 unique and significant \llr~associations in the dataset with support ranging from 0.13  to 0.19 and confidence between 0.39 and 0.49. The employment sector has positive \hhr~associations with housing quality (0.14, 0.4), household factors (0.15, 0.4), housing type (0.15, 0.41), RMP (0.15, 0.41), and RME (0.17, 0.45). The demographics sector has positive \hhr~associations with housing type (0.14, 0.38) and housing costs (0.13, 0.36). The housing costs sector has positive \hhr~associations with demographics (0.13, 0.39) and housing quality (0.13, 0.39). The housing quality sector has positive \hhr~associations with RME (0.15, 0.40), employment (0.14, 0.40), household factors (0.14, 0.39), RMP (0.14, 0.39), and housing costs (0.13, 0.36). The RME sector has positive \hhr~associations with RMP (0.17, 0.43), employment (0.17, 0.41), household factors (0.16, 0.41), and housing quality (0.15, 0.37). The RMP sector has positive \hhr~associations with household factors (0.19, 0.49), RMP (0.17, 0.46), housing type (0.15, 0.40),  employment (0.15, 0.39), and housing quality (0.14, 0.37). The household factor sector has positive \hhr~associations with RMP (0.19, 0.49), housing type (0.16, 0.43), RME (0.16, 0.43), employment (0.15, 0.38), and housing quality (0.14, 0.37). The housing type sector has positive \hhr~associations with household factors (0.16, 0.45), RMP (0.15, 0.41), employment (0.15, 0.40), and demographics (0.14, 0.38).
+
+there are 13 unique and significant \lhr~associations in the dataset with support ranging from 0.7 to 0.13 and confidence between 0.2 and 0.34. The employment sector has positive \lhr~associations with demographics (0.08, 0.21). The housing costs sector has positive \lhr~associations with employment (0.13, 0.34), RMP (0.12, 0.32), and RME (0.10, 0.26). The housing cost sector has positive \lhr~associations with employment (0.12, 0.35) and housing type (0.10, 0.29). The housing quality sector has positive \lhr~associations with housing type (0.11, 0.29) and household factors (0.10, 0.26). The RME sector has positive \lhr~associations with housing type (0.12, 0.29). RMP and household factors have no \lhr~associations. The housing quality sector has positive \lhr~associations with housing quality (0.11, 0.30), and RMP (0.09, 0.25).
+
+there are 12 unique and significant \hlr~associations in the dataset with support ranging from 0.7 to 0.13 and confidence between 0.2 and 0.33. The employment sector has positive \hlr~associations with demographics (0.13, 0.38) and housing costs (0.12, 0.37). The demographics sector has positive \hlr~associations with employment (0.8, 0.38). The housing costs sector has no \hlr~associations. The housing quality sector has positive \hlr~associations with housing type (0.11, 0.38). The RMP sector has positive \hlr~associations with demographics (0.10, 0.39) and housing type (0.09, 0.37). The RMP sector has positive \hlr~associations with demographics (0.12, 0.4). The household factors sector has positive \hlr~associations with housing quality (0.1, 0.37). The housing type sector has positive \hlr~associations with RME (0.12, 0.41) and Housing Quality (0.11, 0.37).
+
 
 \section{\textit{Moran's I}}
 
-While the association rules dealt exclusively with the housing insecurity risk levels, Moran’s I spatial autocorrelation is used to examine how values group in space for the variables and risk levels. Moran’s I is calculated for every state and the entire dataset.  Table~\ref{moran_desc} shows the descriptive statistics for the significant Moran's I values
-Table~\ref{moran_sector} shows the average of statistically significant Moran's I values across sectors. Variable averages show similar trends as the sector averages. Manufacturing has the highest average Moran's I statistic at 0.43, followed by white at 0.38 and ag-for-fish-hunt-mining at 0.34. There is a weak spatial autocorrelation between the different levels of rurality at 0.29. The sector averages are low, ranging from 0.19 to 0.32. While averages are low, certain observations deserve further attention. Nationally, there are 7 variables with notable statistically significant Moran's I values. These include the white population (0.66), American Indian and Native Alaskan (0.61), the catch-all ag\_for\_fish\_hunt\_mining variable (0.61), owners of mobile homes (0.56), individuals living in the same house with less than a high school education (0.57), owners of single-unit homes (0.55) and the "other" demographic variable (0.54). Two crucial variables, renters and owners of unconventional housing show almost no spatial autocorrelation at 0.04 and 0.08 respectively. Most of the variables with average Moran's I scores less than 0.1 are in the residential mobility sectors. The nationwide global spatial autocorrelation scores for the sector variables range from low (0.17) to a medium strength spatial autocorrelation (0.35) with demographic risk levels being the most spatially clustered and housing costs being the least spatially clustered.
+While the association rules dealt exclusively with the housing insecurity risk levels, Moran’s \textit{I} spatial autocorrelation is used to examine how values group in space for the variables and risk levels. Moran’s \textit{I} is calculated for every state and the entire dataset. Table~\ref{moran_desc} shows the descriptive statistics for the significant Moran's \textit{I} values. Table~\ref{moran_sector} shows the average of statistically significant Moran's \textit{I} values across sectors. Variable averages show similar trends as the sector averages. Manufacturing has the highest average Moran's \textit{I} statistic at 0.43, followed by white at 0.38 and ag\_for\_fish\_hunt\_mining at 0.34. There is a weak spatial autocorrelation between the levels of rurality at 0.29. The sector averages are low, ranging from 0.19 to 0.32. While averages are low, certain observations deserve further attention. Nationally, there are seven variables with notable statistically significant Moran's \textit{I} values. These include the white population (0.66), American Indian and Native Alaskan (0.61), the catch-all ag\_for\_fish\_hunt\_mining variable (0.61), owners of mobile homes (0.56), individuals living in the same house with less than a high school education (0.57), owners of single-unit homes (0.55) and the "other" demographic variable (0.54). Two crucial variables, renters and owners of unconventional housing show almost no spatial autocorrelation at 0.04 and 0.08 respectively. Most of the variables with average Moran's \textit{I} scores less than 0.1 are in the residential mobility sectors. The nationwide global spatial autocorrelation scores for the sector variables range from a low (0.17) to a medium strength spatial autocorrelation (0.35) with demographic risk levels being the most spatially clustered and housing costs being the least spatially clustered.
 
 \input{tables/moran/moran_desc.tex}
 
@@ -123,21 +135,20 @@ Table~\ref{moran_sector} shows the average of statistically significant Moran's 
 
 %\input{tables/all_moran_table.tex}
 
-\subsection{Moran's I Outliers}
-% TODO: rewrite intro sentence
-Outliers based on the interquartile range (IRQ) method are calculated for the calculated Moran's I statistics to highlight areas that do not follow the overall trends in the data set. There are 134 statistically significant Moran's I values greater than 0.5 not including the nationwide calculations. These observations are spread across 38 states, with Arizona and New Mexico accounting for 16 percent of high Moran's I statistics. Figure~\ref{fig:moran_sector} shows the distribution of Moran's I for each sector. Demographics and household factors do not have any outliers based on the IRQ method. RMP has 13 outliers. The mean of all RMP observations is 0.19 while the mean for the outliers is 0.47. 69 percent of these outliers are the same house below the poverty line variable. Connecticut, Nevada, and Arizona have surprisingly high Moran’s I statistics for the RMP risk levels variable. The average for these three states is 0.45 compared to 0.21 for the same variable overall. There are 4 outliers in the residential RME sector with same\_house\_less\_than\_hs in Ohio, California, and all states. The final outlier is same\_house\_hs in Maryland. These outliers have an average of 0.61 while all sector observations have an average of 0.23. For housing type, there are two outliers: owner\_single and owner\_mobile, both in South Dakota. These outliers have an average Moran’s I of 0.63 while the sector has an average of 0.25. For housing quality there are two outliers: occupied incomplete plumbing and occupied incomplete kitchen, both in the state of New Mexico. The sector average is 0.28 while these outliers have an average of 0.66. Housing cost has six outliers: mortgage high cost in Arizona, Maryland, Minnesota, Nevada, and New Mexico. The variable average is 0.28 while these observations have an average of 0.5. For economic diversity, there are 16 outliers, 10 of these observations are for manufacturing nationally and in Virginia, Florida, Indiana, Kentucky, Mississippi, Ohio, Pennsylvania, South Dakota, and Virginia. The average Moran’s I statistic for this sector was 0.47 while these outliers have an average of 0.68. five of these outliers are for the agriculture, forestry, fishing, hunting, and mining variable in New Mexico, Oklahoma, Texas, Washington, and nationally. The average Moran’s I statistic for this variable is 0.36 while these outliers have an average of 0.61. Figure~\ref{fig:moran_region} shows the distribution of Moran's I for each state by region.
+\subsection{\textit{Moran's I Outliers}}
+Outliers based on the interquartile range (IRQ) method are calculated for the calculated Moran's \textit{I} statistics to highlight areas that do not follow the overall trends in the data set. There are 134 statistically significant Moran's \textit{I} values greater than 0.5 not including the nationwide calculations. These observations are spread across 38 states, with Arizona and New Mexico accounting for 16 percent of high Moran's \textit{I} statistics. Figure~\ref{fig:moran_sector} shows the distribution of Moran's \textit{I} for each sector. Demographics and household factors do not have any outliers based on the IRQ method. RMP has 13 outliers. The mean of all RMP observations is 0.19 while the mean for the outliers is 0.47. 69 percent of these outliers are the same house below the poverty line variable. Connecticut, Nevada, and Arizona have surprisingly high Moran’s \textit{I} statistics for the RMP risk levels variable. The average for these three states is 0.45 compared to 0.21 for the same variable overall. There are 4 outliers in the residential RME sector with same\_house\_less\_than\_hs in Ohio, California, and all states. The final outlier is same\_house\_hs in Maryland. These outliers have an average of 0.61 while all sector observations have an average of 0.23. For housing type, there are two outliers: owner\_single and owner\_mobile, both in South Dakota. These outliers have an average Moran’s \textit{I} of 0.63 while the sector has an average of 0.25. For housing quality there are two outliers: occupied incomplete plumbing and occupied incomplete kitchen, both in the state of New Mexico. The sector average is 0.28 while these outliers have an average of 0.66. Housing cost has six outliers: mortgage high cost in Arizona, Maryland, Minnesota, Nevada, and New Mexico. The variable average is 0.28 while these observations have an average of 0.5. For economic diversity, there are 16 outliers, 10 of these observations are for manufacturing nationally and in Virginia, Florida, Indiana, Kentucky, Mississippi, Ohio, Pennsylvania, South Dakota, and Virginia. The average Moran’s \textit{I} statistic for this sector was 0.47 while these outliers have an average of 0.68. five of these outliers are for the ag\_for\_fish\_hunt\_mining variable in New Mexico, Oklahoma, Texas, Washington, and nationally. The average Moran’s \textit{I} statistic for this variable is 0.36 while these outliers have an average of 0.61. Figure~\ref{fig:moran_region} shows the distribution of Moran's \textit{I} for each state by region.
 
 \begin{figure}[htbp]
     \centering
      \includegraphics[width=1\textwidth, height=12cm]{plots/moran_state.png}
-     \caption{Boxplot of Moran's I by Region}
+     \caption{Boxplot of Moran's {\itshape I} by Region}
      \label{fig:moran_region}
  \end{figure}
 
  \begin{figure}[htbp]
     \centering
      \includegraphics[width=1\textwidth, height=10cm]{plots/moran_sector}
-     \caption{Boxplot of Moran's I by Sector}
+     \caption{Boxplot of Moran's {\itshape I} by Sector}
      \label{fig:moran_sector}
  \end{figure}
 
@@ -146,45 +157,49 @@ Outliers based on the interquartile range (IRQ) method are calculated for the ca
 
 \section{\textit{Multinomial Logistic Regression}}
 
-The final method applied in this study is a multinomial logistic regression performed on each sector of data and tested on the data for each state. The probability that a predicted risk level is the actual risk level is used to measure how well the data for each state can be predicted based on a model trained on the other states alongside the confusion matrices for each sector's actual and predicted classification. National models using in-sample evaluation are used to measure how well a census tract's risk levels can be predicted.
+The final method applied in this study is a multinomial logistic regression performed on each sector of data and tested on the data for each state. The probability that a predicted risk level is the actual risk level is used to measure how well the data for each state can be predicted based on a model trained on the other states. National models using in-sample evaluation are used to measure how well a census tract's risk levels can be predicted.
 
-\subsection{Probability}
+\subsection{\textit{Probability}}
+
+The average probability for all sectors was low as demonstrated by Figure~\ref{fig:prob_box}. employment, housing quality, RMP and household factors had an average probability of 34 percent; housing type and housing cost had an average of 35 percent; RMP had an average of 36 percent; demographics had the highest average probability at 0.38. Demographics also had the highest standard deviation at 14 percent, indicating a high degree of variation in predictability. Utah had the best prediction results with an average of 41 percent, and Minnesota was the hardest to predict at 31 percent across sectors. Average probabilities for each cluster across sectors were similarly low. Across every sector except demographics, the models predicted the highest average probabilities for low-risk level census tracts. For demographics, the models had the highest average probability for the medium-risk level census tracts. Figure~\ref{fig:prob_sector} Shows the distribution of average probability for each state. With an average of 0.35, no states performed well across sectors. One last area of interest is any trends that may exist between the probabilities for each sector. Figure~\ref{fig:prob_corr} Shows that there are no significant correlations between the probabilities across sectors. The following subsections explore the performance of the state models and national models for each sector. 
+
 
 \begin{figure}[htbp]
     \centering
      \includegraphics[width=1\textwidth, height=10cm]{plots/prob_sector.png}
-     \caption{Boxplot of Moran's I by Sector}
-     \label{fig:prob_sector}
+     \caption{Boxplot of Probability by sector}
+     \label{fig:prob_box}
  \end{figure}
 
-The average probability for all sectors was low as demonstrated by Figure~\ref{fig:prob_sector}: employment diversity, housing quality, RMP and household factors had an average probability of 34 percent; housing type and housing cost had an average of 0.35; RMP had an average of 36 percent; demographics had the highest average probability at 0.38. Demographics also had the highest standard deviation at 14 percent, indicating a high degree of variation in predictability. For each sector in each state, Utah had the best prediction results with an average of 41 percent and Minnesota was the hardest to predict at 31 percent between sectors. Average probabilities for each cluster across sectors were similarly low. Across every sector except demographics, the models predicted the highest average probabilities for low-risk level census tracts. For demographics, the models had the highest average probability for the medium-risk level census tracts. Figure~\ref{fig:prob_sector} Shows the distribution of average probability for each state. With an average of 0.35, no states performed well across sectors. One last area of interest is any trends that may exist between the probabilities for each sector. Figure~\ref{fig:prob_corr} Shows that there are no significant correlations between the probabilities across sectors. The following subsections explore the performance of the state models and national models for each sector. 
-
+% i need to redo this figure to change the name of waid_prob to household_factors_prob
 \begin{figure}[htbp]
     \centering
-     \includegraphics[width=1\textwidth, height=12cm]{plots/prob_corr.png}
+     \includegraphics[width=1\textwidth, height=10cm]{plots/prob_corr.png}
      \caption{Correlation Plot of Sector Probabilities}
      \label{fig:prob_corr}
  \end{figure}
 
 \begin{figure}[htbp]
     \centering
-     \includegraphics[width=1\textwidth, height=12cm]{plots/prob_state.png}
+     \includegraphics[width=1\textwidth, height=10cm]{plots/prob_state.png}
      \caption{Bar Graph of Average Probabilities by State with Error Bars}
      \label{fig:prob_sector}
  \end{figure}
 
+ \pagebreak
 
-\subsection{Accuracy}
-The confusion matrices for each sector show that accuracy is low, with the models for most sectors over-classifying census tracts as low risk significantly harmed their accuracy. Presented here are also the accuracy results for national models tested using in-sample evaluation to measure accuracy under the best-case scenario. 
+\subsection{\textit{Accuracy}}
+The confusion matrices for each sector show that accuracy is low, with the models for most sectors over-classifying census tracts as low risk significantly harming their accuracy. Presented here are also the accuracy results for national models tested using in-sample evaluation to measure accuracy under the best-case scenario. 
 
-Table~\ref{tab:emp_confusion} shows that the models struggled to classify the medium-risk levels and high-risk levelss with the best performance on the low-risk levels for the economic diversity sector. These models were more successful at classifying census tracts with higher levels of economic diversity. The state models correctly classified 34 percent of low-risk census tracts, 11 percent of medium-risk census tracts, and 53 percent of low-risk census tracts. Overall, the state models were 34 percent accurate and the national model was 41 percent accurate. 
+Table~\ref{tab:emp_confusion} shows that the models struggled to classify the medium-risk levels and high-risk levels with the best performance on the low-risk levels for the economic diversity sector. These models were more successful at classifying census tracts with higher levels of economic diversity. The state models correctly classified 34 percent of low-risk census tracts, 11 percent of medium-risk census tracts, and 53 percent of low-risk census tracts. Overall, the state models were 34 percent accurate, and the national model was 41 percent accurate. 
 
 \input{tables/confusion/emp_confusion.tex} 
 
 
-The demographic diversity models were able to predict medium-risk levels and low-risk levels significantly better than high-risk levels for the demographic diversity sector.  Table~\ref{tab:dem_confusion} shows The models were most capable of predicting medium-risk level census tracts. The models accurately predicted three percent of high-risk level census tracts while classifying medium-risk census tracts with 72 percent accuracy and 42 percent of low-risk census tracts. The state and national models predicted 48 and 52 percent of census tracts accurately. 
+The demographic diversity models were able to predict medium-risk levels and low-risk levels significantly better than high-risk levels for the demographic diversity sector.  Table~\ref{tab:dem_confusion} shows the models were most capable of predicting medium-risk level census tracts. The models accurately predicted three percent of high-risk level census tracts while classifying medium-risk census tracts with 72 percent accuracy and 42 percent of low-risk census tracts. The state and national models predicted 48 and 52 percent of census tracts accurately. 
 
 \input{tables/confusion/dem_confusion.tex} 
+
 
 Table~\ref{tab:cost_confusion} shows that the housing cost models struggled to classify all census tracts. They also struggled to differentiate between medium-risk levels and high-risk-level census tracts. The state models accurately predicted 34 percent of high-risk level census tracts, 44 percent of medium-risk level census tracts, and 43 percent of low-risk level census tracts. The state models were 45 percent accurate and the national model was 41 percent accurate. 
 
@@ -194,50 +209,56 @@ Table~\ref{tab:qual_confusion} shows that the housing quality models significant
 
 \input{tables/confusion/qual_confusion.tex} 
 
-Table~\ref{tab:trans_edu_confusion} shows that the  RME models significantly over-classified census tracts as low-risk levels. They successfully predicted 14 percent of low-risk census tracts, 39 percent of medium-risk level census tracts, and  60 percent of low-risk census tracts. The state models had an accuracy of 46 percent and the national model had an accuracy of 42 percent.
+Table~\ref{tab:trans_edu_confusion} shows that the  RME models significantly over-classified census tracts as low-risk levels. They successfully predicted 14 percent of low-risk census tracts, 39 percent of medium-risk level census tracts, and  60 percent of low-risk census tracts. The state models had an accuracy of 46 percent, and the national model had an accuracy of 42 percent.
 
 \input{tables/confusion/trans_edu_confusion.tex} 
 
-Table~\ref{tab:trans_pov_confusion} shows that the RMP models significantly over-classified census tracts as low-risk levels. They successfully predicted 15 percent of high-risk census tracts, 14 percent of medium-risk census tracts, and 72 percent of high-risk census tracts. The state models had an accuracy of 41 percent and the national model had an accuracy of 37 percent. 
+Table~\ref{tab:trans_pov_confusion} shows that the RMP models significantly over-classified census tracts as low-risk levels. They successfully predicted 15 percent of high-risk census tracts, 14 percent of medium-risk census tracts, and 72 percent of high-risk census tracts. The state models had an accuracy of 41 percent, and the national model had an accuracy of 37 percent. 
 
 \input{tables/confusion/trans_pov_confusion.tex} 
 
-Table~\ref{tab:waid_confusion} shows that the household factor models significantly over-classified census tracts as low-risk levels. They successfully predicted 12 percent of high-risk level census tracts, 33 percent of medium-risk level census tracts, and 54 percent of low-risk level census tracts. The state models had an accuracy of 42 percent and the national model had an accuracy of 36 percent. 
+
+Table~\ref{tab:waid_confusion} shows that the household factor models significantly over-classified census tracts as low-risk levels. They successfully predicted 12 percent of high-risk level census tracts, 33 percent of medium-risk level census tracts, and 54 percent of low-risk level census tracts. The state models had an accuracy of 42 percent, and the national model had an accuracy of 36 percent. 
 
 \input{tables/confusion/waid_confusion.tex}
 
-Table~\ref{tab:hh_type_confusion} shows that the housing type models significantly over-classified census tracts as low-risk levels. they successfully predicted 6 percent of low-risk level census tracts, 33 percent of medium-risk level census tracts, and 54 percent of high-risk census tracts. The state models had an accuracy of 45 percent and the national models had an accuracy of 43 percent. 
+Table~\ref{tab:hh_type_confusion} shows that the housing type models significantly over-classified census tracts as low-risk levels. They successfully predicted 54 percent of low-risk level census tracts, 33 percent of medium-risk level census tracts, and 11 percent of high-risk census tracts. The state models had an accuracy of 45 percent, and the national models had an accuracy of 43 percent. 
 
 \input{tables/confusion/hh_type_confusion.tex}
 
 \section{\textit{Rurality and Risk Levels}}
 
-The following table shows the local spatial autocorrelation for each cluster across each sector. There are notable local Moran's I statistics for low and high-risk level census tracts. The medium-risk level census tracts had negligible local Moran's I statistics. The results indicate that the extremes of the scale tend to cluster around each other: high-risk census tracts are close to high-risk census tracts and low-risk census tracts are close to low-risk census tracts while there is a level of spatial randomness in the grouping of medium-risk level census tracts. 
+The following table shows the local spatial autocorrelation for each cluster across each sector. There are notable local Moran's \textit{I} statistics for low and high-risk level census tracts. The medium-risk level census tracts had negligible local Moran's \textit{I} statistics. The results indicate that the extremes of the scale have a noticeable tendency to cluster around each other: high-risk census tracts are close to high-risk census tracts and low-risk census tracts are close to low-risk census tracts while there is a level of spatial randomness in the grouping of medium-risk level census tracts. 
 
 \input{tables/moran/local_cluster_avg.tex}
 
-To better understand housing insecurity risk in rural areas, it is important to look at the risk levels as they relate to the scale of rurality. Table~\ref{tab:ruca_risk} shows the percentage of each RUCA code that has a high-risk level for each sector. While RUCA code 10 makes up 50 percent of all census tracts, 43 to 50 percent of all high-risk level census tracts have this RUCA code. RUCA code 7 is next with a range between 32 and 39 percent of high-risk level census tracts while making up only 33 percent of the dataset. At the opposite end of the spectrum, RUCA code 9 makes up 5 percent of the dataset and only 5 percent of high-risk census tracts. Figure~\ref{fig:regional_map} shows the risk level of each census tract across each sector. Each census tract is assigned a color red (high-risk), yellow (medium-risk), and green (low-risk) for each sector. These colors are then saturated based on the probability for each sector. The colors are then blended so that the map reflects how well the state fits into its national train-split model and the overall risk level of the census tract. Many census tracts fall somewhere between green and yellow, with pockets of light shades of red visible. 
+To better understand housing insecurity risk in rural areas, it is important to look at the risk levels as they relate to the scale of rurality. Table~\ref{tab:ruca_risk} shows the percentage of each RUCA code that has a high-risk level for each sector.  Figure~\ref{fig:regional_map} shows the risk level of each census tract across each sector. Each census tract is assigned a color red (high-risk), yellow (medium-risk), and green (low-risk) for each sector. These colors are then saturated based on the probability for each sector. The colors are then blended so that the map reflects how well the state fits into its national train-split model and the overall risk level of the census tract. Many census tracts fall somewhere between green and yellow, with pockets of light shades of red visible. 
+
+
 
 \input{tables/ruca_cluster.tex}
 
+
 \begin{figure}[htbp]
     \centering
-     \includegraphics[width=\textwidth, height=12cm]{plots/regional_map.png}
+     \includegraphics[width=\textwidth, height=16cm]{plots/regional_map.png}
      \caption{Risk Level Across Sectors}
      \label{fig:regional_map}
  \end{figure}
 
 
- 
- The census tract risk threshold results in 115 census tracts labeled as high risk and 661 labeled as medium risk based on the sum of their risk level variables. Figure~\ref{fig:regional_risk_map} highlights the high-risk areas in red, and the medium-risk levels in yellow. The majority of the high-risk census tracts are in Minnesota (26), Wisconsin (26), Texas (24), Arizona (21), Missouri (18), Georgia (16), North Carolina (13), Montana (11), North Dakota (11), and Oklahoma (10). The other 104 high-risk census tracts are spread across 27 other states. % more on medium-risk census tracts
+ \FloatBarrier
+ The census tract risk threshold results in 280 census tracts (four percent) labeled as high-risk, 1,692 (27 percent) labeled as medium-risk, and 4,361 (69 percent) labeled as low-risk based on the sum of their risk level variables. Figure~\ref{fig:regional_risk_map} highlights the high-risk areas in red, and the medium-risk levels in yellow. The majority of the high-risk census tracts are in Minnesota (26), Wisconsin (26), Texas (24), Arizona (21), Missouri (18), Georgia (16), North Carolina (13), Montana (11), North Dakota (11), and Oklahoma (10). The other 104 high-risk census tracts are spread across 27 other states. There is a significant clustering of high-risk areas in Arizona. Outside of Arizona, there is little clustering of high-risk level census tracts with some clustering of medium-risk level census tracts. It should be noted that a standard t-test found no statistically significant differences in variable averages between high and low-risk census tracts \ref{tab:high_low_t_test}.
 
  \begin{figure}[htbp]
     \centering
-     \includegraphics[width=\textwidth, height=12cm]{plots/regional_risk_map.png}
-     \caption{Risk Level Across Sectors}
+     \includegraphics[width=\textwidth, height=10cm]{plots/regional_risk_map.png}
+     \caption{High and Medium Risk Census Tracts}
      \label{fig:regional_risk_map}
  \end{figure}
 
-There are several important observations to be made from the high, medium, and low-risk census tracts. First, high and medium-risk census tracts have higher African-American and Hispanic/Latino populations as well as smaller white populations.  There are more people with a high school diploma and fewer people below the poverty line in low-risk census tracts. High and medium-risk census tracts have similar levels of high-cost mortgage and high-cost renter households but different levels of high-cost households without a mortgage. There is slightly greater usage of public assistance and supplemental security index usage in high and medium-risk census tracts. It should be noted that the standard t-test found no statistically significant differences between variable averages of the high-risk and low-risk census tracts and the medium-risk and low-risk census tracts. It should be noted that the averages do not account well for the variation in rural areas, so this can only be interpreted to indicate a lack of a national difference between risk levels of census tracts. 
+
+\input{tables/high_low_t_test.tex}
+
 
 \endinput

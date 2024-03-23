@@ -1,81 +1,166 @@
-\chapter{Variable Averages by RUCA Code}	%Appendix title
+\chapter{Descriptive Statistics}	%Appendix title
+\begin{table}[!htbp] \centering 
+    \caption{Demographics Descriptive Statistics} 
+    \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+  \hline \\[-1.8ex] 
+  white & 6,362 & 0.859 & 0.189 & 0.000 & 1.000 \\ 
+  black & 6,362 & 0.067 & 0.150 & 0.000 & 1.000 \\ 
+  am\_in\_ala\_nat & 6,362 & 0.028 & 0.115 & 0.000 & 0.992 \\ 
+  asian & 6,362 & 0.006 & 0.012 & 0.000 & 0.283 \\ 
+  haw\_pac & 6,362 & 0.001 & 0.003 & 0.000 & 0.133 \\ 
+  other & 6,362 & 0.017 & 0.043 & 0.000 & 0.575 \\ 
+  hisp\_lat & 6,362 & 0.076 & 0.133 & 0.000 & 0.995 \\ 
+  male\_u18 & 6,362 & 0.110 & 0.032 & 0.000 & 0.276 \\ 
+  female\_u18 & 6,362 & 0.105 & 0.031 & 0.000 & 0.396 \\ 
+  male\_o18 & 6,362 & 0.391 & 0.055 & 0.000 & 1.000 \\ 
+  female\_o18 & 6,362 & 0.394 & 0.045 & 0.000 & 1.000 \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+  \end{table} 
 
-\begin{table}[ht]
-    \caption{Variable Average by RUCA Code}
-    \label{tab:ruca_stats}
-    \tiny
-    \centering
-    \begin{tabular}{rrrrr}
-      \hline
-     & R7 & R8 & R9 & R10 \\ 
-      \hline
-    white & 0.82 & 0.87 & 0.87 & 0.88 \\ 
-      black & 0.10 & 0.07 & 0.07 & 0.04 \\ 
-      am\_in\_ala\_nat & 0.02 & 0.03 & 0.02 & 0.04 \\ 
-      asian & 0.01 & 0.00 & 0.00 & 0.01 \\ 
-      haw\_pac & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      other & 0.02 & 0.01 & 0.01 & 0.01 \\ 
-      hisp\_lat & 0.10 & 0.05 & 0.04 & 0.07 \\ 
-      male\_u18 & 0.11 & 0.11 & 0.11 & 0.11 \\ 
-      female\_u18 & 0.11 & 0.10 & 0.10 & 0.10 \\ 
-      male\_o18 & 0.38 & 0.40 & 0.39 & 0.40 \\ 
-      female\_o18 & 0.40 & 0.39 & 0.39 & 0.39 \\ 
-      same\_house\_less\_than\_hs & 0.08 & 0.09 & 0.09 & 0.08 \\ 
-      same\_house\_hs & 0.21 & 0.25 & 0.27 & 0.23 \\ 
-      moved\_in\_county\_less\_than\_hs & 0.01 & 0.00 & 0.00 & 0.00 \\ 
-      moved\_in\_county\_hs & 0.02 & 0.01 & 0.01 & 0.01 \\ 
-      moved\_diff\_county\_less\_than\_hs & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      moved\_diff\_county\_hs & 0.01 & 0.01 & 0.01 & 0.01 \\ 
-      moved\_diff\_state\_less\_than\_hs & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      moved\_diff\_state\_hs & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      same\_house\_p1 & 0.13 & 0.13 & 0.12 & 0.12 \\ 
-      same\_house\_p2 & 0.09 & 0.09 & 0.09 & 0.09 \\ 
-      moved\_in\_county\_p1 & 0.02 & 0.01 & 0.01 & 0.01 \\ 
-      moved\_in\_county\_p2 & 0.01 & 0.01 & 0.01 & 0.01 \\ 
-      moved\_diff\_county\_p1 & 0.01 & 0.01 & 0.01 & 0.01 \\ 
-      moved\_diff\_county\_p2 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      moved\_diff\_state\_p1 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      moved\_diff\_state\_p2 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      mortgage\_high\_cost & 0.05 & 0.05 & 0.05 & 0.05 \\ 
-      no\_mortgage\_high\_cost & 0.02 & 0.03 & 0.03 & 0.03 \\ 
-      rent\_high\_cost & 0.19 & 0.14 & 0.14 & 0.15 \\ 
-      all\_incomplete\_plumb & 0.24 & 0.30 & 0.30 & 0.27 \\ 
-      all\_incomplete\_kitchen & 0.31 & 0.31 & 0.31 & 0.27 \\ 
-      occ\_incomplete\_plumb & 0.00 & 0.01 & 0.01 & 0.01 \\ 
-      occ\_incomplete\_kitchen & 0.01 & 0.01 & 0.01 & 0.01 \\ 
-      owner\_single & 0.89 & 0.81 & 0.82 & 0.86 \\ 
-      owner\_2to4 & 0.01 & 0.00 & 0.00 & 0.00 \\ 
-      owner\_5plus & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      owner\_mobile & 0.10 & 0.19 & 0.18 & 0.13 \\ 
-      owner\_unconvent & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      renter\_single & 0.54 & 0.62 & 0.61 & 0.64 \\ 
-      renter\_2to4 & 0.18 & 0.07 & 0.07 & 0.11 \\ 
-      renter\_5plus & 0.17 & 0.05 & 0.05 & 0.09 \\ 
-      renter\_mobile & 0.10 & 0.25 & 0.26 & 0.16 \\ 
-      renter\_unconvent & 0.00 & 0.00 & 0.00 & 0.00 \\ 
-      hh\_no\_wage & 0.14 & 0.14 & 0.14 & 0.15 \\ 
-      hh\_no\_other\_income & 0.37 & 0.36 & 0.35 & 0.37 \\ 
-      hh\_no\_investment\_income & 0.34 & 0.32 & 0.32 & 0.32 \\ 
-      hh\_public\_assistance & 0.07 & 0.05 & 0.05 & 0.05 \\ 
-      hh\_ssi & 0.03 & 0.03 & 0.03 & 0.02 \\ 
-      hh\_3plus\_worker & 0.02 & 0.02 & 0.02 & 0.02 \\ 
-      hh\_worker\_no\_vehicle & 0.03 & 0.01 & 0.01 & 0.02 \\ 
-      hh\_no\_vehicle & 0.04 & 0.02 & 0.02 & 0.02 \\ 
-      gini\_index & 0.44 & 0.43 & 0.43 & 0.44 \\ 
-      ag\_for\_fish\_hunt\_mining & 0.02 & 0.03 & 0.03 & 0.04 \\ 
-      construction & 0.03 & 0.03 & 0.04 & 0.04 \\ 
-      manufacturing & 0.06 & 0.06 & 0.07 & 0.05 \\ 
-      wholesale\_trade & 0.01 & 0.01 & 0.01 & 0.01 \\ 
-      retail\_trade & 0.05 & 0.05 & 0.05 & 0.05 \\ 
-      trans\_warehouse\_util & 0.02 & 0.02 & 0.03 & 0.02 \\ 
-      information & 0.01 & 0.00 & 0.00 & 0.01 \\ 
-      fin\_re\_insur & 0.02 & 0.02 & 0.02 & 0.02 \\ 
-      prof\_sci\_mgmt\_waste & 0.03 & 0.02 & 0.02 & 0.03 \\ 
-      edu\_health\_social & 0.10 & 0.10 & 0.09 & 0.09 \\ 
-      arts\_rec\_food & 0.04 & 0.03 & 0.03 & 0.04 \\ 
-      othersvcs & 0.02 & 0.02 & 0.02 & 0.02 \\ 
-      public\_admin & 0.02 & 0.02 & 0.02 & 0.02 \\ 
-       \hline
-    \end{tabular}
-    \end{table}
+
+  \begin{table}[!htbp] \centering 
+    \caption{RME Descriptive Statistics} 
+    \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+  \hline \\[-1.8ex] 
+  same\_house\_less\_than\_hs & 6,362 & 0.084 & 0.048 & 0.000 & 0.495 \\ 
+  same\_house\_hs & 6,362 & 0.231 & 0.060 & 0.000 & 0.667 \\ 
+  moved\_in\_county\_less\_than\_hs & 6,362 & 0.005 & 0.007 & 0.000 & 0.079 \\ 
+  moved\_in\_county\_hs & 6,362 & 0.012 & 0.010 & 0.000 & 0.083 \\ 
+  moved\_diff\_county\_less\_than\_hs & 6,362 & 0.004 & 0.008 & 0.000 & 0.134 \\ 
+  moved\_diff\_county\_hs & 6,362 & 0.008 & 0.011 & 0.000 & 0.169 \\ 
+  moved\_diff\_state\_less\_than\_hs & 6,362 & 0.001 & 0.003 & 0.000 & 0.090 \\ 
+  moved\_diff\_state\_hs & 6,362 & 0.003 & 0.005 & 0.000 & 0.080 \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+  \end{table} 
+
+\begin{table}[!htbp] \centering 
+\caption{RMP Descriptive Statistics} 
+\label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+same\_house\_p1 & 6,362 & 0.124 & 0.073 & 0.000 & 0.758 \\ 
+same\_house\_p2 & 6,362 & 0.090 & 0.043 & 0.000 & 0.374 \\ 
+moved\_in\_county\_p1 & 6,362 & 0.015 & 0.018 & 0.000 & 0.190 \\ 
+moved\_in\_county\_p2 & 6,362 & 0.008 & 0.012 & 0.000 & 0.154 \\ 
+moved\_diff\_county\_p1 & 6,362 & 0.007 & 0.011 & 0.000 & 0.115 \\ 
+moved\_diff\_county\_p2 & 6,362 & 0.004 & 0.007 & 0.000 & 0.073 \\ 
+moved\_diff\_state\_p1 & 6,362 & 0.004 & 0.008 & 0.000 & 0.128 \\ 
+moved\_diff\_state\_p2 & 6,362 & 0.002 & 0.006 & 0.000 & 0.169 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+
+\begin{table}[!htbp] \centering 
+    \caption{Housing Costs Descriptive Statistics} 
+    \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+  \hline \\[-1.8ex] 
+  mortgage\_high\_cost & 6,342 & 0.052 & 0.029 & 0.000 & 1.000 \\ 
+  no\_mortgage\_high\_cost & 6,342 & 0.026 & 0.017 & 0.000 & 0.611 \\ 
+  rent\_high\_cost & 6,342 & 0.162 & 0.081 & 0.000 & 1.000 \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+  \end{table} 
+  
+\begin{table}[!htbp] \centering 
+\caption{Housing Quality Descriptive Statistics} 
+\label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+all\_incomplete\_plumb & 6,347 & 0.263 & 0.317 & 0.000 & 16.500 \\ 
+all\_incomplete\_kitchen & 6,347 & 0.292 & 0.304 & 0.000 & 9.000 \\ 
+occ\_incomplete\_plumb & 6,347 & 0.008 & 0.019 & 0.000 & 0.329 \\ 
+occ\_incomplete\_kitchen & 6,347 & 0.010 & 0.018 & 0.000 & 0.300 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+  
+\begin{table}[!htbp] \centering 
+    \caption{Housing Type Descriptive Statistics} 
+    \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+  \hline \\[-1.8ex] 
+  owner\_single & 6,343 & 0.860 & 0.124 & 0.000 & 1.000 \\ 
+  owner\_2to4 & 6,343 & 0.005 & 0.018 & 0.000 & 1.000 \\ 
+  owner\_5plus & 6,343 & 0.003 & 0.018 & 0.000 & 1.000 \\ 
+  owner\_mobile & 6,343 & 0.130 & 0.122 & 0.000 & 1.000 \\ 
+  owner\_unconvent & 6,343 & 0.002 & 0.015 & 0.000 & 1.000 \\ 
+  renter\_single & 6,343 & 0.604 & 0.191 & 0.000 & 1.000 \\ 
+  renter\_2to4 & 6,343 & 0.127 & 0.122 & 0.000 & 1.000 \\ 
+  renter\_5plus & 6,343 & 0.111 & 0.123 & 0.000 & 1.000 \\ 
+  renter\_mobile & 6,343 & 0.157 & 0.163 & 0.000 & 1.000 \\ 
+  renter\_unconvent & 6,343 & 0.002 & 0.011 & 0.000 & 0.348 \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+  \end{table} 
+  
+\begin{table}[!htbp] \centering 
+\caption{Household Factors Descriptive Statistics} 
+\label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+hh\_no\_wage & 6,362 & 0.143 & 0.048 & 0.000 & 0.667 \\ 
+hh\_no\_other\_income & 6,362 & 0.366 & 0.050 & 0.121 & 1.000 \\ 
+hh\_no\_investment\_income & 6,362 & 0.328 & 0.050 & 0.058 & 1.000 \\ 
+hh\_public\_assistance & 6,362 & 0.058 & 0.035 & 0.000 & 0.333 \\ 
+hh\_ssi & 6,362 & 0.027 & 0.017 & 0.000 & 0.162 \\ 
+hh\_3plus\_worker & 6,362 & 0.019 & 0.011 & 0.000 & 0.080 \\ 
+hh\_worker\_no\_vehicle & 6,362 & 0.018 & 0.016 & 0.000 & 0.165 \\ 
+hh\_no\_vehicle & 6,362 & 0.026 & 0.021 & 0.000 & 0.257 \\ 
+gini\_index & 6,362 & 0.437 & 0.054 & 0.004 & 0.786 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+  
+
+\begin{table}[!htbp] \centering 
+    \caption{Employment Diversity Descriptive Statistics} 
+    \label{} 
+  \begin{tabular}{@{\extracolsep{5pt}}lD{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} D{.}{.}{-3} } 
+  \\[-1.8ex]\hline 
+  \hline \\[-1.8ex] 
+  Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+  \hline \\[-1.8ex] 
+  ag\_for\_fish\_hunt\_mining & 6,362 & 0.034 & 0.037 & 0.000 & 0.385 \\ 
+  construction & 6,362 & 0.033 & 0.017 & 0.000 & 0.160 \\ 
+  manufacturing & 6,362 & 0.056 & 0.041 & 0.000 & 0.280 \\ 
+  wholesale\_trade & 6,362 & 0.010 & 0.009 & 0.000 & 0.108 \\ 
+  retail\_trade & 6,362 & 0.048 & 0.019 & 0.000 & 0.283 \\ 
+  trans\_warehouse\_util & 6,362 & 0.023 & 0.013 & 0.000 & 0.139 \\ 
+  information & 6,362 & 0.005 & 0.005 & 0.000 & 0.058 \\ 
+  fin\_re\_insur & 6,362 & 0.017 & 0.012 & 0.000 & 0.126 \\ 
+  prof\_sci\_mgmt\_waste & 6,362 & 0.025 & 0.017 & 0.000 & 0.316 \\ 
+  edu\_health\_social & 6,362 & 0.097 & 0.034 & 0.000 & 0.712 \\ 
+  arts\_rec\_food & 6,362 & 0.036 & 0.029 & 0.000 & 0.601 \\ 
+  othersvcs & 6,362 & 0.020 & 0.011 & 0.000 & 0.278 \\ 
+  public\_admin & 6,362 & 0.022 & 0.016 & 0.000 & 0.579 \\ 
+  \hline \\[-1.8ex] 
+  \end{tabular} 
+  \end{table} 
+  
 \endinput

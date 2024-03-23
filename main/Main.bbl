@@ -1,14 +1,9 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{165}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Administration(2022)]{health_resources__services_administration_defining_2022}
-Health Resources \&~Services Administration.
-\newblock Defining {Rural} {Population}, 2022.
-\newblock URL \url{https://www.hrsa.gov/rural-health/about-us/what-is-rural}.
 
 \bibitem[Agans et~al.(2014)Agans, Jefferson, Bowling, Zeng, Yang, and
   Silverbush]{agans_enumerating_2014}
@@ -21,6 +16,33 @@ Robert~P. Agans, Malcolm~T. Jefferson, James~M. Bowling, Donglin Zeng, Jenny
 \newblock ISSN 2001-7367.
 \newblock \doi{10.2478/jos-2014-0014}.
 \newblock URL \url{https://www.sciendo.com/article/10.2478/jos-2014-0014}.
+
+\bibitem[Agrawal and Srikant(1994)]{agrawal_fast_1994}
+Rakesh Agrawal and Ramakrishnan Srikant.
+\newblock Fast {Algorithms} for {Mining} {Association} {Rules}.
+\newblock In \emph{Proceedings of the 20th {VLDB} {Conferance}}, Santiago,
+  Chile, 1994.
+
+\bibitem[Agrawal et~al.(1993)Agrawal, Faloutsos, and
+  Swami]{goos_efficient_1993}
+Rakesh Agrawal, Christos Faloutsos, and Arun Swami.
+\newblock Efficient similarity search in sequence databases.
+\newblock In Gerhard Goos, Juris Hartmanis, and David~B. Lomet, editors,
+  \emph{Foundations of {Data} {Organization} and {Algorithms}}, volume 730,
+  pages 69--84. Springer Berlin Heidelberg, Berlin, Heidelberg, 1993.
+\newblock ISBN 978-3-540-57301-2 978-3-540-48047-1.
+\newblock \doi{10.1007/3-540-57301-1_5}.
+\newblock URL \url{http://link.springer.com/10.1007/3-540-57301-1_5}.
+\newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem[Ahmed et~al.(2020)Ahmed, Seraj, and Islam]{ahmed_k-means_2020}
+Mohiuddin Ahmed, Raihan Seraj, and Syed Mohammed~Shamsul Islam.
+\newblock The k-means {Algorithm}: {A} {Comprehensive} {Survey} and
+  {Performance} {Evaluation}.
+\newblock \emph{Electronics}, 9\penalty0 (8):\penalty0 1295, August 2020.
+\newblock ISSN 2079-9292.
+\newblock \doi{10.3390/electronics9081295}.
+\newblock URL \url{https://www.mdpi.com/2079-9292/9/8/1295}.
 
 \bibitem[Anderson et~al.(2021)Anderson, Han, and
   Hisnanick]{anderson_effect_2021}
@@ -41,16 +63,55 @@ Stefan Angel and Benjamin Bittschi.
 \newblock \doi{10.2139/ssrn.2518364}.
 \newblock URL \url{http://www.ssrn.com/abstract=2518364}.
 
+\bibitem[Asgary(2020)]{asgary_what_2020}
+Ali Asgary.
+\newblock What {Does} {Spatial} {Autocorrelation} {Tell} {Us} about the
+  {COVID}-19 {Spread} in the {USA}?, March 2020.
+\newblock URL
+  \url{https://medium.com/@ali.asgary/what-does-spatial-autocorrelation-tell-us-about-the-covid-19-spread-in-the-usa-233b5d3818b6}.
+
 \bibitem[Bachmann and Cooper(2014)]{bachmann_ins_2014}
 Rüdiger Bachmann and Daniel Cooper.
 \newblock The ins and arounds in the {U}.{S}. housing market.
 \newblock Working {Paper}, Federal Reserve Bank of Boston, 2014.
+
+\bibitem[Ball and Hall(1965)]{ball_isodata_1965}
+Geoffrey~H Ball and David~J Hall.
+\newblock {ISODATA}, {A} {NOVEL} {METHOD} {OF} {DATA} {ANALYSIS} {AND}
+  {PATTERN} {CLASSIFICATION}.
+\newblock Technical report, Stanford Research Institute, Menlo Park,
+  California, 1965.
 
 \bibitem[Barcus(2011)]{barcus_heterogeneity_2011}
 Holly Barcus.
 \newblock Heterogeneity of rural housing markets.
 \newblock \emph{Rural Housing, Exurbanization, and Amenity-Driven Development:
   Contrasting the 'Haves' and the 'Have Nots'}, pages 51--73, January 2011.
+
+\bibitem[Bavaud(1998)]{bavaud_models_1998}
+François Bavaud.
+\newblock Models for {Spatial} {Weights}: {A} {Systematic} {Look}.
+\newblock \emph{Geographical Analysis}, 30\penalty0 (2):\penalty0 153--171,
+  April 1998.
+\newblock ISSN 0016-7363, 1538-4632.
+\newblock \doi{10.1111/j.1538-4632.1998.tb00394.x}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1998.tb00394.x}.
+
+\bibitem[Bayaga(2010)]{bayaga_multinomial_2010}
+Anass Bayaga.
+\newblock {MULTINOMIAL} {LOGISTIC} {REGRESSION}: {USAGE} {AND} {APPLICATION}
+  {IN} {RISK} {ANALYSIS}.
+\newblock \emph{Journal of Applied Quantitative Methods}, 5\penalty0
+  (2):\penalty0 288--297, 2010.
+
+\bibitem[Berg(2013)]{berg_hearth_2013}
+Steve Berg.
+\newblock The {HEARTH} {Act}.
+\newblock \emph{Cityscape}, 15\penalty0 (1):\penalty0 317--323, 2013.
+\newblock ISSN 1936-007X.
+\newblock URL \url{https://www.jstor.org/stable/41958974}.
+\newblock Publisher: US Department of Housing and Urban Development.
 
 \bibitem[Berkowitz and Palakshappa(2023)]{berkowitz_gaps_2023}
 Seth~A. Berkowitz and Deepak Palakshappa.
@@ -86,22 +147,44 @@ Evelyn Blumenberg and Gregory Pierce.
 \newblock \emph{Transportation Research Record: Journal of the Transportation
   Research Board}, No. 2320:\penalty0 28--36, 2012.
 
-\bibitem[Blumenberg et~al.(2020)Blumenberg, Brown, and
-  Schouten]{blumenberg_car-deficit_2020}
-Evelyn Blumenberg, Anne Brown, and Andrew Schouten.
-\newblock Car-deficit households: determinants and implications for household
-  travel in the {U}.{S}.
-\newblock \emph{Transportation}, 47\penalty0 (3):\penalty0 1103--1125, June
-  2020.
-\newblock ISSN 0049-4488, 1572-9435.
-\newblock \doi{10.1007/s11116-018-9956-6}.
-\newblock URL \url{http://link.springer.com/10.1007/s11116-018-9956-6}.
+\bibitem[Boots and Tiefelsdorf(2000)]{boots_global_2000}
+Barry Boots and Michael Tiefelsdorf.
+\newblock Global and local spatial autocorrelation in bounded regular
+  tessellations.
+\newblock \emph{Journal of Geographical Systems}, 2\penalty0 (4):\penalty0
+  319--348, December 2000.
+\newblock ISSN 1435-5930.
+\newblock \doi{10.1007/PL00011461}.
+\newblock URL \url{http://link.springer.com/10.1007/PL00011461}.
+
+\bibitem[Borders et~al.(2018)Borders, Ferris, Beeby, and
+  McCahill]{borders_west_2018}
+Stephen Borders, Blake Ferris, Mary~Jo Beeby, and Pattijean McCahill.
+\newblock West {Michigan} {Food} {Insecurity}: {Using} {Cluster} {Analysis} and
+  {Geographic} {Information} {Systems} to {Identify} {Needs}.
+\newblock \emph{Progress in Community Health Partnerships: Research, Education,
+  and Action}, 12\penalty0 (2):\penalty0 187--197, 2018.
+\newblock ISSN 1557-055X.
+\newblock \doi{10.1353/cpr.2018.0039}.
+\newblock URL \url{https://muse.jhu.edu/article/704596}.
 
 \bibitem[Braveman et~al.(2011)Braveman, Dekker, Egerter, Sadegh-Nobari, and
   Pollack]{braveman_housing_2011}
 Paula Braveman, Mercedes Dekker, Susan Egerter, Tabashir Sadegh-Nobari, and
   Craig Pollack.
-\newblock Housing and {Health}, 2011.
+\newblock Housing and {Health}.
+\newblock Brief~7, Robert Wood Johnson Foundation, 2011.
+
+\bibitem[Brooks(2019)]{brooks_advantages_2019}
+Matthew~M. Brooks.
+\newblock The {Advantages} of {Comparative} {LISA} {Techniques} in {Spatial}
+  {Inequality} {Research}: {Evidence} from {Poverty} {Change} in the {United}
+  {States}.
+\newblock \emph{Spatial Demography}, 7\penalty0 (2-3):\penalty0 167--193,
+  October 2019.
+\newblock ISSN 2364-2289, 2164-7070.
+\newblock \doi{10.1007/s40980-019-00052-4}.
+\newblock URL \url{http://link.springer.com/10.1007/s40980-019-00052-4}.
 
 \bibitem[Bruch et~al.(2023)Bruch, Naald, and Gornick]{bruch_poverty_2023}
 Sarah~K. Bruch, Joseph Van~Der Naald, and Janet~C. Gornick.
@@ -112,6 +195,16 @@ Sarah~K. Bruch, Joseph Van~Der Naald, and Janet~C. Gornick.
 \newblock ISSN 0037-7961, 1537-5404.
 \newblock \doi{10.1086/724556}.
 \newblock URL \url{https://www.journals.uchicago.edu/doi/10.1086/724556}.
+
+\bibitem[Bryson(2013)]{bryson_nature_2013}
+Jeremy Bryson.
+\newblock The {Nature} of {Gentrification}.
+\newblock \emph{Geography Compass}, 7\penalty0 (8):\penalty0 578--587, August
+  2013.
+\newblock ISSN 1749-8198, 1749-8198.
+\newblock \doi{10.1111/gec3.12056}.
+\newblock URL
+  \url{https://compass.onlinelibrary.wiley.com/doi/10.1111/gec3.12056}.
 
 \bibitem[Burton et~al.(2013)Burton, Lichter, Baker, and
   Eason]{burton_inequality_2013}
@@ -153,11 +246,48 @@ Emery~N. Castle, JunJie Wu, and Bruce~A. Weber.
 \newblock URL
   \url{https://onlinelibrary.wiley.com/doi/abs/10.1093/aepp/ppr009}.
 
+\bibitem[Chen et~al.(2011)Chen, Chen, Yu, and Yang]{chen_comparisons_2011}
+Jiangping Chen, Yanan Chen, Jie Yu, and Zhaohui Yang.
+\newblock Comparisons with spatial autocorrelation and spatial association rule
+  mining.
+\newblock In \emph{Proceedings 2011 {IEEE} {International} {Conference} on
+  {Spatial} {Data} {Mining} and {Geographical} {Knowledge} {Services}}, pages
+  32--37, Fuzhou, China, June 2011. IEEE.
+\newblock ISBN 978-1-4244-8352-5.
+\newblock \doi{10.1109/ICSDM.2011.5969000}.
+\newblock URL \url{http://ieeexplore.ieee.org/document/5969000/}.
+
 \bibitem[Chen(2018)]{chen_economic_2018}
 Jing Chen.
 \newblock Economic {Diversity} and {Regional} {Economic} {Performance}: {A}
   {Methodological} {Concern} from {Model} {Uncertainty}.
 \newblock Working {Paper}, West Virginia University, 2018.
+
+\bibitem[Cloke et~al.(2006)Cloke, Marsden, and Mooney]{cloke_handbook_2006}
+Paul~J. Cloke, Terry Marsden, and Patrick~H. Mooney, editors.
+\newblock \emph{Handbook of rural studies}.
+\newblock SAGE, London ; Thousand Oaks, Calif, 2006.
+\newblock ISBN 978-0-7619-7332-4.
+\newblock OCLC: ocm57639108.
+
+\bibitem[Coenen(2011)]{coenen_data_2011}
+Frans Coenen.
+\newblock Data mining: past, present and future.
+\newblock \emph{The Knowledge Engineering Review}, 26\penalty0 (1):\penalty0
+  25--29, February 2011.
+\newblock ISSN 0269-8889, 1469-8005.
+\newblock \doi{10.1017/S0269888910000378}.
+\newblock URL
+  \url{https://www.cambridge.org/core/product/identifier/S0269888910000378/type/journal_article}.
+
+\bibitem[Cohen and Greaney(2022)]{cohen_aging_2022}
+Steven~A. Cohen and Mary~L. Greaney.
+\newblock Aging in {Rural} {Communities}.
+\newblock \emph{Current Epidemiology Reports}, 10\penalty0 (1):\penalty0 1--16,
+  November 2022.
+\newblock ISSN 2196-2995.
+\newblock \doi{10.1007/s40471-022-00313-9}.
+\newblock URL \url{https://link.springer.com/10.1007/s40471-022-00313-9}.
 
 \bibitem[Cox et~al.(2019)Cox, Henwood, Rodnyansky, Rice, and
   Wenzel]{cox_road_2019}
@@ -166,6 +296,14 @@ Robynn Cox, Benjamin Henwood, Seva Rodnyansky, Eric Rice, and Suzanne Wenzel.
 \newblock \emph{Cityscape}, 21\penalty0 (2):\penalty0 93--127, 2019.
 \newblock URL
   \url{https://www.huduser.gov/portal/periodicals/cityscpe/vol21num2/ch5.pdf}.
+
+\bibitem[Cramer(2003)]{cramer_origins_2003}
+J.S. Cramer.
+\newblock The {Origins} of {Logistic} {Regression}.
+\newblock \emph{SSRN Electronic Journal}, 2003.
+\newblock ISSN 1556-5068.
+\newblock \doi{10.2139/ssrn.360300}.
+\newblock URL \url{http://www.ssrn.com/abstract=360300}.
 
 \bibitem[Crandall and Weber(2004)]{crandall_local_2004}
 Mindy~S. Crandall and Bruce~A. Weber.
@@ -182,6 +320,29 @@ Mindy~S. Crandall and Bruce~A. Weber.
 John Cromartie and Shawn Bucholtz.
 \newblock Defining the "{Rural}" in {Rural} {America}.
 \newblock \emph{Amber Waves}, 6\penalty0 (3), 2008.
+
+\bibitem[Curtis et~al.(2019)Curtis, Lee, O'Connell, and
+  Zhu]{curtis_spatial_2019}
+Katherine~J. Curtis, Junho Lee, Heather~A. O'Connell, and Jun Zhu.
+\newblock The {Spatial} {Distribution} of {Poverty} and the {Long} {Reach} of
+  the {Industrial} {Makeup} of {Places}: {New} {Evidence} on {Spatial} and
+  {Temporal} {Regimes}.
+\newblock \emph{Rural Sociology}, 84\penalty0 (1):\penalty0 28--65, March 2019.
+\newblock ISSN 0036-0112, 1549-0831.
+\newblock \doi{10.1111/ruso.12216}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1111/ruso.12216}.
+
+\bibitem[De~Jong et~al.(1984)De~Jong, Sprenger, and
+  Van~Veen]{de_jong_extreme_1984}
+P.~De~Jong, C.~Sprenger, and F.~Van~Veen.
+\newblock \textit{{On} {Extreme} {Values} of {Moran}'s} {I} \textit{and
+  {Geary}'s c}.
+\newblock \emph{Geographical Analysis}, 16\penalty0 (1):\penalty0 17--24,
+  January 1984.
+\newblock ISSN 0016-7363, 1538-4632.
+\newblock \doi{10.1111/j.1538-4632.1984.tb00797.x}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1984.tb00797.x}.
 
 \bibitem[Deller and Watson(2016)]{deller_spatial_2016}
 Steven Deller and Philip Watson.
@@ -233,7 +394,7 @@ Matthew Desmond and Kristin~L. Perkins.
 \newblock \doi{10.1177/1078087415589192}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/1078087415589192}.
 
-\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_sholl_2015}
+\bibitem[Desmond and Shollenberger(2015)]{desmond_forced_2015-1}
 Matthew Desmond and Tracey Shollenberger.
 \newblock Forced {Displacement} {From} {Rental} {Housing}: {Prevalence} and
   {Neighborhood} {Consequences}.
@@ -272,16 +433,41 @@ Rachel~Bogardus Drew.
 \newblock Technical report, Joint Center for Housing Studies, Harvard
   Univerity, 2014.
 
+\bibitem[Dunham et~al.(2000)Dunham, Xiao, Gruenwald, and
+  Hossain]{dunham_mining_2000}
+Margaret~H. Dunham, Yongqiao Xiao, Le~Gruenwald, and Zahid Hossain.
+\newblock Mining {Association} {Rule}.
+\newblock \emph{ACM Survey Journal}, 2000.
+
+\bibitem[Dutka(1990)]{dutka_robert_1990}
+Jacques Dutka.
+\newblock Robert {Adrain} and the method of least squares.
+\newblock \emph{Archive for History of Exact Sciences}, 41\penalty0
+  (2):\penalty0 171--184, 1990.
+\newblock ISSN 0003-9519, 1432-0657.
+\newblock \doi{10.1007/BF00411864}.
+\newblock URL \url{http://link.springer.com/10.1007/BF00411864}.
+
 \bibitem[D’Alessandro and Appolloni(2020)]{dalessandro_housing_2020}
 D~D’Alessandro and L~Appolloni.
 \newblock Housing and health: an overview.
 \newblock \emph{Ann Ig}, 32\penalty0 (5):\penalty0 17--26, 2020.
 
-\bibitem[{Economic Policy Institute}(2022)]{productivity-pay-gap_2022}
+\bibitem[{Economic Policy
+  Institute}(2022)]{economic_policy_institute_productivity-pay_2022}
 {Economic Policy Institute}.
 \newblock The {Productivity}-{Pay} {Gap}.
 \newblock Technical report, Economic Policy Institute, 2022.
 \newblock URL \url{https://www.epi.org/productivity-pay-gap/}.
+
+\bibitem[El-Habil(2012)]{el-habil_application_2012}
+Abdalla~M El-Habil.
+\newblock An {Application} on {Multinomial} {Logistic} {Regression} {Model}.
+\newblock \emph{Pakistan Journal of Statistics and Operation Research},
+  8\penalty0 (2):\penalty0 271, March 2012.
+\newblock ISSN 2220-5810, 1816-2711.
+\newblock \doi{10.18187/pjsor.v8i2.234}.
+\newblock URL \url{http://www.pjsor.com/index.php/pjsor/article/view/234}.
 
 \bibitem[Evans et~al.(2019)Evans, Philips, and Ruffini]{evans_reducing_2019}
 William Evans, David Philips, and Krista Ruffini.
@@ -302,6 +488,22 @@ Price~V. Fishback.
 \newblock URL
   \url{https://www.cambridge.org/core/product/identifier/S0022050720000200/type/journal_article}.
 
+\bibitem[Fisher(1935)]{fisher_design_1935}
+R.A. Fisher.
+\newblock \emph{The design of experiments}.
+\newblock Oliver \& Boyd, 1935.
+\newblock URL \url{http://tankona.free.fr/fisher1935.pdf}.
+
+\bibitem[Fisher(1958)]{fisher_grouping_1958}
+Walter~D. Fisher.
+\newblock On {Grouping} for {Maximum} {Homogeneity}.
+\newblock \emph{Journal of the American Statistical Association}, 53\penalty0
+  (284):\penalty0 789--798, December 1958.
+\newblock ISSN 0162-1459, 1537-274X.
+\newblock \doi{10.1080/01621459.1958.10501479}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/01621459.1958.10501479}.
+
 \bibitem[Fletcher et~al.(2009)Fletcher, Andreyeva, and
   Busch]{fletcher_assessing_2009}
 Jason~M. Fletcher, Tatiana Andreyeva, and Susan~H. Busch.
@@ -313,8 +515,59 @@ Jason~M. Fletcher, Tatiana Andreyeva, and Susan~H. Busch.
 \newblock URL
   \url{http://www.tandfonline.com/doi/abs/10.1080/10796120903310541}.
 
+\bibitem[Fürnkranz and Kliegr(2015)]{bassiliades_brief_2015}
+Johannes Fürnkranz and Tomáš Kliegr.
+\newblock A {Brief} {Overview} of {Rule} {Learning}.
+\newblock In Nick Bassiliades, Georg Gottlob, Fariba Sadri, Adrian Paschke, and
+  Dumitru Roman, editors, \emph{Rule {Technologies}: {Foundations}, {Tools},
+  and {Applications}}, volume 9202, pages 54--69. Springer International
+  Publishing, Cham, 2015.
+\newblock ISBN 978-3-319-21541-9 978-3-319-21542-6.
+\newblock \doi{10.1007/978-3-319-21542-6_4}.
+\newblock URL \url{http://link.springer.com/10.1007/978-3-319-21542-6_4}.
+\newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem[Gauss(2007)]{davis_theory_2007}
+Carl~Friedrich Gauss.
+\newblock \emph{Theory {Of} {The} {Motion} {Of} {The} {Heavenly} {Bodies}
+  {Moving} {About} {The} {Sun} {In} {Conic} {Sections}: {A} {Translation} {Of}
+  {Gauss}'s {Theoria} {Motus}}.
+\newblock Kessinger Publishing, 2007.
+
+\bibitem[Getis(2008)]{getis_history_2008}
+Arthur Getis.
+\newblock A {History} of the {Concept} of {Spatial} {Autocorrelation}: {A}
+  {Geographer}'s {Perspective}.
+\newblock \emph{Geographical Analysis}, 40\penalty0 (3):\penalty0 297--309,
+  July 2008.
+\newblock ISSN 0016-7363, 1538-4632.
+\newblock \doi{10.1111/j.1538-4632.2008.00727.x}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.2008.00727.x}.
+
+\bibitem[Getis(2010)]{fischer_spatial_2010}
+Arthur Getis.
+\newblock Spatial {Autocorrelation}.
+\newblock In Manfred~M. Fischer and Arthur Getis, editors, \emph{Handbook of
+  {Applied} {Spatial} {Analysis}}, pages 255--278. Springer Berlin Heidelberg,
+  Berlin, Heidelberg, 2010.
+\newblock ISBN 978-3-642-03646-0 978-3-642-03647-7.
+\newblock \doi{10.1007/978-3-642-03647-7_14}.
+\newblock URL \url{https://link.springer.com/10.1007/978-3-642-03647-7_14}.
+
+\bibitem[Getis and Aldstadt(2004)]{getis_constructing_2004}
+Arthur Getis and Jared Aldstadt.
+\newblock Constructing the {Spatial} {Weights} {Matrix} {Using} a {Local}
+  {Statistic}.
+\newblock \emph{Geographical Analysis}, 36\penalty0 (2):\penalty0 90--104, July
+  2004.
+\newblock ISSN 0016-7363, 1538-4632.
+\newblock \doi{10.1111/j.1538-4632.2004.tb01127.x}.
+\newblock URL
+  \url{https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.2004.tb01127.x}.
+
 \bibitem[Gkartzios and Ziebarth(2017)]{gkartzios_housing_2017}
-MEnelaos Gkartzios and Ann Ziebarth.
+Menelaos Gkartzios and Ann Ziebarth.
 \newblock Housing: {A} {Lens} to rural {Inequalities}.
 \newblock \emph{International Handbook of Rural Studies}, November 2017.
 
@@ -326,6 +579,37 @@ Kristin Gleason, Matthew Dube, and Jennifer Martin.
 \newblock \emph{Journal of Community Psychology}, 50\penalty0 (4):\penalty0
   1993--2012, 2021.
 
+\bibitem[Golding(2016)]{golding_gentrification_2016}
+Shaun~A. Golding.
+\newblock Gentrification and {Segregated} {Wealth} in {Rural} {America}: {Home}
+  {Value} {Sorting} in {Destination} {Counties}.
+\newblock \emph{Population Research and Policy Review}, 35\penalty0
+  (1):\penalty0 127--146, February 2016.
+\newblock ISSN 0167-5923, 1573-7829.
+\newblock \doi{10.1007/s11113-015-9374-9}.
+\newblock URL \url{http://link.springer.com/10.1007/s11113-015-9374-9}.
+
+\bibitem[Griffith(1992)]{griffith_what_1992}
+Daniel~A. Griffith.
+\newblock What is spatial autocorrelation? {Reflections} on the past 25 years
+  of spatial statistics.
+\newblock \emph{L’Espace géographique}, 21\penalty0 (3):\penalty0 265--280,
+  1992.
+\newblock ISSN 0046-2497.
+\newblock \doi{10.3406/spgeo.1992.3091}.
+\newblock URL
+  \url{https://www.persee.fr/doc/spgeo_0046-2497_1992_num_21_3_3091}.
+
+\bibitem[Grubesic(2008)]{grubesic_zip_2008}
+Tony~H. Grubesic.
+\newblock Zip codes and spatial analysis: {Problems} and prospects.
+\newblock \emph{Socio-Economic Planning Sciences}, 42\penalty0 (2):\penalty0
+  129--149, June 2008.
+\newblock ISSN 00380121.
+\newblock \doi{10.1016/j.seps.2006.09.001}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0038012106000516}.
+
 \bibitem[Harrison et~al.(2019)Harrison, Montgomery, and
   Jeanty]{harrison_spatial_2019}
 Jane~L. Harrison, Claire~A. Montgomery, and P.~Wilner Jeanty.
@@ -336,6 +620,22 @@ Jane~L. Harrison, Claire~A. Montgomery, and P.~Wilner Jeanty.
 \newblock \doi{10.1016/j.socec.2018.09.001}.
 \newblock URL
   \url{https://linkinghub.elsevier.com/retrieve/pii/S2214804318304166}.
+
+\bibitem[Harter(1974)]{harter_method_1974}
+W.~Leon Harter.
+\newblock The {Method} of {Least} {Squares} and {Some} {Alternatives}: {Part}
+  {I}.
+\newblock \emph{International Statistical Review / Revue Internationale de
+  Statistique}, 42\penalty0 (2):\penalty0 147, August 1974.
+\newblock ISSN 03067734.
+\newblock \doi{10.2307/1403077}.
+\newblock URL \url{https://www.jstor.org/stable/1403077?origin=crossref}.
+
+\bibitem[{Health Resources \& Services
+  Administration}(2022)]{health_resources__services_administration_defining_2022}
+{Health Resources \& Services Administration}.
+\newblock Defining {Rural} {Population}, 2022.
+\newblock URL \url{https://www.hrsa.gov/rural-health/about-us/what-is-rural}.
 
 \bibitem[Herbert et~al.(2018)Herbert, Hermann, and
   McCue]{herbert_measuring_2018}
@@ -353,6 +653,23 @@ Diana Hernández and Carolyn~B. Swope.
 \newblock \doi{10.2105/AJPH.2019.305210}.
 \newblock URL
   \url{https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2019.305210}.
+
+\bibitem[Herring and Lutz(2015)]{herring_roots_2015}
+Chris Herring and Manuel Lutz.
+\newblock The roots and implications of the {USA}'s homeless tent cities.
+\newblock \emph{City}, 19\penalty0 (5):\penalty0 689--701, September 2015.
+\newblock ISSN 1360-4813, 1470-3629.
+\newblock \doi{10.1080/13604813.2015.1071114}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/full/10.1080/13604813.2015.1071114}.
+
+\bibitem[{Housing Assistance
+  Council}(2012)]{housing_assistance_council_race_2012}
+{Housing Assistance Council}.
+\newblock Race \& {Ethnicity} in {Rural} {America}.
+\newblock Research {Brief}, Housing Assistance Council, Washington D.C., 2012.
+\newblock URL
+  \url{https://ruralhome.org/wp-content/uploads/storage/research_notes/rrn-race-and-ethnicity-web.pdf}.
 
 \bibitem[Hu and Wang(2019)]{hu_housing_2019}
 Lingqian Hu and Liming Wang.
@@ -383,6 +700,15 @@ Andrew~M. Isserman, Edward Feser, and Drake~E. Warren.
 \newblock \doi{10.1177/0160017609336090}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/0160017609336090}.
 
+\bibitem[Jackson(2002)]{jackson_data_2002}
+Joyce Jackson.
+\newblock Data {Mining}; {A} {Conceptual} {Overview}.
+\newblock \emph{Communications of the Association for Information Systems}, 8,
+  2002.
+\newblock ISSN 15293181.
+\newblock \doi{10.17705/1CAIS.00819}.
+\newblock URL \url{https://aisel.aisnet.org/cais/vol8/iss1/19}.
+
 \bibitem[Jacobs(2011)]{jacobs_environmental_2011}
 David~E. Jacobs.
 \newblock Environmental {Health} {Disparities} in {Housing}.
@@ -393,12 +719,28 @@ David~E. Jacobs.
 \newblock URL
   \url{https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2010.300058}.
 
+\bibitem[Jain(2010)]{jain_data_2010}
+Anil~K. Jain.
+\newblock Data clustering: 50 years beyond {K}-means.
+\newblock \emph{Pattern Recognition Letters}, 31\penalty0 (8):\penalty0
+  651--666, June 2010.
+\newblock ISSN 01678655.
+\newblock \doi{10.1016/j.patrec.2009.09.011}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0167865509002323}.
+
 \bibitem[Johnson(2012)]{johnson_rural_2012}
 Kenneth Johnson.
 \newblock Rural demographic change in the new century: slower growth, increased
   diversity.
-\newblock Technical report, Carsey Institute, 2012.
+\newblock Technical report, 2012.
 \newblock URL \url{https://scholars.unh.edu/carsey/159}.
+
+\bibitem[Johnson and Lichter(2019)]{johnson_rural_2019}
+Kenneth Johnson and Daniel Lichter.
+\newblock Rural {Depopulation} in a {Rapidly} {Urbanizing} {America}.
+\newblock Brief 139, Durham, 2019.
+\newblock URL \url{https://scholars.unh.edu/carsey/358}.
 
 \bibitem[Kang(2019)]{kang_why_2019}
 Seungbeom Kang.
@@ -421,6 +763,20 @@ Seungbeom Kang.
 \newblock URL
   \url{https://www.tandfonline.com/doi/full/10.1080/02673037.2021.1982871}.
 
+\bibitem[Kaufman and Rousseeuw(1987)]{kaufman_clustering_1987}
+Leonard Kaufman and Peter Rousseeuw.
+\newblock Clustering by means of medoids.
+\newblock In \emph{Proceedings of the statistical data analysis based on the
+  {L1} norm conference}, volume~31, Neuchatel, Switzerland, 1987.
+\newblock URL
+  \url{https://wis.kuleuven.be/stat/robust/papers/publications-1987/kaufmanrousseeuw-clusteringbymedoids-l1norm-1987.pdf}.
+
+\bibitem[Kaur et~al.(2014)Kaur, Kaur, and Singh]{kaur_k-medoid_2014}
+Noor~Kamal Kaur, Usvir Kaur, and Dr~Dheerendra Singh.
+\newblock K-{Medoid} {Clustering} {Algorithm}- {A} {Review}.
+\newblock \emph{International Journal of Computer Application and Technology},
+  1\penalty0 (1):\penalty0 42--45, 2014.
+
 \bibitem[Kim et~al.(2017)Kim, Burgard, and Seefeldt]{kim_housing_2017}
 Huiyun Kim, Sarah~A. Burgard, and Kristin~S. Seefeldt.
 \newblock Housing {Assistance} and {Housing} {Insecurity}: {A} {Study} of
@@ -432,12 +788,15 @@ Huiyun Kim, Sarah~A. Burgard, and Kristin~S. Seefeldt.
 \newblock \doi{10.1086/690681}.
 \newblock URL \url{https://www.journals.uchicago.edu/doi/10.1086/690681}.
 
-\bibitem[Kochhar and Fry(2014)]{kochhar_wealth_2014}
-Rakesh Kochhar and Richard Fry.
-\newblock Wealth inequality has widened along racial, ethnic lines since end of
-  {Great} {Recession}, 2014.
-\newblock URL
-  \url{https://www.pewresearch.org/short-reads/2014/12/12/racial-wealth-gaps-great-recession/}.
+\bibitem[Kingsland(1982)]{kingsland_refractory_1982}
+Sharon Kingsland.
+\newblock The {Refractory} {Model}: {The} {Logistic} {Curve} and the {History}
+  of {Population} {Ecology}.
+\newblock \emph{The Quarterly Review of Biology}, 57\penalty0 (1):\penalty0
+  29--52, 1982.
+\newblock ISSN 0033-5770.
+\newblock URL \url{https://www.jstor.org/stable/2825134}.
+\newblock Publisher: University of Chicago Press.
 
 \bibitem[Krivo and Kaufman(2004)]{krivo_housing_2004}
 Lauren~J. Krivo and Robert~L. Kaufman.
@@ -488,6 +847,13 @@ Barrett~A. Lee, Marybeth Shinn, and Dennis~P. Culhane.
 \newblock ISSN 0002-7162, 1552-3349.
 \newblock \doi{10.1177/0002716221997038}.
 \newblock URL \url{http://journals.sagepub.com/doi/10.1177/0002716221997038}.
+
+\bibitem[Legendre(1805)]{legendre_nouvelles_1805}
+A.M. Legendre.
+\newblock \emph{Nouvelles méthodes pour la détermination des orbites des
+  comètes}.
+\newblock F. Didot, 1805.
+\newblock URL \url{https://books.google.com/books?id=FRcOAAAAQAAJ}.
 
 \bibitem[Leifheit et~al.(2022)Leifheit, Schwartz, Pollack, and
   Linton]{leifheit_building_2022}
@@ -542,6 +908,15 @@ Daniel~T. Lichter, David~L. Brown, and Domenico Parisi.
 \newblock \doi{10.1002/psp.2415}.
 \newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1002/psp.2415}.
 
+\bibitem[Lloyd(1982)]{lloyd_least_1982}
+S.~Lloyd.
+\newblock Least squares quantization in {PCM}.
+\newblock \emph{IEEE Transactions on Information Theory}, 28\penalty0
+  (2):\penalty0 129--137, March 1982.
+\newblock ISSN 0018-9448.
+\newblock \doi{10.1109/TIT.1982.1056489}.
+\newblock URL \url{http://ieeexplore.ieee.org/document/1056489/}.
+
 \bibitem[Lobao and Saenz(2002)]{lobao_spatial_2002}
 Linda Lobao and Rogelio Saenz.
 \newblock Spatial {Inequality} and {Diversity} as an {Emerging} {Research}
@@ -581,6 +956,14 @@ May~Nawal Lutfiyya, Joel~Emery McCullough, Irina~V. Haller, Stephen~C. Waring,
 \newblock URL
   \url{https://linkinghub.elsevier.com/retrieve/pii/S0011502912001563}.
 
+\bibitem[Macqueen(1967)]{macqueen_methods_1967}
+J~Macqueen.
+\newblock {SOME} {METHODS} {FOR} {CLASSIFICATION} {AND} {ANALYSIS} {OF}
+  {MULTIVARIATE} {OBSERVATIONS}.
+\newblock volume~1 of \emph{Berkeley {Symposium} on {Mathematical} {Statistics}
+  and {Probability}}, pages 281--297, Berkley, CA, 1967. University of
+  California Press.
+
 \bibitem[MacTavish et~al.(2006)MacTavish, Eley, and
   Salamon']{mactavish_policy_2006}
 Katherine MacTavish, Michelle Eley, and Sonya Salamon'.
@@ -599,6 +982,19 @@ Katherine~A. MacTavish.
 \newblock URL
   \url{http://www.tandfonline.com/doi/abs/10.1080/15575330709490186}.
 
+\bibitem[Madhulatha(2011)]{wyld_comparison_2011}
+Tagaram~Soni Madhulatha.
+\newblock Comparison between {K}-{Means} and {K}-{Medoids} {Clustering}
+  {Algorithms}.
+\newblock In David~C. Wyld, Michal Wozniak, Nabendu Chaki, Natarajan
+  Meghanathan, and Dhinaharan Nagamalai, editors, \emph{Advances in {Computing}
+  and {Information} {Technology}}, volume 198, pages 472--481. Springer Berlin
+  Heidelberg, Berlin, Heidelberg, 2011.
+\newblock ISBN 978-3-642-22554-3 978-3-642-22555-0.
+\newblock \doi{10.1007/978-3-642-22555-0_48}.
+\newblock URL \url{http://link.springer.com/10.1007/978-3-642-22555-0_48}.
+\newblock Series Title: Communications in Computer and Information Science.
+
 \bibitem[Matte and Jacobs(2000)]{matte_housing_2000}
 Thomas~D. Matte and David~E. Jacobs.
 \newblock Housing and {Health}- {Current} {Issues} and {Implications} for
@@ -614,8 +1010,16 @@ Molly~W Metzger and Amy~T Khare.
 \bibitem[Miller and Weber(2003)]{miller_persistent_2003}
 Kathleen~K. Miller and Bruce~A. Weber.
 \newblock {PERSISTENT} {POVERTY} {ACROSS} {THE} {RURAL}-{URBAN} {CONTINUUM}.
-\newblock Technical report, Rural Poverty Research Center, 2003.
+\newblock 2003.
+\newblock \doi{10.22004/AG.ECON.18910}.
 \newblock URL \url{https://ageconsearch.umn.edu/record/18910}.
+\newblock Publisher: Unknown.
+
+\bibitem[Molina(2023)]{molina_notitle_2023}
+Genaro Molina, 2023.
+\newblock URL
+  \url{https://ca-times.brightspotcdn.com/dims4/default/4f39bdd/2147483647/strip/true/crop/5760x3840+0+0/resize/1200x800!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F71%2F0e%2Fad1bfbd3481198adb245a359ec50%2F1319023-me-0706-conservatives-say-homelessness-paralyzing-west-gem-121.jpg}.
+\newblock Source: Los Angeles Times.
 
 \bibitem[Molloy et~al.(2011)Molloy, Smith, and Wozniak]{molloy_internal_2011}
 Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
@@ -626,7 +1030,28 @@ Raven Molloy, Christopher~L Smith, and Abigail Wozniak.
 \newblock \doi{10.1257/jep.25.3.173}.
 \newblock URL \url{https://pubs.aeaweb.org/doi/10.1257/jep.25.3.173}.
 
-\bibitem[{National Coalition for the Homeless}(2009)]{noauthor_rural_2009}
+\bibitem[Moran(1950)]{moran_notes_1950}
+P.~A.~P. Moran.
+\newblock Notes on {Continuous} {Stochastic} {Phenomena}.
+\newblock \emph{Biometrika}, 37\penalty0 (1/2):\penalty0 17, June 1950.
+\newblock ISSN 00063444.
+\newblock \doi{10.2307/2332142}.
+\newblock URL \url{https://www.jstor.org/stable/2332142?origin=crossref}.
+
+\bibitem[Msaouel et~al.(2022)Msaouel, Jimenez-Fonseca, Lim, Carmona-Bayonas,
+  and Agnelli]{msaouel_medicine_2022}
+Pavlos Msaouel, Paula Jimenez-Fonseca, Bora Lim, Alberto Carmona-Bayonas, and
+  Giancarlo Agnelli.
+\newblock Medicine before and after {David} {Cox}.
+\newblock \emph{European Journal of Internal Medicine}, 98:\penalty0 1--3,
+  April 2022.
+\newblock ISSN 09536205.
+\newblock \doi{10.1016/j.ejim.2022.02.022}.
+\newblock URL
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0953620522000875}.
+
+\bibitem[{National Coalition for the
+  Homeless}(2009)]{national_coalition_for_the_homeless_rural_2009}
 {National Coalition for the Homeless}.
 \newblock Rural {Homelessness}.
 \newblock Technical report, National Coalition for the Homeless, 2009.
@@ -717,10 +1142,22 @@ Virginia~A. Rauh, Philip~J. Landrigan, and Luz Claudio.
 Marjorie Robertson, Natalie Harris, Nancy Fritz, Rebecca Noftsinger, and Pamela
   Fischer.
 \newblock Rural {Homelessness}.
-\newblock In \emph{Proceedings of the 2007 National Symposium on Homelessness
-  Research}, 2007.
+\newblock 2007.
 \newblock \doi{10.13140/RG.2.1.3433.7683}.
 \newblock URL \url{http://rgdoi.net/10.13140/RG.2.1.3433.7683}.
+\newblock Publisher: Unpublished.
+
+\bibitem[{Sarwosri} et~al.(2016){Sarwosri}, Sunaryono, Akbar, and
+  Setiyawan]{sarwosri_poverty_2016}
+{Sarwosri}, Dwi Sunaryono, Rizky~Januar Akbar, and Risky~Dwi Setiyawan.
+\newblock Poverty classification using {Analytic} {Hierarchy} {Process} and
+  k-means clustering.
+\newblock In \emph{2016 {International} {Conference} on {Information} \&
+  {Communication} {Technology} and {Systems} ({ICTS})}, pages 266--269,
+  Surabaya, Indonesia, 2016. IEEE.
+\newblock ISBN 978-1-5090-1381-4.
+\newblock \doi{10.1109/ICTS.2016.7910310}.
+\newblock URL \url{http://ieeexplore.ieee.org/document/7910310/}.
 
 \bibitem[Sharp and Hall(2014)]{sharp_emerging_2014}
 Gregory Sharp and Matthew Hall.
@@ -756,10 +1193,28 @@ Lilly Shoup and Becca Houma.
   {Small} {Town} {Communities}.
 \newblock White {Paper}, Transportation for America, 2010.
 
+\bibitem[Sinaga and Yang(2020)]{sinaga_unsupervised_2020}
+Kristina~P. Sinaga and Miin-Shen Yang.
+\newblock Unsupervised {K}-{Means} {Clustering} {Algorithm}.
+\newblock \emph{IEEE Access}, 8:\penalty0 80716--80727, 2020.
+\newblock ISSN 2169-3536.
+\newblock \doi{10.1109/ACCESS.2020.2988796}.
+\newblock URL \url{https://ieeexplore.ieee.org/document/9072123/}.
+
 \bibitem[Siskar(2019)]{siskar_who_2019}
 Thomas~C Siskar.
 \newblock \emph{Who {Is} {Forced} to {Move}?}
 \newblock Master of {Arts}, Pennsylvannia State University, 2019.
+
+\bibitem[Solanki and Patel(2015)]{solanki_survey_2015}
+Surbhi~K. Solanki and Jalpa~T. Patel.
+\newblock A {Survey} on {Association} {Rule} {Mining}.
+\newblock In \emph{2015 {Fifth} {International} {Conference} on {Advanced}
+  {Computing} \& {Communication} {Technologies}}, pages 212--216, Haryana,
+  India, February 2015. IEEE.
+\newblock ISBN 978-1-4799-8488-6.
+\newblock \doi{10.1109/ACCT.2015.69}.
+\newblock URL \url{http://ieeexplore.ieee.org/document/7079081/}.
 
 \bibitem[Sparks et~al.(2013)Sparks, Sparks, and Campbell]{sparks_poverty_2013}
 P.~Johnelle Sparks, Corey~S. Sparks, and Joseph J.~A. Campbell.
@@ -782,6 +1237,23 @@ Seth~E. Spielman, David Folch, and Nicholas Nagle.
 \newblock URL
   \url{https://linkinghub.elsevier.com/retrieve/pii/S0143622813002518}.
 
+\bibitem[Steinhaus(1956)]{steinhaus_sur_1956}
+H~Steinhaus.
+\newblock Sur la division des corps materiels en parties.
+\newblock \emph{Bulletin de L'Academie Polonaise des Sciences}, 4\penalty0
+  (12):\penalty0 801--804, 1956.
+\newblock URL
+  \url{http://www.laurent-duval.eu/Documents/Steinhaus_H_1956_j-bull-acad-polon-sci_division_cmp-k-means.pdf}.
+
+\bibitem[Stigler(1981)]{stigler_gauss_1981}
+Stephen~M. Stigler.
+\newblock Gauss and the {Invention} of {Least} {Squares}.
+\newblock \emph{The Annals of Statistics}, 9\penalty0 (3):\penalty0 465--474,
+  1981.
+\newblock ISSN 0090-5364.
+\newblock URL \url{https://www.jstor.org/stable/2240811}.
+\newblock Publisher: Institute of Mathematical Statistics.
+
 \bibitem[Stockhammer(2008)]{stockhammer_stylized_2008}
 Engelbert Stockhammer.
 \newblock Some {Stylized} {Facts} on the {Finance}-{Dominated} {Accumulation}
@@ -796,11 +1268,19 @@ Engelbert Stockhammer.
 
 \bibitem[Swope and Hernandez(2020)]{swope_housing_2020}
 Carolyn~B. Swope and Diana Hernandez.
-\newblock Housing as a determinant of health equity\_ {A} conceptual model.
+\newblock Housing as a determinant of health equity: {A} conceptual model.
 \newblock \emph{Soc Sci Med}, 243, 2020.
 \newblock \doi{10.1016/j.socscimed.2019.112571}.
 \newblock URL
   \url{https://reader.elsevier.com/reader/sd/pii/S0277953619305659?token=0BF7CE998C4949B5AD4DB9DB6CE6CA02DF1448E46028A9D722AB36EBD1473C1B404CCF479C8632CC8BEF36226993A634&originRegion=us-east-1&originCreation=20230118070028}.
+
+\bibitem[{The American Presidency
+  Project}()]{the_american_presidency_project_annual_nodate}
+{The American Presidency Project}.
+\newblock Annual {Message} to the {Congress} on the {State} of the {Union}.
+  {\textbar} {The} {American} {Presidency} {Project}.
+\newblock URL
+  \url{https://www.presidency.ucsb.edu/documents/annual-message-the-congress-the-state-the-union-25}.
 
 \bibitem[Thiede et~al.(2018)Thiede, Kim, and Valasik]{thiede_spatial_2018}
 Brian Thiede, Hyojung Kim, and Matthew Valasik.
@@ -813,17 +1293,71 @@ Brian Thiede, Hyojung Kim, and Matthew Valasik.
 \newblock \doi{10.1111/ruso.12166}.
 \newblock URL \url{https://onlinelibrary.wiley.com/doi/10.1111/ruso.12166}.
 
+\bibitem[Tian et~al.(2020)Tian, Wu, Zeng, Ahmed, Yan, White, Zhang, and
+  Stein]{tian_identifying_2020}
+Fuyou Tian, Bingfang Wu, Hongwei Zeng, Shukri Ahmed, Nana Yan, Ian White, Miao
+  Zhang, and Alfred Stein.
+\newblock Identifying the {Links} {Among} {Poverty}, {Hydroenergy} and {Water}
+  {Use} {Using} {Data} {Mining} {Methods}.
+\newblock \emph{Water Resources Management}, 34\penalty0 (5):\penalty0
+  1725--1741, March 2020.
+\newblock ISSN 0920-4741, 1573-1650.
+\newblock \doi{10.1007/s11269-020-02524-5}.
+\newblock URL \url{http://link.springer.com/10.1007/s11269-020-02524-5}.
+
+\bibitem[Tobler(1970)]{tobler_computer_1970}
+W.~R. Tobler.
+\newblock A {Computer} {Movie} {Simulating} {Urban} {Growth} in the {Detroit}
+  {Region}.
+\newblock \emph{Economic Geography}, 46:\penalty0 234, June 1970.
+\newblock ISSN 00130095.
+\newblock \doi{10.2307/143141}.
+\newblock URL \url{https://www.jstor.org/stable/143141?origin=crossref}.
+
+\bibitem[{US Census Bureau}(2023)]{us_census_bureau_income_2023}
+{US Census Bureau}.
+\newblock Income {Inequality} {Down} {Due} to {Drops} in {Real} {Incomes} at
+  the {Middle} and {Top}, {But} {Post}-{Tax} {Income} {Estimates} {Tell} a
+  {Different} {Story}, 2023.
+\newblock URL
+  \url{https://www.census.gov/library/stories/2023/09/income-inequality.html}.
+\newblock Section: Government.
+
 \bibitem[{U.S. Census Bureau} and {U.S. Department of Housing and Urban
-  Development}(1963)]{us_census_bureau_median_1963}
+  Development}(2023)]{us_census_bureau_median_2023}
 {U.S. Census Bureau} and {U.S. Department of Housing and Urban Development}.
 \newblock Median {Sales} {Price} of {Houses} {Sold} for the {United} {States},
-  January 1963.
+  2023.
 \newblock URL \url{https://fred.stlouisfed.org/series/MSPUS}.
 \newblock Publisher: FRED, Federal Reserve Bank of St. Louis.
 
-\bibitem[{U.S. Department of Agriculture}(2023)]{noauthor_usda_2023}
+\bibitem[{U.S. Department of
+  Agriculture}(2023)]{us_department_of_agriculture_usda_2023}
 {U.S. Department of Agriculture}.
 \newblock {USDA} {Rural} {Development} {Summary} of {Programs}, 2023.
+
+\bibitem[{U.S.D.A. Economic Research
+  Service}(2023)]{usda_economic_research_service_rural-urban_2023}
+{U.S.D.A. Economic Research Service}.
+\newblock Rural-{Urban} {Commuting} {Area} {Codes}, 2023.
+\newblock URL
+  \url{https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/}.
+
+\bibitem[Varona and Capretz(2011)]{varona_comparing_2011}
+Daniel Varona and Luiz Capretz.
+\newblock Comparing {Cuban} and {Brazilian} software engineers.
+\newblock \emph{World Transactions on Engineering and Technology Education},
+  9:\penalty0 109--113, January 2011.
+
+\bibitem[Voss et~al.(2006)Voss, Long, Hammer, and Friedman]{voss_county_2006}
+Paul~R. Voss, David~D. Long, Roger~B. Hammer, and Samantha Friedman.
+\newblock County child poverty rates in the {US}: a spatial regression
+  approach.
+\newblock \emph{Population Research and Policy Review}, 25\penalty0
+  (4):\penalty0 369--391, November 2006.
+\newblock ISSN 0167-5923, 1573-7829.
+\newblock \doi{10.1007/s11113-006-9007-4}.
+\newblock URL \url{http://link.springer.com/10.1007/s11113-006-9007-4}.
 
 \bibitem[Wakin(2005)]{wakin_not_2005}
 Michele Wakin.
@@ -838,6 +1372,13 @@ Michele Wakin.
 John~C. Weicher.
 \newblock Housing conditions and homelessness.
 \newblock \emph{Gender Issues}, pages 35--53, 2006.
+
+\bibitem[White(2013)]{white_logistic_2013}
+Jeffry~L White.
+\newblock Logistic regression {Model} {Effectiveness}: {Proportional} {Chance}
+  {Criteria} and {Proportional} {Reduction} in {Error}.
+\newblock \emph{Journal of Contemporary Research in Education}, 2\penalty0 (1),
+  2013.
 
 \bibitem[Wiener(2020)]{wiener_labor_2020}
 Noé~M. Wiener.
@@ -858,6 +1399,15 @@ Bev Wilson and Mallory~L. Rahe.
 \newblock URL
   \url{https://rsaiconnect.onlinelibrary.wiley.com/doi/10.1111/rsp3.12070}.
 
+\bibitem[Xu and Tian(2015)]{xu_comprehensive_2015}
+Dongkuan Xu and Yingjie Tian.
+\newblock A {Comprehensive} {Survey} of {Clustering} {Algorithms}.
+\newblock \emph{Annals of Data Science}, 2\penalty0 (2):\penalty0 165--193,
+  June 2015.
+\newblock ISSN 2198-5804, 2198-5812.
+\newblock \doi{10.1007/s40745-015-0040-1}.
+\newblock URL \url{http://link.springer.com/10.1007/s40745-015-0040-1}.
+
 \bibitem[Yadavalli et~al.(2020)Yadavalli, Rivett, Brooks, McFarland, and
   Hardiman]{yadavalli_comprehensive_2020}
 Anita Yadavalli, Brenna Rivett, James Brooks, Christiana~K McFarland, and David
@@ -865,6 +1415,25 @@ Anita Yadavalli, Brenna Rivett, James Brooks, Christiana~K McFarland, and David
 \newblock A {Comprehensive} {Look} at {Housing} {Market} {Conditions} {Across}
   {America}'s {Cities}.
 \newblock \emph{Cityscape}, 22\penalty0 (2):\penalty0 111--132, 2020.
+
+\bibitem[Yagley et~al.(2005)Yagley, George, Moore, and
+  Pinder]{yagley_they_2005}
+James Yagley, Lance George, Cequyna Moore, and Jennifer Pinder.
+\newblock They {Paved} {Paradise}...{Gentrification} in {Rural} {Communities}.
+\newblock Technical report, Housing Assistance Council, 2005.
+\newblock URL
+  \url{https://ruralhome.org/wp-content/uploads/storage/documents/gentrification.pdf}.
+
+\bibitem[Yoder~Clark et~al.(2021)Yoder~Clark, Blumenfeld, Lal, Darbari,
+  Northwood, and Wadpey]{yoder_clark_using_2021}
+Andrea Yoder~Clark, Nicole Blumenfeld, Eric Lal, Shikar Darbari, Shiyang
+  Northwood, and Ashkan Wadpey.
+\newblock Using {K}-{Means} {Cluster} {Analysis} and {Decision} {Trees} to
+  {Highlight} {Significant} {Factors} {Leading} to {Homelessness}.
+\newblock \emph{Mathematics}, 9\penalty0 (17):\penalty0 2045, August 2021.
+\newblock ISSN 2227-7390.
+\newblock \doi{10.3390/math9172045}.
+\newblock URL \url{https://www.mdpi.com/2227-7390/9/17/2045}.
 
 \bibitem[Yousey and Samudra(2018)]{yousey_defining_2018}
 Amelia Yousey and Rhucha Samudra.
@@ -886,6 +1455,28 @@ Kimberly~E. Zarecor, David~J. Peters, and Sara Hamideh.
 \newblock \doi{10.1007/978-3-030-50540-0_20}.
 \newblock URL \url{http://link.springer.com/10.1007/978-3-030-50540-0_20}.
 \newblock Series Title: International Handbooks of Quality-of-Life.
+
+\bibitem[Zhang(2012)]{zhang_spatial_2012}
+Changping Zhang.
+\newblock Spatial {Weights} {Matrix} and its {Application}.
+\newblock \emph{Journal of Regional Development Studies}, 2012.
+
+\bibitem[Zhao and Bhowmick(2003)]{zhao_association_2003}
+Qiankun Zhao and Zhao Bhowmick.
+\newblock Association {Rule} {Mining}: {A} {Survey}.
+\newblock Technical {Report} 2003116, Nanyang Technological University,
+  Singapore, 2003.
+
+\bibitem[Zhen and Mengxian(2020)]{zhen_poverty_2020}
+Zeng Zhen and Zhu Mengxian.
+\newblock Poverty {Groups} {Identification} and {Assessment} of {Poverty}
+  {Alleviation} {Programs} in {Rural} {China}.
+\newblock In \emph{Proceedings of the 6th {International} {Conference} on
+  {Humanities} and {Social} {Science} {Research} ({ICHSSR2020})}, Hangzhou,
+  China, 2020. Atlantis Press.
+\newblock ISBN 978-94-6252-960-1.
+\newblock \doi{10.2991/assehr.k.200428.040}.
+\newblock URL \url{https://www.atlantis-press.com/article/125939300}.
 
 \bibitem[Zimmerman et~al.(2008)Zimmerman, Ham, and Frank]{zimmerman_does_2008}
 Julie~N. Zimmerman, Sunny~(Seonok) Ham, and Sarah~Michelle Frank.
