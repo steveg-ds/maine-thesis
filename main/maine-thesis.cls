@@ -290,7 +290,7 @@
 	\addtocontents{toc}{\protect\pagebreak[2]\vskip 10pt plus 1pt minus 1pt}
 	\ifapp
 		\ifmultipleappendices
-			\typeout{<---- Appendix \thechapter ---->}
+			\typeout{<---- APPENDICES \thechapter ---->}
 		\addtocontents{toc}{\protect\@dottedtocline{0}{0em}{1.4em}{\MakeUppercase{\appendixname}\space\thechapter\space -- \texorpdfstring{\MakeUppercase{#1}}{#1}}{Pocket}}
 		\else
 			\typeout{<---- APPENDIX ---->}%
@@ -935,7 +935,7 @@
 	\renewcommand*\thechapter{\@Alph\c@chapter}
 	\addtocontents{toc}{\protect\renewcommand*\protect\l@chapter{\protect\@dottedtocline{0}{0pt}{7.5em}}}
 	\ifmultipleappendices%
-		\toclabel{Appendices}
+		\toclabel{APPENDICES}
 	\fi%
 	\settocdepth{chapter}
 	\doublespacing
