@@ -1,5 +1,4 @@
-
-\documentclass{maine-thesis}  % Default options 12pt and final copy
+\documentclass{maine-thesis}[apa]  % Default options 12pt and final copy
 
 % Include necessary packages here
 \usepackage[round]{natbib} % Load the natbib package with round brackets
@@ -19,6 +18,8 @@
 \usepackage{caption}
 \usepackage{url}
 \usepackage{booktabs}
+\usepackage{titletoc}
+
 % Adjust the space between figure number and title in the list of figures
 \cftsetindents{figure}{3em}{1em} % Adjust the second value to set the desired space
 
@@ -33,6 +34,10 @@
 
 % Adjust the space after the table number in the list of tables
 \renewcommand{\cfttabaftersnum}{\hspace{10em}} % Space after the table
+
+
+\renewcommand{\cfttoctitlefont}{\hfil\bfseries\centering}
+\renewcommand{\cftaftertoctitle}{\hfil}
 
 
 % Creating custom commands
@@ -83,6 +88,7 @@
 \preliminary
 \titlepage
 
+
 \include{Front}
 
 % Main text of the thesis.  Use of the `\input' command will make later editing much easier.
@@ -102,14 +108,14 @@
 
 
 
-\doublespacing % Adjust spacing as needed (e.g., \doublespacing, \onehalfspacing)
+\singlespacing % Adjust spacing as needed (e.g., \doublespacing, \onehalfspacing)
 \bibliographystyle{plainnat} % Set the bibliography style to plainnat
 \bibliography{references} % Specifies the BibTeX file		% Inserts and formats the reference section.
 
 \appendix					% Include this before any appendices.
 \include{AppA}				% First appendix.
 \include{AppB}				% Second appendix, etc.
-\include{AppC}
+%\include{AppC}
 
 \include{Biography}
 

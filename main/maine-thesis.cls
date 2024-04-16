@@ -192,7 +192,8 @@
 \newcount\numcomm \numcomm=4
 \newcount\numadv \numadv=1
 
-\renewcommand*\contentsname{Table of Contents}
+
+\renewcommand*\contentsname{	TABLE OF CONTENTS}
 \renewcommand*\bibname{References}
 \renewcommand*\indexname{INDEX}
 \renewcommand*\chaptername{Chapter}
@@ -689,13 +690,13 @@
 %%%%%%%%%%%%%%%%%%%%%
 % Special Pages/Environments
 %%%%%%%%%%%%%%%%%%%%%
-%\newcommand{\references}{%
-%	\cleardoublepage
-%	\singlespacing
-%	\phantomsection
-%	\addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{\bibname}}{\bibname}}
-%	\bibliography{\@bibfiles}
-%}
+\newcommand{\references}{%
+	\cleardoublepage
+	\singlespacing
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\texorpdfstring{\MakeUppercase{\bibname}}{\bibname}}
+	\bibliography{\@bibfiles}
+}
 
 \renewenvironment{thebibliography}[1]
 	{%begin
